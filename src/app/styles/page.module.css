@@ -66,10 +66,61 @@
 }
 
 .dropdownWrapper {
-  height: 500px;
   display: flex;
-  
   flex-direction: column;
+}
+
+.dropdownWrapper:hover > .hidden{
+  opacity: 1;
+  height: fit-content;
+  width: 300px;
+  padding: 10px;
+  background-color: transparent;
+  
+  background-color: black;
+  top: 20px;
+  
+  position: absolute;
+  display: flex;
+  transition: all .3s ease-in-out;
+}
+.dropdownWrapper:hover .hide{
+  display: flex;
+  color: lightgray;
+  padding: 17px;
+  border-bottom: .5px solid rgb(104,103,96);
+  width: 80%;
+  
+}
+.dropdownWrapper:hover .hideNo{
+  display: flex;
+  color: lightgray;
+  padding: 17px;
+  
+  width: 80%;
+  
+}
+.dropdownWrapper:hover .hideNo:hover{
+  color: white;
+}
+.hideNo{
+  display: none;
+}
+.dropdownWrapper:hover .hide:hover{
+  color: white;
+  
+}
+.hidden{
+  opacity: 1;
+}
+.hide{
+  display: none;
+}
+.menuWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   
 }
 
@@ -114,6 +165,7 @@
   text-align: center;
   font-size: 20px;
   padding: 15px;
+  color: black;
   font-weight: 600;
 }
 .smallRow{
@@ -156,9 +208,8 @@
 }
 .row div{
   cursor: pointer;
-  height: fit-content;
   position: sticky;
-  top: 0;
+  
 }
 .bigButton{
   background-color: rgb(238,30,36);

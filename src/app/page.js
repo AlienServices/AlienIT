@@ -1,65 +1,22 @@
 'use client'
 import Image from 'next/image'
-import { Quote } from '../SVG/Quote'
-import Footer from '../components/footer'
+import { Quote } from './SVG/Quote'
+import Footer from './components/footer'
 import Link from 'next/link'
-import styles from '../styles/page.module.css'
+import Header from "../app/components/header"
+import styles from '../app/styles/page.module.css'
 import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
 
 export default function Home() {
   const [fixedHeader, setFixedHeader] = useState(false)
   const [isDropdownOpen, setDropdownOpen] = useState(false)
   const HEADER_HEIGHT = 90
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY >= 100) {
-        setFixedHeader(true)
-      } else {
-        setFixedHeader(false)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
 
   return (
     <div className={styles.main}>
       <div className={styles.backgroundColor}>
         <div style={{ height: fixedHeader ? HEADER_HEIGHT : 0 }}></div>
-        <div
-          className={`${styles.center} ${
-            fixedHeader
-              ? `${styles.fixedHeader}`
-              : `${styles.fixedHeader} ${styles.hidden}`
-          }`}
-        >
-          <div className={styles.row}>
-            <div className={styles.dropdownWrapper}>
-              <div
-                className={styles.hover}
-                onMouseEnter={() => setDropdownOpen(true)}
-                onMouseLeave={() => setDropdownOpen(false)}
-              >
-                Home
-                {isDropdownOpen && (
-                  <div className={styles.dropdownMenu}>
-                    <div>1st item</div>
-                  </div>
-                )}
-              </div>
-            </div>
-            <div>Services</div>
-            <div>Industries We Serve</div>
-            <div>Areas We Serve</div>
-            <div>Company</div>
-            <button className={styles.bigButton}>Free Assesment</button>
-          </div>
-        </div>
+        <Header/>
 
         <div className={styles.section}>
           <div className={styles.mainTitle}>
