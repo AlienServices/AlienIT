@@ -3,20 +3,21 @@ import Image from 'next/image'
 import { Quote } from './SVG/Quote'
 import Footer from './components/footer'
 import Link from 'next/link'
-import Header from "../app/components/header"
+import Header from '../app/components/header'
 import styles from '../app/styles/page.module.css'
 import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 
 export default function Home() {
   const [fixedHeader, setFixedHeader] = useState(false)
   const [isDropdownOpen, setDropdownOpen] = useState(false)
   const HEADER_HEIGHT = 90
-
+  const router = useRouter()
   return (
     <div className={styles.main}>
       <div className={styles.backgroundColor}>
-        <div style={{ height: fixedHeader ? HEADER_HEIGHT : 0 }}></div>
-        <Header/>
+        
+        <Header />
 
         <div className={styles.section}>
           <div className={styles.mainTitle}>
@@ -26,7 +27,14 @@ export default function Home() {
             <Link href="/assesment/" title="buy new and used copiers">
               <button className={styles.buttonRed}>Get Started</button>
             </Link>
-            <button className={styles.button}>Call 801-123-4567</button>
+            <button
+              onClick={() => {
+                router.push('/assesment')
+              }}
+              className={styles.button}
+            >
+              Call 801-123-4567
+            </button>
           </div>
         </div>
       </div>

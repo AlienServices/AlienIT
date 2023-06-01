@@ -31,8 +31,11 @@ export default function Assesment() {
                 can figure out how to solve your IT problems!
               </div>
             </div>
-            <div>Call Us At (801) 261-0510</div>
+            <a href="">
+              <div className={styles.bold}>Call Us At (801) 261-0510</div>
+            </a>
           </div>
+          <Image src={"/arrow.webp"} height={150} width={150}/>
         </div>
         <div className={styles.section}>
           <div className={styles.row}>
@@ -46,19 +49,34 @@ export default function Assesment() {
               </div>
               <div className={styles.space}>
                 <div className={styles.container}>
-                  <Image src={'/checkmark.png'} width={25} height={25} />
-                  <div>Asses your needs</div>
+                  <Image
+                    style={{ margin: '10px' }}
+                    src={'/checkmark.png'}
+                    width={25}
+                    height={25}
+                  />
+                  <div className={styles.paragraphSmall}>Asses your needs</div>
                 </div>
                 <div className={styles.container}>
-                  <Image src={'/checkmark.png'} width={25} height={25} />
-                  <div>
+                  <Image
+                    style={{ margin: '10px' }}
+                    src={'/checkmark.png'}
+                    width={25}
+                    height={25}
+                  />
+                  <div className={styles.paragraphSmall}>
                     Provide a plan to solve your IT problems and keep them from
                     happening
                   </div>
                 </div>
                 <div className={styles.container}>
-                  <Image src={'/checkmark.png'} width={25} height={25} />
-                  <div>
+                  <Image
+                    style={{ margin: '10px' }}
+                    src={'/checkmark.png'}
+                    width={25}
+                    height={25}
+                  />
+                  <div className={styles.paragraphSmall}>
                     Provide recommendations for securing your data and
                     maximizing your operational efficiency.
                   </div>
@@ -106,23 +124,30 @@ export default function Assesment() {
                 <div className={styles.checkColumn}>
                   <div className={styles.inputrow}>
                     <input className={styles.check} type="checkbox" />
-                    <div>I need Managed IT</div>
+                    <div style={{ paddingLeft: '5px' }}>I need Managed IT</div>
                   </div>
                   <div className={styles.inputrow}>
                     <input className={styles.check} type="checkbox" />
-                    <div>I need Remote Support</div>
+                    <div style={{ paddingLeft: '5px' }}>
+                      I need Remote Support
+                    </div>
                   </div>
                   <div className={styles.inputrow}>
                     <input className={styles.check} type="checkbox" />
-                    <div>I need Onsite Support</div>
+                    <div style={{ paddingLeft: '5px' }}>
+                      I need Onsite Support
+                    </div>
                   </div>
                   <div className={styles.inputrow}>
                     <input className={styles.check} type="checkbox" />
-                    <div>I need Personal Computer Support</div>
+                    <div style={{ paddingLeft: '5px' }}>
+                      I need Personal Computer Support
+                    </div>
                   </div>
                 </div>
                 <textarea
                   className={styles.text}
+                  placeholder={'Tell us about how we can help!'}
                   name=""
                   id=""
                   cols="30"
@@ -133,7 +158,7 @@ export default function Assesment() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

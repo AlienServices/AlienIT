@@ -1,14 +1,16 @@
 import styles from '../styles/page.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 
 export default function header() {
+  const router = useRouter();
     return (
         <div className={styles.center}>
-          <div className={styles.row}>
+        <div className={styles.row}>
+          <Image style={{cursor:"pointer"}} onClick={() => {  router.push("/")}}  src={"/logo.webp"} height={200} width={200}/>
             <div className={styles.dropdownWrapper}>
-              <div className={styles.hover}>Home</div>
+              <div onClick={() => {  router.push("/")}} className={styles.hover}>Home</div>
             </div>
             <div className={styles.dropdownWrapper}>
               <div className={styles.hover}>Services</div>
@@ -28,15 +30,15 @@ export default function header() {
               <div className={styles.hover}>Industries we serve</div>
               <div className={styles.hidden}>
                 <div className={styles.menuWrapper}>
-                  <div className={styles.hide}>Financial</div>
-                  <div className={styles.hide}>Consumer Goods</div>
-                  <div className={styles.hide}>Healthcare And Medical</div>
-                  <div className={styles.hide}>Hospitality</div>
-                  <div className={styles.hide}>Manufactoring</div>
-                  <div className={styles.hide}>Restaurants</div>
-                  <div className={styles.hide}>Construction</div>
-                  <div className={styles.hide}>Property Management</div>
-                  <div className={styles.hide}>Landscape And Pool Design</div>
+                  <div onClick={() => {  router.push("finance")}}  className={styles.hide}>Financial</div>
+                  <div onClick={() => {  router.push("/consumer")}} className={styles.hide}>Consumer Goods</div>
+                  <div onClick={() => {  router.push("/health")}} className={styles.hide}>Healthcare And Medical</div>
+                  <div onClick={() => {  router.push("/hospitality")}} className={styles.hide}>Hospitality</div>
+                  <div onClick={() => {  router.push("/manufactoring")}} className={styles.hide}>Manufactoring</div>
+                  <div onClick={() => {  router.push("/restaurants")}} className={styles.hide}>Restaurants</div>
+                  <div onClick={() => {  router.push("/construction")}} className={styles.hide}>Construction</div>
+                  <div onClick={() => {  router.push("/property")}} className={styles.hide}>Property Management</div>
+                  <div onClick={() => {  router.push("/landscape")}} className={styles.hide}>Landscape And Pool Design</div>
                 </div>
               </div>
             </div>
@@ -44,15 +46,15 @@ export default function header() {
               <div className={styles.hover}>Areas we serve</div>
               <div className={styles.hidden}>
                 <div className={styles.menuWrapper}>
-                  <div className={styles.hide}>Utah County</div>
-                  <div className={styles.hide}>Salt Lake County</div>
-                  <div className={styles.hide}>Sanpete County</div>
-                  <div className={styles.hide}>Weber County</div>
-                  <div className={styles.hide}>Wasatch County</div>
-                  <div className={styles.hide}>Davis County</div>
-                  <div className={styles.hide}>Cache County</div>
-                  <div className={styles.hide}>Washington County</div>
-                  <div className={styles.hide}>All Other Utah Counties!</div>
+                  <div onClick={() => {  router.push("/assesment")}} className={styles.hide}>Utah County</div>
+                  <div onClick={() => {  router.push("/assesment")}} className={styles.hide}>Salt Lake County</div>
+                  <div onClick={() => {  router.push("/assesment")}} className={styles.hide}>Sanpete County</div>
+                  <div onClick={() => {  router.push("/assesment")}} className={styles.hide}>Weber County</div>
+                  <div onClick={() => {  router.push("/assesment")}} className={styles.hide}>Wasatch County</div>
+                  <div onClick={() => {  router.push("/assesment")}} className={styles.hide}>Davis County</div>
+                  <div onClick={() => {  router.push("/assesment")}} className={styles.hide}>Cache County</div>
+                  <div onClick={() => {  router.push("/assesment")}} className={styles.hide}>Washington County</div>
+                  <div  onClick={() => {  router.push("/assesment")}}className={styles.hide}>All Other Utah Counties!</div>
                 </div>
               </div>
             </div>
@@ -65,7 +67,7 @@ export default function header() {
               </div>
             </div>
 
-            <button className={styles.bigButton}>Free Assesment</button>
+            <button onClick={() => {router.push("/assesment")}} className={styles.bigButton}>Free Assesment</button>
           </div>
         </div>
     )
