@@ -32,11 +32,13 @@ export default function manufactoring() {
                 Drive Restaurant Success
               </div>
             </div>
-            <a href="">
-              <div className={styles.bold}>Get An Assesment</div>
+            <a href="/restaurants">
+              <div className={styles.arrowRow}>
+                <div className={styles.bold}>Get An Assesment</div>
+                <Image src={'/arrowR.webp'} height={30} width={30} />
+              </div>
             </a>
           </div>
-          <Image src={'/arrow.webp'} height={150} width={150} />
         </div>
         <div className={styles.section}></div>
       </div>

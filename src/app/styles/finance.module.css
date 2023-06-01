@@ -31,6 +31,10 @@
     width: 60%;
     text-align: center ;
   }
+  .arrowRow{
+    display: flex;
+    align-items: center;
+  }
   .mainTitleFull{
     font-size: 50px;
     width: 100%;

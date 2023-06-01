@@ -32,11 +32,14 @@ export default function finance() {
                 Accounting and Finance
               </div>
             </div>
-            <a href="">
-              <div className={styles.bold}>Get An Assesment</div>
+            <a href="/finance">
+              <div className={styles.arrowRow}>
+                <div className={styles.bold}>Get An Assesment</div>
+                <Image src={'/arrowR.webp'} height={30} width={30} />
+              </div>
             </a>
           </div>
-          <Image src={'/arrow.webp'} height={150} width={150} />
+          <Image src={'/arrow.webp'} height={70} width={70} />
         </div>
         <div className={styles.section}>
           
