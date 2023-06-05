@@ -16,7 +16,7 @@ export default function header() {
               <div className={styles.hover}>Services</div>
               <div className={styles.hidden}>
                 <div className={styles.menuWrapper}>
-                  <div className={styles.hide}>Ransomware Protection</div>
+                  <div onClick={() => {  router.push("ransom")}} className={styles.hide}>Ransomware Protection</div>
                   <div className={styles.hide}>Backup And Restore</div>
                   <div className={styles.hide}>Full Printer Support</div>
                   <div className={styles.hide}>Network Efficiency</div>
@@ -62,7 +62,7 @@ export default function header() {
               <div className={styles.hover}>Company</div>
               <div className={styles.hidden}>
                 <div className={styles.menuWrapper}>
-                  <div className={styles.hideNo}>About Us</div>
+                  <div onClick={() => {router.push("/about")}} className={styles.hideNo}>About Us</div>
                 </div>
               </div>
             </div>

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Quote } from '../SVG/Quote'
 import { PatternFormat } from 'react-number-format'
 import Header from '../components/header'
+import Funnel from '../funnel/page'
 import Footer from '../components/footer'
 import styles from '../styles/finance.module.css'
 import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
@@ -16,7 +17,7 @@ export default function manufactoring() {
         <div className={styles.section}>
           <div
             style={{
-              height: '60%',
+              height: '70%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -32,7 +33,7 @@ export default function manufactoring() {
                 Optimizing Operations and Accelerating Industry 4.0 Adoption
               </div>
             </div>
-            <a href="/manufactoring">
+            <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get An Assesment</div>
                 <Image src={'/arrowR.webp'} height={30} width={30} />
@@ -41,8 +42,42 @@ export default function manufactoring() {
           </div>
           <Image src={'/arrow.webp'} height={70} width={70} />
         </div>
-        <div className={styles.section}></div>
+        <div className={styles.sectionRow}>
+          <div
+            style={{
+              width: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Image style={{borderRadius:"5px"}} src={'/manufactor.webp'} width={500} height={450} />
+          </div>
+          <div style={{ width: '50%', padding: '10px' }}>
+            <div className={styles.title}>
+            PROPELLING YOUR BUSINESS INTO THE FUTURE
+            </div>
+            <div className={styles.paragraphfifty}>
+              In the dynamic world of manufacturing, seamless telecommunications
+              networks, efficient product distribution systems, reliable
+              broadband access, and robust data management are essential for
+              success. At Alien IT, we recognize the paramount importance of
+              these capabilities in driving your business forward. We also
+              understand that many manufacturers still rely on outdated
+              technology and systems. That's where our expertise comes into
+              play. We offer your manufacturing business access to the latest
+              and most innovative IT solutions available in the market today.
+              From state-of-the-art enterprise resource planning (ERP) systems
+              to advanced data storage and security solutions, we possess the
+              experience and know-how to propel your business to new heights.
+              Partnering with Alien IT means unlocking the potential for
+              enhanced operational efficiency and unparalleled growth in the
+              competitive manufacturing landscape.
+            </div>
+          </div>
+        </div>
       </div>
+      <Funnel />
       <Footer />
     </div>
   )
