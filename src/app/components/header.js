@@ -17,12 +17,12 @@ export default function header() {
               <div className={styles.hidden}>
                 <div className={styles.menuWrapper}>
                   <div onClick={() => {  router.push("ransom")}} className={styles.hide}>Ransomware Protection</div>
-                  <div className={styles.hide}>Backup And Restore</div>
-                  <div className={styles.hide}>Full Printer Support</div>
-                  <div className={styles.hide}>Network Efficiency</div>
-                  <div className={styles.hide}>Fix Broken Hardware</div>
-                  <div className={styles.hide}>Secure And Fast Setup</div>
-                  <div className={styles.hide}>Sofware And App Support</div>
+                  <div onClick={() => {  router.push("backup")}} className={styles.hide}>Backup And Restore</div>
+                  <div onClick={() => {  router.push("printer")}} className={styles.hide}>Full Printer Support</div>
+                  <div onClick={() => {  router.push("network")}} className={styles.hide}>Network Efficiency</div>
+                  <div onClick={() => {  router.push("broken")}} className={styles.hide}>Fix Broken Hardware</div>
+                  <div onClick={() => {  router.push("secure")}} className={styles.hide}>Secure And Fast Setup</div>
+                  <div onClick={() => {  router.push("software")}} className={styles.hide}>Sofware And App Support</div>
                 </div>
               </div>
             </div>

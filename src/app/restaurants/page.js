@@ -35,18 +35,30 @@ export default function restaurants() {
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get An Assesment</div>
+                <div className={styles.bold}>Get A Free Assesment</div>
                 <Image src={'/arrowR.webp'} height={30} width={30} />
               </div>
             </a>
           </div>
         </div>
         <div className={styles.sectionRow}>
-          <div style={{ width: "50%", display:"flex", justifyContent:"center", alignItems:"center" }}>
-            <Image style={{borderRadius:"5px"}} src={"/food.webp"} width={400} height={500}/>
+          <div
+            style={{
+              width: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/food.webp'}
+              width={400}
+              height={450}
+            />
           </div>
-          <div style={{width:"50%", padding:"10px"}}>
-            <div className={styles.title}>              
+          <div style={{ width: '50%', padding: '10px' }}>
+            <div className={styles.title}>
               Enhancing Restaurant Efficiency and Security through Managed IT
               Services
             </div>
@@ -71,8 +83,39 @@ export default function restaurants() {
             </div>
           </div>
         </div>
+        <div className={styles.sectionOpposite}>
+          <div
+            style={{
+              width: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/rest2.webp'}
+              width={470}
+              height={330}
+            />
+          </div>
+          <div style={{ width: '50%', padding: '10px' }}>
+            <div className={styles.title}>Cybersecurity Support</div>
+            <div className={styles.paragraphfifty}>
+              In today's digital landscape, cybersecurity is crucial for all
+              businesses, including restaurants. Alien IT offers comprehensive
+              cybersecurity solutions to protect your restaurant from cyber
+              attacks. Our services include malware removal, firewalls,
+              intrusion detection, and more. We work closely with you to create
+              a customized security plan that fits your restaurant's needs,
+              providing peace of mind knowing your business is safeguarded.
+              Trust Alien IT to fortify your restaurant's defenses and keep your
+              valuable data secure.
+            </div>
+          </div>
+        </div>
       </div>
-      <Funnel/>
+      <Funnel />
       <Footer />
     </div>
   )

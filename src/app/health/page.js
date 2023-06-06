@@ -35,7 +35,7 @@ export default function health() {
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get An Assesment</div>
+                <div className={styles.bold}>Get A Free Assesment</div>
                 <Image src={'/arrowR.webp'} height={30} width={30} />
               </div>
             </a>
@@ -51,33 +51,76 @@ export default function health() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"5px"}} src={'/hospital.webp'} width={500} height={400} />
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/hospital.webp'}
+              width={500}
+              height={350}
+            />
           </div>
           <div style={{ width: '50%', padding: '10px' }}>
             <div className={styles.title}>
-              Optimizing Efficiency and Security: Cloud Services for Utah
-              Construction Companies
+              Seamless Healthcare IT Solutions: Empowering Your Practice for
+              Uninterrupted Operations
             </div>
             <div className={styles.paragraphfifty}>
-              At Alien IT, we specialize in simplifying the transition to
-              cloud-based construction business applications. Our expert team
-              will guide you through the migration process, helping you
-              determine which applications to move and providing a clear plan.
-              With ongoing support, we ensure a smooth and hassle-free
-              experience post-migration. By embracing our cloud services, Utah
-              construction companies gain flexibility, scalability, and robust
-              security. Remote access, ample storage space, and efficient
-              communication tools promote seamless collaboration. Additionally,
-              automatic backups and data encryption protect your business from
-              disasters and cyber threats. Experience the advantages of Alien
-              IT's cloud services and empower your construction company in Utah.
-              Make the move to the cloud for enhanced efficiency, security, and
-              future-proofing your business.
+              Alien IT understands the crucial role of healthcare IT services in
+              ensuring the seamless operation of your medical practice. From
+              maintaining accurate patient records to enabling secure data
+              access, your technology infrastructure is instrumental in
+              delivering quality care to your patients. Given the increasing
+              frequency of cyber attacks targeting healthcare organizations,
+              data security has become a paramount concern. Compliance with
+              stringent guidelines, such as HIPAA, is essential for safeguarding
+              and protecting sensitive patient health information. Alien IT's
+              healthcare IT services offer comprehensive security measures to
+              fortify the protection of critical data within your practice. By
+              establishing a robust network infrastructure, we provide a secure
+              environment where authorized access is granted while unauthorized
+              access is effectively prevented. With our solutions in place, you
+              can confidently prioritize patient care, knowing that your
+              protected health information remains shielded from potential
+              threats.
+            </div>
+          </div>
+        </div>
+        <div className={styles.sectionOpposite}>
+          <div
+            style={{
+              width: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/health.webp'}
+              width={500}
+              height={350}
+            />
+          </div>
+          <div style={{ width: '50%', padding: '10px' }}>
+            <div className={styles.title}>
+              Elevating Patient Care: How Managed IT Enhances Your Medical
+              Practice
+            </div>
+            <div className={styles.paragraphfifty}>
+              Managed IT services from Alien IT offer healthcare businesses the
+              opportunity to elevate their patient care through improved network
+              security, 24/7 monitoring, in-depth IT assessments, seamless
+              integration with EHR and medical software, remote and on-site
+              support, and expert security planning and implementation. With our
+              flexible and cloud-based solutions, we empower your medical
+              practice to operate with enhanced efficiency, productivity, and
+              confidence in comprehensive security measures. Trust Alien IT to
+              optimize your IT infrastructure, allowing you to better serve your
+              patients while we handle your technology needs.
             </div>
           </div>
         </div>
       </div>
-      <Funnel/>
+      <Funnel />
       <Footer />
     </div>
   )

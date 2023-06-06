@@ -35,7 +35,7 @@ export default function landscape() {
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get An Assesment</div>
+                <div className={styles.bold}>Get A Free Assesment</div>
                 <Image src={'/arrowR.webp'} height={30} width={30} />
               </div>
             </a>
@@ -51,7 +51,12 @@ export default function landscape() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"5px"}} src={'/landscape.webp'} width={400} height={450} />
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/landscape.webp'}
+              width={400}
+              height={450}
+            />
           </div>
           <div style={{ width: '50%', padding: '10px' }}>
             <div className={styles.title}>

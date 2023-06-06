@@ -35,7 +35,7 @@ export default function finance() {
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get An Assesment</div>
+                <div className={styles.bold}>Get A Free Assesment</div>
                 <Image src={'/arrowR.webp'} height={30} width={30} />
               </div>
             </a>
@@ -51,28 +51,67 @@ export default function finance() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"5px"}} src={'/finance.webp'} width={500} height={400} />
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/finance.webp'}
+              width={500}
+              height={400}
+            />
           </div>
           <div style={{ width: '50%', padding: '10px' }}>
             <div className={styles.title}>
-              Optimizing Efficiency and Security: Cloud Services for Utah
-              Construction Companies
+              Elevating Accounting & Finance: Unlocking Potential with
+              Comprehensive IT Services
+            </div>
+            <div className={styles.paragraphfifty}>
+              Revolutionize your accounting and finance processes with Alien IT,
+              the leading provider of extraterrestrial technology solutions. Our
+              expert team brings extensive experience in the financial sector to
+              help you meet client needs and optimize your IT infrastructure.
+              From automating tasks to safeguarding data, we implement
+              cutting-edge tools like cosmic cloud technology and advanced
+              security software. With Alien IT, serve your clients confidently,
+              knowing your data is protected and your network is reliable and
+              fast. Embark on an interstellar journey to success with us.
+            </div>
+          </div>
+        </div>
+        <div className={styles.sectionOpposite}>
+          <div
+            style={{
+              width: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/finance.webp'}
+              width={500}
+              height={400}
+            />
+          </div>
+          <div style={{ width: '50%', padding: '10px' }}>
+            <div className={styles.title}>
+              Revolutionizing Financial Firms: Unleashing the Power of Managed
+              IT Solutions
             </div>
             <div className={styles.paragraphfifty}>
               At Alien IT, we specialize in simplifying the transition to
               cloud-based construction business applications. Our expert team
-              will guide you through the migration process, helping you
-              determine which applications to move and providing a clear plan.
-              With ongoing support, we ensure a smooth and hassle-free
-              experience post-migration. By embracing our cloud services, Utah
-              construction companies gain flexibility, scalability, and robust
-              security. Remote access, ample storage space, and efficient
-              communication tools promote seamless collaboration. Additionally,
-              automatic backups and data encryption protect your business from
-              disasters and cyber threats. Experience the advantages of Alien
-              IT's cloud services and empower your construction company in Utah.
-              Make the move to the cloud for enhanced efficiency, security, and
-              future-proofing your business.
+              Financial firms handle sensitive customer information every day,
+              and to maintain customer trust and deliver top-notch services,
+              managed IT becomes a game-changing solution. Protect your data and
+              ensure your company's security with Alien IT's managed services.
+              Our flexible offerings allow you to choose the services you need
+              at a price point that fits your firm's budget. With scalable
+              managed IT services, you can easily adapt the level of support to
+              match your growth trajectory. Whether it's the high-pressure tax
+              season or slower periods, our 24/7 availability ensures prompt
+              assistance. During quieter times, we focus on crafting your
+              long-term strategy and efficiently managing day-to-day projects to
+              drive productivity and success.
             </div>
           </div>
         </div>

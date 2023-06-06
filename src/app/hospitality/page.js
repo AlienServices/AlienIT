@@ -35,7 +35,7 @@ export default function hospitality() {
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get An Assesment</div>
+                <div className={styles.bold}>Get A Free Assesment</div>
                 <Image src={'/arrowR.webp'} height={30} width={30} />
               </div>
             </a>
@@ -51,7 +51,12 @@ export default function hospitality() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"5px"}} src={'/hotel.webp'} width={550} height={400} />
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/hotel.webp'}
+              width={550}
+              height={350}
+            />
           </div>
           <div style={{ width: '50%', padding: '10px' }}>
             <div className={styles.title}>
@@ -70,6 +75,46 @@ export default function hospitality() {
               provides the expertise and cutting-edge solutions necessary to
               navigate this ever-changing landscape, ensuring your business
               thrives in the face of evolving customer demands.
+            </div>
+          </div>
+        </div>
+        <div className={styles.sectionOpposite}>
+          <div
+            style={{
+              width: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Image
+              style={{ borderRadius: '5px' }}
+              src={'/hotel2.webp'}
+              width={550}
+              height={350}
+            />
+          </div>
+          <div style={{ width: '50%', padding: '10px' }}>
+            <div className={styles.title}>
+              Safeguarding IT Security: Protecting Guests and Businesses Alike
+            </div>
+            <div className={styles.paragraphfifty}>
+              With cyberattacks occurring at an alarming frequency of every 39
+              seconds, every moment with comprehensive cybersecurity measures
+              becomes crucial. Alien IT understands the significance of
+              safeguarding both guests and businesses in the hospitality
+              industry. We recognize the vital role that data plays in the
+              longevity of your hospitality business and the trust bestowed upon
+              you by your valued guests. That's why we go the extra mile to
+              implement our strongest security measures specifically tailored
+              for hotels, motels, inns, restaurants, and resorts. Hospitality is
+              an industry that demands constant attention, and we understand
+              that data security shouldn't be a burden on your mind. Allow Alien
+              IT to handle the behind-the-scenes cybersecurity tasks, enabling
+              you to focus wholeheartedly on providing the best possible
+              experience for your patrons. Rest assured, we are committed to
+              fortifying your IT security, so you can navigate the ever-evolving
+              landscape of cyber threats with confidence and peace of mind.
             </div>
           </div>
         </div>

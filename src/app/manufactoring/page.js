@@ -35,7 +35,7 @@ export default function manufactoring() {
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get An Assesment</div>
+                <div className={styles.bold}>Get A Free Assesment</div>
                 <Image src={'/arrowR.webp'} height={30} width={30} />
               </div>
             </a>
@@ -51,11 +51,16 @@ export default function manufactoring() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"5px"}} src={'/manufactor.webp'} width={500} height={450} />
+            <Image
+              style={{ borderRadius: '10px' }}
+              src={'/manufactor.webp'}
+              width={350}
+              height={450}
+            />
           </div>
           <div style={{ width: '50%', padding: '10px' }}>
             <div className={styles.title}>
-            PROPELLING YOUR BUSINESS INTO THE FUTURE
+              PROPELLING YOUR BUSINESS INTO THE FUTURE
             </div>
             <div className={styles.paragraphfifty}>
               In the dynamic world of manufacturing, seamless telecommunications

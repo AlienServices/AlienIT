@@ -30,7 +30,7 @@ export default function funnel() {
         </div>
         <a href="/assesment">
           <div className={styles.arrowRow}>
-            <div className={styles.bold}>Get An Assesment</div>
+            <div className={styles.bold}>Get A Free Assesment</div>
             <Image src={'/arrowR.webp'} height={30} width={30} />
           </div>
         </a>
