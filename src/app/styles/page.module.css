@@ -464,3 +464,47 @@
     transform: rotate(0deg);
   }
 }
+
+@media(max-width:1200px) {
+  .row{
+    width: 95%;
+  }
+  .hover{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .mainTitle{
+    font-size: 30px;
+  }
+  .buttonRow{
+    width: 80%;
+  }
+  .sectionRow{
+    flex-direction: column;
+    height: fit-content;
+  }
+  .centerRow{
+    width: 80%;
+  }
+  .sectionServiceRow{
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+  .sideRowLeft{
+    width: 50%;
+  }
+  .titleSmall{
+    font-size: 18px;
+  }
+  .title{
+    padding: 5px;
+  }
+  .paragraph{
+    padding: 5px;
+  }
+  .mainTitleFull{
+    font-size: 40px;
+  }
+}

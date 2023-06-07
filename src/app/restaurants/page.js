@@ -17,7 +17,7 @@ export default function restaurants() {
         <div className={styles.section}>
           <div
             style={{
-              height: '60%',
+              height: '80%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -57,7 +57,7 @@ export default function restaurants() {
               height={450}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               Enhancing Restaurant Efficiency and Security through Managed IT
               Services
@@ -99,7 +99,7 @@ export default function restaurants() {
               height={330}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>Cybersecurity Support</div>
             <div className={styles.paragraphfifty}>
               In today's digital landscape, cybersecurity is crucial for all

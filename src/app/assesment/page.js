@@ -17,7 +17,7 @@ export default function Assesment() {
         <div className={styles.section}>
           <div
             style={{
-              height: '60%',
+              height: '80%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',

@@ -8,7 +8,7 @@ import Footer from '../components/footer'
 import styles from '../styles/finance.module.css'
 import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
 
-export default function ransom() {
+export default function backup() {
   return (
     <div>
       <div style={{ color: 'black' }} className={styles.backgroundColor}>
@@ -25,18 +25,18 @@ export default function ransom() {
             }}
           >
             <div className={styles.mainTitle}>
-              Safeguard Your Business with Alien IT's Robust Ransomware
-              Protection Services
+              Streamline Connectivity and Boost Productivity: Alien IT's Expert
+              Network Efficiency Solutions
             </div>
             <div className={styles.buttonRow}>
               <div className={styles.paragraph}>
-                Stop worrying about your security, let us worry for you
+                Stop worrying about your connection, let us worry for you
               </div>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image style={{borderRadius:"10px"}} src={'/arrowR.webp'} height={30} width={30} />
+                <Image src={'/arrowR.webp'} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -51,26 +51,29 @@ export default function ransom() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"10px"}} src={'/property.webp'} width={500} height={400} />
+            <Image src={'/wifi.webp'} width={500} height={350} />
           </div>
-          <div className={styles.stuff}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
-              Unleash the Power of Alien IT: Your Shield Against Ransomware
-              Attacks
+              Unlock Network Efficiency: Empower Your Business with Alien IT's
+              Comprehensive Network Support
             </div>
             <div className={styles.paragraphfifty}>
-              Alien IT understands the critical importance of protecting your
-              business from the growing threat of ransomware attacks. Our
-              dedicated team specializes in providing robust ransomware
-              protection services that shield your systems and data from
-              malicious encryption attempts. Leveraging advanced technologies
-              and industry best practices, we proactively monitor your network,
-              detect potential threats, and swiftly respond to mitigate any
-              potential damage. With Alien IT as your trusted partner, you can
-              rest assured that your business is equipped with the most
-              effective ransomware protection solutions, allowing you to focus
-              on your core operations without the fear of crippling
-              cyberattacks.
+              At Alien IT, we are committed to optimizing your network
+              efficiency to ensure seamless connectivity and smooth operations.
+              Our team of skilled professionals possesses extensive experience
+              in network infrastructure design, implementation, and management.
+              We conduct thorough assessments to identify potential bottlenecks,
+              security vulnerabilities, or performance issues within your
+              network. Leveraging industry best practices and cutting-edge
+              technologies, we tailor solutions that enhance network speed,
+              stability, and security. From network configuration and
+              optimization to proactive monitoring and troubleshooting, we
+              provide comprehensive network support services that allow your
+              business to operate at its full potential. With Alien IT's
+              expertise, you can experience a reliable and efficient network
+              that empowers your organization to thrive in today's digital
+              landscape.
             </div>
           </div>
         </div>

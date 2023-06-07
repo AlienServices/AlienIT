@@ -17,7 +17,7 @@ export default function finance() {
         <div className={styles.section}>
           <div
             style={{
-              height: '60%',
+              height: '80%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -58,7 +58,7 @@ export default function finance() {
               height={400}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               Elevating Accounting & Finance: Unlocking Potential with
               Comprehensive IT Services
@@ -92,7 +92,7 @@ export default function finance() {
               height={400}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               Revolutionizing Financial Firms: Unleashing the Power of Managed
               IT Solutions

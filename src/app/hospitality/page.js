@@ -58,7 +58,7 @@ export default function hospitality() {
               height={350}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               Transform Your Hotel with Superior IT Management
             </div>
@@ -94,7 +94,7 @@ export default function hospitality() {
               height={350}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               Safeguarding IT Security: Protecting Guests and Businesses Alike
             </div>

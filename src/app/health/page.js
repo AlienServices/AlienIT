@@ -17,7 +17,7 @@ export default function health() {
         <div className={styles.section}>
           <div
             style={{
-              height: '60%',
+              height: '80%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -58,7 +58,7 @@ export default function health() {
               height={350}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               Seamless Healthcare IT Solutions: Empowering Your Practice for
               Uninterrupted Operations
@@ -100,7 +100,7 @@ export default function health() {
               height={350}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               Elevating Patient Care: How Managed IT Enhances Your Medical
               Practice

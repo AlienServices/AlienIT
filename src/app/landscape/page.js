@@ -17,7 +17,7 @@ export default function landscape() {
         <div className={styles.section}>
           <div
             style={{
-              height: '60%',
+              height: '80%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -58,7 +58,7 @@ export default function landscape() {
               height={450}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               THE BENEFITS OF MANAGED IT SERVICES FOR YOUR BUSINESS
             </div>

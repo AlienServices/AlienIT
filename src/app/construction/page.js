@@ -17,7 +17,7 @@ export default function construction() {
         <div className={styles.section}>
           <div
             style={{
-              height: '60%',
+              height: '80%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -57,7 +57,7 @@ export default function construction() {
               height={350}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               Optimizing Efficiency and Security: Cloud Services for Utah
               Construction Companies
@@ -96,7 +96,7 @@ export default function construction() {
               height={400}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>Reliable Managed IT Services</div>
             <div className={styles.paragraphfifty}>
               With Alien IT, you can bid farewell to the worries of managing

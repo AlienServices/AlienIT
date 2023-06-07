@@ -18,7 +18,7 @@ export default function about() {
           <div
             style={{
               width: '80%',
-              height: '60%',
+              height: '80%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',

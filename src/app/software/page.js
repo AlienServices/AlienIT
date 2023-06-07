@@ -8,7 +8,7 @@ import Footer from '../components/footer'
 import styles from '../styles/finance.module.css'
 import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
 
-export default function ransom() {
+export default function backup() {
   return (
     <div>
       <div style={{ color: 'black' }} className={styles.backgroundColor}>
@@ -25,18 +25,18 @@ export default function ransom() {
             }}
           >
             <div className={styles.mainTitle}>
-              Safeguard Your Business with Alien IT's Robust Ransomware
-              Protection Services
+              Reliable Support for Your Digital Solutions: Alien IT's Expert
+              Software and App Assistance
             </div>
             <div className={styles.buttonRow}>
               <div className={styles.paragraph}>
-                Stop worrying about your security, let us worry for you
+                Stop worrying about your software, let us worry for you
               </div>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image style={{borderRadius:"10px"}} src={'/arrowR.webp'} height={30} width={30} />
+                <Image src={'/arrowR.webp'} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -51,26 +51,28 @@ export default function ransom() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"10px"}} src={'/property.webp'} width={500} height={400} />
+            <Image style={{borderRadius:"10px"}} src={'/app.webp'} width={500} height={350} />
           </div>
-          <div className={styles.stuff}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
-              Unleash the Power of Alien IT: Your Shield Against Ransomware
-              Attacks
+              Seamless Software and App Support: Alien IT's Expert Assistance
+              for Smooth Digital Operations
             </div>
             <div className={styles.paragraphfifty}>
-              Alien IT understands the critical importance of protecting your
-              business from the growing threat of ransomware attacks. Our
-              dedicated team specializes in providing robust ransomware
-              protection services that shield your systems and data from
-              malicious encryption attempts. Leveraging advanced technologies
-              and industry best practices, we proactively monitor your network,
-              detect potential threats, and swiftly respond to mitigate any
-              potential damage. With Alien IT as your trusted partner, you can
-              rest assured that your business is equipped with the most
-              effective ransomware protection solutions, allowing you to focus
-              on your core operations without the fear of crippling
-              cyberattacks.
+              At Alien IT, we offer comprehensive software and app support
+              services to ensure the smooth operation of your digital
+              applications. Our experienced team is well-versed in a wide range
+              of software solutions and platforms, enabling us to provide expert
+              assistance for troubleshooting, maintenance, and updates. Whether
+              you're facing compatibility issues, software glitches, or need
+              guidance on utilizing specific features, our experts are here to
+              help. We offer timely resolutions to technical issues, ensuring
+              minimal disruption to your business processes. Additionally, we
+              provide proactive monitoring to detect potential software
+              vulnerabilities and apply necessary patches and updates to enhance
+              security and performance. With Alien IT's software and app
+              support, you can maximize the efficiency of your digital solutions
+              and optimize your business operations with confidence.
             </div>
           </div>
         </div>

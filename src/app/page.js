@@ -137,7 +137,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div style={{ flexDirection: 'column' }} className={styles.sectionRow}>
+      <div style={{ flexDirection: 'column', paddingBottom:"40px", height:"450px" }} className={styles.sectionRow}>
         <div className={styles.middle}>
           <h3 className={styles.reviewBig}>Recent Google Reviews...</h3>
         </div>

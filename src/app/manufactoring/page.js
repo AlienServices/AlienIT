@@ -58,7 +58,7 @@ export default function manufactoring() {
               height={450}
             />
           </div>
-          <div style={{ width: '50%', padding: '10px' }}>
+          <div  className={styles.stuff}>
             <div className={styles.title}>
               PROPELLING YOUR BUSINESS INTO THE FUTURE
             </div>

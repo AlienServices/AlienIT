@@ -14,23 +14,23 @@ export default function backup() {
       <div style={{ color: 'black' }} className={styles.backgroundColor}>
         <Header />
 
-        <div className={styles.section}>
+        <div style={{ height: '530px' }} className={styles.section}>
           <div
             style={{
               width: '80%',
-              height: '60%',
+              height: '80%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
             }}
           >
             <div className={styles.mainTitle}>
-              Safeguard Your Business with Alien IT's Robust Ransomware
-              Protection Services
+              Safeguard Your Business: Comprehensive Backup and Restore
+              Solutions by Alien IT
             </div>
             <div className={styles.buttonRow}>
               <div className={styles.paragraph}>
-                Stop worrying about your security, let us worry for you
+                Stop worrying about your backups, let us worry for you
               </div>
             </div>
             <a href="/assesment">
@@ -41,26 +41,44 @@ export default function backup() {
             </a>
           </div>
         </div>
+
         <div className={styles.sectionRow}>
-          <div style={{width:"50%", display:"flex"}}>
-            <Image src={'/health.webp'} width={200} height={200} />
+          <div
+            style={{
+              width: '50%',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Image src={'/rest2.webp'} width={500} height={350} />
           </div>
-          <div className={styles.paragraph}>
-            Alien IT understands the critical importance of protecting your
-            business from the growing threat of ransomware attacks. Our
-            dedicated team specializes in providing robust ransomware protection
-            services that shield your systems and data from malicious encryption
-            attempts. Leveraging advanced technologies and industry best
-            practices, we proactively monitor your network, detect potential
-            threats, and swiftly respond to mitigate any potential damage. With
-            Alien IT as your trusted partner, you can rest assured that your
-            business is equipped with the most effective ransomware protection
-            solutions, allowing you to focus on your core operations without the
-            fear of crippling cyberattacks.
+          <div  className={styles.stuff}>
+            <div className={styles.title}>
+              Secure Your Business with Alien IT's Robust Backup and Restore
+              Services
+            </div>
+            <div className={styles.paragraphfifty}>
+              At Alien IT, we understand the critical importance of protecting
+              your business from unforeseen data loss and system failures.
+              That's why we offer top-notch Backup and Restore services to
+              safeguard your valuable information and ensure business
+              continuity. Our dedicated team specializes in implementing robust
+              backup solutions tailored to your specific needs, ensuring that
+              all your critical data is securely backed up and readily available
+              when you need it the most. In the event of any data loss or system
+              failure, our expert technicians swiftly initiate the restore
+              process, minimizing downtime and restoring your operations to full
+              functionality. With Alien IT as your trusted partner, you can have
+              peace of mind knowing that your business is well-prepared against
+              data loss and equipped with reliable backup and restore solutions.
+              Focus on your core operations while we take care of securing your
+              invaluable data.
+            </div>
           </div>
         </div>
       </div>
-      <Funnel/>
+      <Funnel />
       <Footer />
     </div>
   )

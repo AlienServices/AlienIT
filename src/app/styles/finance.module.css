@@ -544,6 +544,10 @@
       position: fixed;
       width: 100%;
     }
+    .stuff{
+      width: 50%; 
+      padding: 10px
+    }
   
     .description p {
       align-items: center;
@@ -599,6 +603,21 @@
     }
     to {
       transform: rotate(0deg);
+    }
+  }
+  @media(max-width:1200px) {
+    .mainTitle{
+      font-size: 30px;
+      padding:15px
+    }
+    .sectionRow{
+      flex-direction: column;
+      height: fit-content;
+
+    }
+    .stuff{
+      width: 85%;
+      padding:20px
     }
   }
   
