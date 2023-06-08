@@ -17,7 +17,7 @@ export default function property() {
         <div className={styles.section}>
           <div
             style={{
-              height: '80%',
+              height: '70%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -43,37 +43,38 @@ export default function property() {
           <Image src={'/arrow.webp'} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
-          <div
-            style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Image src={'/property.webp'} width={500} height={400} />
-          </div>
-          <div  className={styles.stuff}>
-            <div className={styles.title}>
-              Streamlined IT Management for Utah Property Management Companies:
-              Alien IT's Managed Services
+          <div className={styles.photoContainer}>
+            <div
+              style={{
+                width: '50%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <Image src={'/property.webp'} width={500} height={400} />
             </div>
-            <div className={styles.paragraphfifty}>
-              Let us handle your IT infrastructure with our comprehensive
-              managed IT services. Our proactive team will monitor and manage
-              your network, ensuring uninterrupted operations. We offer 24/7
-              help desk support, patch management, network monitoring, threat
-              detection, and more. With Alien IT, you can focus on your core
-              business while we take care of your technology needs. Our
-              customizable packages ensure cost-effective solutions tailored to
-              your requirements. Collaborate with us to identify the best IT
-              solutions for enhanced productivity, accessibility, and security.
-              Partner with Alien IT to unlock the full potential of technology
-              for your property management business.
+            <div className={styles.stuff}>
+              <div className={styles.title}>
+                Streamlined IT Management for Utah Property Management
+                Companies: Alien IT's Managed Services
+              </div>
+              <div className={styles.paragraphfifty}>
+                Let us handle your IT infrastructure with our comprehensive
+                managed IT services. Our proactive team will monitor and manage
+                your network, ensuring uninterrupted operations. We offer 24/7
+                help desk support, patch management, network monitoring, threat
+                detection, and more. With Alien IT, you can focus on your core
+                business while we take care of your technology needs. Our
+                customizable packages ensure cost-effective solutions tailored
+                to your requirements. Collaborate with us to identify the best
+                IT solutions for enhanced productivity, accessibility, and
+                security. Partner with Alien IT to unlock the full potential of
+                technology for your property management business.
+              </div>
             </div>
           </div>
         </div>
-        
       </div>
       <Funnel />
       <Footer />

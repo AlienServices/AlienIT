@@ -17,7 +17,7 @@ export default function landscape() {
         <div className={styles.section}>
           <div
             style={{
-              height: '80%',
+              height: '70%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',

@@ -17,8 +17,8 @@ export default function ransom() {
         <div style={{ height: '530px' }} className={styles.section}>
           <div
             style={{
-              width: '80%',
-              height: '80%',
+              width: '95%',
+              height: '70%',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
