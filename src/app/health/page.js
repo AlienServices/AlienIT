@@ -52,6 +52,7 @@ export default function health() {
             }}
           >
             <Image
+              alt={"it services for healthcare"}
               style={{ borderRadius: '5px' }}
               src={'/hospital.webp'}
               width={500}
@@ -94,6 +95,7 @@ export default function health() {
             }}
           >
             <Image
+              alt={"it services for hospitals"}
               style={{ borderRadius: '5px' }}
               src={'/health.webp'}
               width={500}

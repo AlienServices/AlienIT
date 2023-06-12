@@ -52,7 +52,7 @@ export default function property() {
                 alignItems: 'center',
               }}
             >
-              <Image src={'/property.webp'} width={500} height={400} />
+              <Image alt={" "} src={'/property.webp'} width={500} height={400} />
             </div>
             <div className={styles.stuff}>
               <div className={styles.title}>

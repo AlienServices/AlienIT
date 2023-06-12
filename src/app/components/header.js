@@ -1,22 +1,28 @@
 import styles from '../styles/page.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import Dropdown from '../dropdown/page'
 
 export default function header() {
+  const [menu, setMenu] = useState(true)
   const router = useRouter()
   return (
     <div className={styles.center}>
+      <Dropdown toggle={menu}/>
       <div className={styles.row}>
-        <Image
-          style={{ cursor: 'pointer' }}
-          onClick={() => {
-            router.push('/')
-          }}
-          src={'/logo.webp'}
-          height={200}
-          width={200}
-        />
+        <div className={styles.imageContainerSmall}>
+          <Image
+            alt={"alien IT logo"}
+            style={{ cursor: 'pointer' }}
+            onClick={() => {
+              router.push('/')
+            }}
+            src={'/logo.webp'}
+            fill={true}
+          />
+        </div>
         <div className={styles.dropdownWrapper}>
           <div
             onClick={() => {
@@ -265,6 +271,9 @@ export default function header() {
         >
           Free Assesment
         </button>
+      </div>
+      <div className={styles.burgerContainer}>
+        <Image alt={"header menu"} onClick={() => {setMenu(!menu)}}  src={'/whiteMenu.png'} fill={true} />
       </div>
     </div>
   )

@@ -51,7 +51,7 @@ export default function backup() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"10px"}} src={'/app.webp'} width={500} height={350} />
+            <Image alt={"data and software backup"} style={{borderRadius:"10px"}} src={'/app.webp'} width={500} height={350} />
           </div>
           <div  className={styles.stuff}>
             <div className={styles.title}>

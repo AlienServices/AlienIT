@@ -51,6 +51,7 @@ export default function construction() {
             }}
           >
             <Image
+              alt={"it solutions for construction"}
               style={{ borderRadius: '5px' }}
               src={'/construction.webp'}
               width={500}
@@ -90,6 +91,7 @@ export default function construction() {
             }}
           >
             <Image
+              alt={"it services for construction"}
               style={{ borderRadius: '5px' }}
               src={'/construction2.webp'}
               width={550}

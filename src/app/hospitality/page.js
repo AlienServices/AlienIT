@@ -52,6 +52,7 @@ export default function hospitality() {
             }}
           >
             <Image
+              alt={"it services for hotels"}
               style={{ borderRadius: '5px' }}
               src={'/hotel.webp'}
               width={550}
@@ -88,6 +89,7 @@ export default function hospitality() {
             }}
           >
             <Image
+              alt={"software support for hotels"}
               style={{ borderRadius: '5px' }}
               src={'/hotel2.webp'}
               width={550}

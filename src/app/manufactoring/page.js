@@ -52,6 +52,7 @@ export default function manufactoring() {
             }}
           >
             <Image
+              alt={"it services for manufactoring companies"}
               style={{ borderRadius: '10px' }}
               src={'/manufactor.webp'}
               width={350}

@@ -237,7 +237,7 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-    height:630px;
+    height:fit-content;
     flex-direction: column;
   }
   .paragraphContainer{
@@ -535,10 +535,17 @@
     }
   }
   
-  /* Tablet and Smaller Desktop */
-  @media (min-width: 701px) and (max-width: 1120px) {
-    .grid {
-      grid-template-columns: repeat(2, 50%);
+  
+  @media  (max-width: 1120px) {
+    
+    .row{
+      flex-direction: column;
+      padding-bottom: 50px;
+      width: 100%;
+    }
+    .column{
+      width: 85%;
+      padding-bottom: 50px;
     }
   }
   
@@ -560,4 +567,14 @@
       transform: rotate(0deg);
     }
   }
-  
+  @media(max-width:600px) {
+    .box{
+      width: 450px;
+    }
+    .buttonRow{
+      padding: 0px;
+    }
+    .bold{
+      padding: 10px;
+    }
+  }

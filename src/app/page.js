@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <div className={styles.backgroundColor}>
-        
         <Header />
 
         <div className={styles.section}>
@@ -42,6 +41,7 @@ export default function Home() {
       <div className={styles.sectionRow}>
         <div className={styles.buttonRow}>
           <Image
+            alt={"Expert managed IT services"}
             src={'/professional.webp'}
             height={375}
             width={375}
@@ -98,12 +98,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <Image
-            src={'/support.webp'}
-            height={300}
-            width={300}
-            style={{ borderRadius: '10px' }}
-          />
+          <div className={styles.imageContainerFront}>
+            <Image
+              alt={"Alien IT services"}
+              src={'/support.webp'}
+              fill={true}
+              style={{ borderRadius: '10px' }}
+            />
+          </div>
           <div className={styles.sideRowLeft}>
             <div>
               <h2 className={styles.title}>
@@ -137,7 +139,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div style={{ flexDirection: 'column', paddingBottom:"40px", height:"450px" }} className={styles.sectionRow}>
+      <div
+        style={{
+          flexDirection: 'column',
+          paddingBottom: '40px',
+          height: '450px',
+        }}
+        className={styles.sectionRow}
+      >
         <div className={styles.middle}>
           <h3 className={styles.reviewBig}>Recent Google Reviews...</h3>
         </div>

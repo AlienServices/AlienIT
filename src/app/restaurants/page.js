@@ -51,6 +51,7 @@ export default function restaurants() {
             }}
           >
             <Image
+              alt={"software support for restaurants"}
               style={{ borderRadius: '5px' }}
               src={'/food.webp'}
               width={400}
@@ -93,6 +94,7 @@ export default function restaurants() {
             }}
           >
             <Image
+              alt={"restaurant it services"}
               style={{ borderRadius: '5px' }}
               src={'/rest2.webp'}
               width={470}

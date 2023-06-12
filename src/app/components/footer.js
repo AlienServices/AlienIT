@@ -1,41 +1,45 @@
 import styles from '../styles/footer.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 export default function Footer(props) {
+  const router = useRouter()
   return (
-    <div className={styles.footer}>
-      <div className={styles.exploreContainerGood}>
-        <h3 className={styles.footerTitle}>Contact Us</h3>
-        <div className={styles.footerTags}>Copiers Utah</div>
-        <div className={styles.footerTags}>We have Copiers For Sale</div>
-        <div className={styles.footerTags}>554 W 8360 S</div>
-        <div className={styles.footerTags}>Sandy, UT 84070</div>
-        <div className={styles.footerTags}>PHONE: (801)261-0510</div>
-        <div className={styles.footerTags}>FAX: (801)261-1967</div>
-        <div className={styles.footerTags}>E-MAIL: info@copiersutah.com</div>
+    <div className={styles.footerBody}>
+      <div className={styles.imageContainerSmall}>
+        <Image
+          alt={"alien IT logo"}
+          style={{ cursor: 'pointer' }}
+          onClick={() => {}}
+          src={'/logo.webp'}
+          fill={true}
+        />
       </div>
-      <div className={styles.exploreContainer}>
-        <div className={styles.footerTitle}>Services</div>
-        <h4 className={styles.h4}>Copiers for sale</h4>
-        <h4 className={styles.h4}>Copier Rentals</h4>
-        <h4 className={styles.h4}>Copier Maintanance</h4>
-        <div className={styles.headerPieces}>Finance a Copier</div>
-        <div className={styles.headerPieces}>Our top New and Used Copiers</div>
+      <div className={styles.headerRow}>
+        <div className={styles.center}>
+          <div className={styles.bold}>Services</div>
+          <div onClick={() => {}}>Ransomware</div>
+          <div onClick={() => {}}>Backup</div>
+          <div onClick={() => {}}>Printer Support</div>
+          <div onClick={() => {}}>Network Efficiency</div>
+          <div>Broken Hardware</div>
+          <div>App Support</div>
+        </div>
+        <div className={styles.line}></div>
+        <div className={styles.center}>
+          <div className={styles.bold}>Industries We Serve</div>
+          <div>Financial</div>
+          <div>Consumer</div>
+          <div>Healthcare</div>
+          <div>Hospitality</div>
+        </div>
+        <div className={styles.line}></div>
+        <div className={styles.center}>
+          <div className={styles.bold}>Areas We Serve</div>
+          <div>Utah</div>
+        </div>
       </div>
-      <div className={styles.exploreContainer}>
-        <div className={styles.footerTitle}>Why choose Alien IT</div>
-        <li>Wide range of new copiers for sale in Utah</li>
-        <li>New and used copiers available</li>
-        <li>Top brands and models to fit any budget and business needs</li>
-        <li>
-          Thoroughly tested and serviced used copiers in excellent condition
-        </li>
-        <li>Competitive pricing for quality equipment</li>
-        <li>Trustworthy and reliable source for all your copier needs</li>
-        <li>Copier leasing available for all models</li>
-      </div>
-      <div className={styles.exploreContainerGood}></div>
+      
     </div>
   )
 }

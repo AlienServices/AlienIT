@@ -51,7 +51,7 @@ export default function backup() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"10px"}} src={'/print.webp'} width={400} height={500} />
+            <Image alt={"printer it services"} style={{borderRadius:"10px"}} src={'/print.webp'} width={400} height={500} />
           </div>
           <div  className={styles.stuff}>
             <div className={styles.title}>

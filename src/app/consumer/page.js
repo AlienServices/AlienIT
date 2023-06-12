@@ -52,6 +52,7 @@ export default function consumer() {
               }}
             >
               <Image
+                alt={"it services for consumer companies"}
                 style={{ borderRadius: '10px' }}
                 src={'/food.webp'}
                 width={350}
@@ -94,6 +95,7 @@ export default function consumer() {
               }}
             >
               <Image
+                alt={"consumer it services"}
                 style={{ borderRadius: '10px' }}
                 src={'/consumer.webp'}
                 width={450}

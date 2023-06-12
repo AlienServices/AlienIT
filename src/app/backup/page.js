@@ -51,7 +51,7 @@ export default function backup() {
               alignItems: 'center',
             }}
           >
-            <Image src={'/rest2.webp'} width={500} height={350} />
+            <Image alt={"secure your business with our backup services"} src={'/rest2.webp'} width={500} height={350} />
           </div>
           <div  className={styles.stuff}>
             <div className={styles.title}>

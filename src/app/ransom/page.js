@@ -51,7 +51,7 @@ export default function ransom() {
               alignItems: 'center',
             }}
           >
-            <Image style={{borderRadius:"10px"}} src={'/property.webp'} width={500} height={400} />
+            <Image alt={"ransomware services"} style={{borderRadius:"10px"}} src={'/property.webp'} width={500} height={400} />
           </div>
           <div className={styles.stuff}>
             <div className={styles.title}>

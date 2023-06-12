@@ -52,6 +52,7 @@ export default function landscape() {
             }}
           >
             <Image
+              alt={"it service for landscaping companies"}
               style={{ borderRadius: '5px' }}
               src={'/landscape.webp'}
               width={400}

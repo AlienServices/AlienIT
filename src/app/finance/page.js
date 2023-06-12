@@ -45,7 +45,8 @@ export default function finance() {
         <div className={styles.sectionRow}>
           <div className={styles.eighty}>
            
-              <Image
+            <Image
+              alt={"it services for finance"}
                 style={{ borderRadius: '5px' }}
                 src={'/finance.webp'}
                 width={500}
@@ -83,6 +84,7 @@ export default function finance() {
               }}
             >
               <Image
+                alt={""}
                 style={{ borderRadius: '5px' }}
                 src={'/finance.webp'}
                 width={500}
