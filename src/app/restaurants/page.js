@@ -1,26 +1,65 @@
-'use client'
-import Image from 'next/image'
-import Funnel from '../funnel/page'
-import { Quote } from '../SVG/Quote'
-import { PatternFormat } from 'react-number-format'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import styles from '../styles/finance.module.css'
-import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
+"use client";
+import Image from "next/image";
+import Funnel from "../funnel/page";
+import { Quote } from "../SVG/Quote";
+import { PatternFormat } from "react-number-format";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import styles from "../styles/finance.module.css";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function restaurants() {
   return (
     <div>
-      <div style={{ color: 'black' }} className={styles.backgroundColor}>
+      <Head>
+        <title>
+          Digital Dining Solutions: Enhancing Restaurant Experiences in the
+          Digital Age
+        </title>
+        <meta
+          name="description"
+          content="Embracing Technology to Delight Guests, Optimize Operations, and Drive Restaurant Success"
+        />
+        <meta
+          name="keywords"
+          content="restaurant technology, digital dining solutions, IT services for restaurants"
+        />
+        <meta
+          property="og:title"
+          content="Digital Dining Solutions: Enhancing Restaurant Experiences in the Digital Age"
+        />
+        <meta
+          property="og:description"
+          content="Embracing Technology to Delight Guests, Optimize Operations, and Drive Restaurant Success"
+        />
+        <meta property="og:image" content="/food.webp" />
+        <meta
+          property="og:url"
+          content="https://example.com/restaurantsolutions"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Alien IT" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Digital Dining Solutions: Enhancing Restaurant Experiences in the Digital Age"
+        />
+        <meta
+          name="twitter:description"
+          content="Embracing Technology to Delight Guests, Optimize Operations, and Drive Restaurant Success"
+        />
+        <meta name="twitter:image" content="/food.webp" />
+      </Head>
+      <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
         <div className={styles.section}>
           <div
             style={{
-              height: '70%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              height: "70%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <div className={styles.mainTitle}>
@@ -36,7 +75,7 @@ export default function restaurants() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image src={'/arrowR.webp'} height={30} width={30} />
+                <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -44,21 +83,21 @@ export default function restaurants() {
         <div className={styles.sectionRow}>
           <div
             style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Image
               alt={"software support for restaurants"}
-              style={{ borderRadius: '5px' }}
-              src={'/food.webp'}
+              style={{ borderRadius: "5px" }}
+              src={"/food.webp"}
               width={400}
               height={450}
             />
           </div>
-          <div  className={styles.stuff}>
+          <div className={styles.stuff}>
             <div className={styles.title}>
               Enhancing Restaurant Efficiency and Security through Managed IT
               Services
@@ -87,21 +126,21 @@ export default function restaurants() {
         <div className={styles.sectionOpposite}>
           <div
             style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Image
               alt={"restaurant it services"}
-              style={{ borderRadius: '5px' }}
-              src={'/rest2.webp'}
+              style={{ borderRadius: "5px" }}
+              src={"/rest2.webp"}
               width={470}
               height={330}
             />
           </div>
-          <div  className={styles.stuff}>
+          <div className={styles.stuff}>
             <div className={styles.title}>Cybersecurity Support</div>
             <div className={styles.paragraphfifty}>
               In today's digital landscape, cybersecurity is crucial for all
@@ -120,5 +159,5 @@ export default function restaurants() {
       <Funnel />
       <Footer />
     </div>
-  )
+  );
 }

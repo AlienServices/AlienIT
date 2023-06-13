@@ -1,26 +1,81 @@
-'use client'
-import Image from 'next/image'
-import Funnel from '../funnel/page'
-import { Quote } from '../SVG/Quote'
-import { PatternFormat } from 'react-number-format'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import styles from '../styles/finance.module.css'
-import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
+"use client";
+import Image from "next/image";
+import Funnel from "../funnel/page";
+import { Quote } from "../SVG/Quote";
+import { PatternFormat } from "react-number-format";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Head from "next/head";
+import styles from "../styles/finance.module.css";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function construction() {
   return (
     <div>
-      <div style={{ color: 'black' }} className={styles.backgroundColor}>
+      <Head>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://youritcompany.com/construction-services"
+        />
+        <title>IT Solutions for Construction Companies | Your IT Company</title>
+        <meta
+          name="description"
+          content="Your IT Company offers comprehensive IT solutions tailored for construction companies. From network infrastructure setup to software integration, our expert team ensures smooth operations and enhanced productivity for your construction projects."
+        />
+        <meta
+          name="keywords"
+          content="IT solutions for construction companies, construction IT services, construction software integration, network infrastructure setup, construction project management software, construction technology, IT consulting, IT support, construction industry, construction IT solutions, construction IT infrastructure"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              name: "IT Solutions for Construction Companies",
+              description:
+                "Your IT Company offers comprehensive IT solutions tailored for construction companies. From network infrastructure setup to software integration, our expert team ensures smooth operations and enhanced productivity for your construction projects.",
+              brand: "Your IT Company",
+              url: "https://youritcompany.com/construction-services",
+              image: "https://youritcompany.com/static/logo.webp",
+              offers: {
+                "@type": "AggregateOffer",
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+                lowPrice: "Contact for Pricing",
+                highPrice: "Contact for Pricing",
+                offerCount: "Multiple",
+                seller: {
+                  "@type": "LocalBusiness",
+                  name: "Alien IT",
+                  telephone: "(801) 261-0510",
+                  email: "info@copiersutah.com",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "554 W 8360 S",
+                    addressLocality: "Sandy",
+                    addressRegion: "Utah",
+                    postalCode: "84070",
+                    addressCountry: "USA",
+                  },
+                },
+              },
+            }),
+          }}
+        />
+      </Head>
+
+      <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
         <div className={styles.section}>
           <div
             style={{
-              height: '70%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              height: "70%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <div className={styles.mainTitle}>
@@ -35,30 +90,30 @@ export default function construction() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image src={'/arrowR.webp'} height={30} width={30} />
+                <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={'/arrow.webp'} height={70} width={70} />
+          <Image src={"/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div
             style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Image
               alt={"it solutions for construction"}
-              style={{ borderRadius: '5px' }}
-              src={'/construction.webp'}
+              style={{ borderRadius: "5px" }}
+              src={"/construction.webp"}
               width={500}
               height={350}
             />
           </div>
-          <div  className={styles.stuff}>
+          <div className={styles.stuff}>
             <div className={styles.title}>
               Optimizing Efficiency and Security: Cloud Services for Utah
               Construction Companies
@@ -84,21 +139,21 @@ export default function construction() {
         <div className={styles.sectionOpposite}>
           <div
             style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Image
               alt={"it services for construction"}
-              style={{ borderRadius: '5px' }}
-              src={'/construction2.webp'}
+              style={{ borderRadius: "5px" }}
+              src={"/construction2.webp"}
               width={550}
               height={400}
             />
           </div>
-          <div   className={styles.stuff}>
+          <div className={styles.stuff}>
             <div className={styles.title}>Reliable Managed IT Services</div>
             <div className={styles.paragraphfifty}>
               With Alien IT, you can bid farewell to the worries of managing
@@ -121,5 +176,5 @@ export default function construction() {
       <Funnel />
       <Footer />
     </div>
-  )
+  );
 }

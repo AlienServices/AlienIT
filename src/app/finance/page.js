@@ -1,26 +1,80 @@
-'use client'
-import Image from 'next/image'
-import Funnel from '../funnel/page'
-import { Quote } from '../SVG/Quote'
-import { PatternFormat } from 'react-number-format'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import styles from '../styles/finance.module.css'
-import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
+"use client";
+import Image from "next/image";
+import Funnel from "../funnel/page";
+import { Quote } from "../SVG/Quote";
+import { PatternFormat } from "react-number-format";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Head from "next/head";
+import styles from "../styles/finance.module.css";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function finance() {
   return (
     <div>
-      <div style={{ color: 'black' }} className={styles.backgroundColor}>
+      <Head>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://youritcompany.com/finance-services"
+        />
+        <title>IT Solutions for Finance Companies | Your IT Company</title>
+        <meta
+          name="description"
+          content="Your IT Company provides comprehensive IT solutions tailored for finance companies. From secure data management to advanced analytics, our expert team ensures efficient operations and regulatory compliance for finance businesses."
+        />
+        <meta
+          name="keywords"
+          content="IT solutions for finance companies, finance IT services, data management, analytics, cybersecurity, IT consulting, IT support, financial industry solutions, regulatory compliance, digital transformation, financial technology"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              name: "IT Solutions for Finance Companies",
+              description:
+                "Your IT Company provides comprehensive IT solutions tailored for finance companies. From secure data management to advanced analytics, our expert team ensures efficient operations and regulatory compliance for finance businesses.",
+              brand: "Your IT Company",
+              url: "https://youritcompany.com/finance-services",
+              image: "https://youritcompany.com/static/logo.webp",
+              offers: {
+                "@type": "AggregateOffer",
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+                lowPrice: "Contact for Pricing",
+                highPrice: "Contact for Pricing",
+                offerCount: "Multiple",
+                seller: {
+                  "@type": "LocalBusiness",
+                  name: "Alien IT",
+                  telephone: "(801) 261-0510",
+                  email: "info@copiersutah.com",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "554 W 8360 S",
+                    addressLocality: "Sandy",
+                    addressRegion: "Utah",
+                    postalCode: "84070",
+                    addressCountry: "USA",
+                  },
+                },
+              },
+            }),
+          }}
+        />
+      </Head>
+      <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
         <div className={styles.section}>
           <div
             style={{
-              height: '70%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              height: "70%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <div className={styles.mainTitle}>
@@ -36,23 +90,22 @@ export default function finance() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image src={'/arrowR.webp'} height={30} width={30} />
+                <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={'/arrow.webp'} height={70} width={70} />
+          <Image src={"/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div className={styles.eighty}>
-           
             <Image
               alt={"it services for finance"}
-                style={{ borderRadius: '5px' }}
-                src={'/finance.webp'}
-                width={500}
-                height={400}
-              />
-            
+              style={{ borderRadius: "5px" }}
+              src={"/finance.webp"}
+              width={500}
+              height={400}
+            />
+
             <div className={styles.stuff}>
               <div className={styles.title}>
                 Elevating Accounting & Finance: Unlocking Potential with
@@ -77,16 +130,16 @@ export default function finance() {
           <div className={styles.eightyOpposite}>
             <div
               style={{
-                width: '50%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
+                width: "50%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
               <Image
                 alt={""}
-                style={{ borderRadius: '5px' }}
-                src={'/finance.webp'}
+                style={{ borderRadius: "5px" }}
+                src={"/finance.webp"}
                 width={500}
                 height={400}
               />
@@ -119,5 +172,5 @@ export default function finance() {
       <Funnel />
       <Footer />
     </div>
-  )
+  );
 }

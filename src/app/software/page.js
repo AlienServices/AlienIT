@@ -1,27 +1,66 @@
-'use client'
-import Image from 'next/image'
-import Funnel from '../funnel/page'
-import { Quote } from '../SVG/Quote'
-import { PatternFormat } from 'react-number-format'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import styles from '../styles/finance.module.css'
-import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
+"use client";
+import Image from "next/image";
+import Funnel from "../funnel/page";
+import { Quote } from "../SVG/Quote";
+import { PatternFormat } from "react-number-format";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import styles from "../styles/finance.module.css";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function backup() {
   return (
     <div>
-      <div style={{ color: 'black' }} className={styles.backgroundColor}>
+      <Head>
+        <title>
+          Reliable Support for Your Digital Solutions: Alien IT's Expert
+          Software and App Assistance
+        </title>
+        <meta
+          name="description"
+          content="Stop worrying about your software, let us worry for you"
+        />
+        <meta
+          name="keywords"
+          content="software support, app assistance, digital solutions, IT services"
+        />
+        <meta
+          property="og:title"
+          content="Reliable Support for Your Digital Solutions: Alien IT's Expert Software and App Assistance"
+        />
+        <meta
+          property="og:description"
+          content="Stop worrying about your software, let us worry for you"
+        />
+        <meta property="og:image" content="/app.webp" />
+        <meta
+          property="og:url"
+          content="https://example.com/software-support"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Alien IT" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Reliable Support for Your Digital Solutions: Alien IT's Expert Software and App Assistance"
+        />
+        <meta
+          name="twitter:description"
+          content="Stop worrying about your software, let us worry for you"
+        />
+        <meta name="twitter:image" content="/app.webp" />
+      </Head>
+      <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div style={{ height: '530px' }} className={styles.section}>
+        <div style={{ height: "530px" }} className={styles.section}>
           <div
             style={{
-              width: '95%',
-              height: '70%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              width: "95%",
+              height: "70%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <div className={styles.mainTitle}>
@@ -36,7 +75,7 @@ export default function backup() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image src={'/arrowR.webp'} height={30} width={30} />
+                <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -45,15 +84,21 @@ export default function backup() {
         <div className={styles.sectionRow}>
           <div
             style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            <Image alt={"data and software backup"} style={{borderRadius:"10px"}} src={'/app.webp'} width={500} height={350} />
+            <Image
+              alt={"data and software backup"}
+              style={{ borderRadius: "10px" }}
+              src={"/app.webp"}
+              width={500}
+              height={350}
+            />
           </div>
-          <div  className={styles.stuff}>
+          <div className={styles.stuff}>
             <div className={styles.title}>
               Seamless Software and App Support: Alien IT's Expert Assistance
               for Smooth Digital Operations
@@ -80,5 +125,5 @@ export default function backup() {
       <Funnel />
       <Footer />
     </div>
-  )
+  );
 }

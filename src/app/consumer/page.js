@@ -1,26 +1,83 @@
-'use client'
-import Image from 'next/image'
-import { Quote } from '../SVG/Quote'
-import { PatternFormat } from 'react-number-format'
-import Header from '../components/header'
-import Funnel from '../funnel/page'
-import Footer from '../components/footer'
-import styles from '../styles/finance.module.css'
-import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
+"use client";
+import Image from "next/image";
+import { Quote } from "../SVG/Quote";
+import { PatternFormat } from "react-number-format";
+import Header from "../components/header";
+import Funnel from "../funnel/page";
+import Head from "next/head";
+import Footer from "../components/footer";
+import styles from "../styles/finance.module.css";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function consumer() {
   return (
     <div>
-      <div style={{ color: 'black' }} className={styles.backgroundColor}>
+      <div style={{ color: "black" }} className={styles.backgroundColor}>
+        <Head>
+          <meta name="robots" content="index, follow" />
+          <link
+            rel="canonical"
+            href="https://youritcompany.com/consumer-goods-services"
+          />
+          <title>
+            IT Solutions for the Consumer Goods Industry | Your IT Company
+          </title>
+          <meta
+            name="description"
+            content="Your IT Company offers comprehensive IT solutions tailored for the consumer goods industry. From e-commerce platforms to supply chain management systems, our expert team ensures efficient operations and enhanced customer experiences for consumer goods businesses."
+          />
+          <meta
+            name="keywords"
+            content="IT solutions for consumer goods industry, consumer goods IT services, e-commerce platforms, supply chain management systems, inventory management, data analytics, consumer goods technology, IT consulting, IT support, consumer goods industry solutions, customer experience, digital transformation"
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Product",
+                name: "IT Solutions for the Consumer Goods Industry",
+                description:
+                  "Your IT Company offers comprehensive IT solutions tailored for the consumer goods industry. From e-commerce platforms to supply chain management systems, our expert team ensures efficient operations and enhanced customer experiences for consumer goods businesses.",
+                brand: "Your IT Company",
+                url: "https://youritcompany.com/consumer-goods-services",
+                image: "https://youritcompany.com/static/logo.webp",
+                offers: {
+                  "@type": "AggregateOffer",
+                  priceCurrency: "USD",
+                  availability: "https://schema.org/InStock",
+                  lowPrice: "Contact for Pricing",
+                  highPrice: "Contact for Pricing",
+                  offerCount: "Multiple",
+                  seller: {
+                    "@type": "LocalBusiness",
+                    name: "Alien IT",
+                    telephone: "(801) 261-0510",
+                    email: "info@copiersutah.com",
+                    address: {
+                      "@type": "PostalAddress",
+                      streetAddress: "554 W 8360 S",
+                      addressLocality: "Sandy",
+                      addressRegion: "Utah",
+                      postalCode: "84070",
+                      addressCountry: "USA",
+                    },
+                  },
+                },
+              }),
+            }}
+          />
+        </Head>
+
         <Header />
 
         <div className={styles.section}>
           <div
             style={{
-              height: '70%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              height: "70%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <div className={styles.mainTitle}>
@@ -35,26 +92,26 @@ export default function consumer() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image src={'/arrowR.webp'} height={30} width={30} />
+                <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={'/arrow.webp'} height={70} width={70} />
+          <Image src={"/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div className={styles.eighty}>
             <div
               style={{
-                width: '50%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
+                width: "50%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
               <Image
                 alt={"it services for consumer companies"}
-                style={{ borderRadius: '10px' }}
-                src={'/food.webp'}
+                style={{ borderRadius: "10px" }}
+                src={"/food.webp"}
                 width={350}
                 height={450}
               />
@@ -88,16 +145,16 @@ export default function consumer() {
           <div className={styles.eightyOpposite}>
             <div
               style={{
-                width: '50%',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
+                width: "50%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
               }}
             >
               <Image
                 alt={"consumer it services"}
-                style={{ borderRadius: '10px' }}
-                src={'/consumer.webp'}
+                style={{ borderRadius: "10px" }}
+                src={"/consumer.webp"}
                 width={450}
                 height={400}
               />
@@ -128,5 +185,5 @@ export default function consumer() {
       <Funnel />
       <Footer />
     </div>
-  )
+  );
 }

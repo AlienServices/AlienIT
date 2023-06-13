@@ -1,27 +1,67 @@
-'use client'
-import Image from 'next/image'
-import Funnel from '../funnel/page'
-import { Quote } from '../SVG/Quote'
-import { PatternFormat } from 'react-number-format'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import styles from '../styles/finance.module.css'
-import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
+"use client";
+import Image from "next/image";
+import Funnel from "../funnel/page";
+import { Quote } from "../SVG/Quote";
+import { PatternFormat } from "react-number-format";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import styles from "../styles/finance.module.css";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function ransom() {
   return (
     <div>
-      <div style={{ color: 'black' }} className={styles.backgroundColor}>
+      <Head>
+        <title>
+          Safeguard Your Business with Alien IT's Robust Ransomware Protection
+          Services
+        </title>
+        <meta
+          name="description"
+          content="Stop worrying about your security, let us worry for you"
+        />
+        <meta
+          name="keywords"
+          content="ransomware protection, ransomware services, cybersecurity, data protection"
+        />
+        <meta
+          property="og:title"
+          content="Safeguard Your Business with Alien IT's Robust Ransomware Protection Services"
+        />
+        <meta
+          property="og:description"
+          content="Stop worrying about your security, let us worry for you"
+        />
+        <meta property="og:image" content="/property.webp" />
+        <meta
+          property="og:url"
+          content="https://example.com/ransomwareprotection"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Alien IT" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Safeguard Your Business with Alien IT's Robust Ransomware Protection Services"
+        />
+        <meta
+          name="twitter:description"
+          content="Stop worrying about your security, let us worry for you"
+        />
+        <meta name="twitter:image" content="/property.webp" />
+      </Head>
+
+      <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div style={{ height: '530px' }} className={styles.section}>
+        <div style={{ height: "530px" }} className={styles.section}>
           <div
             style={{
-              width: '95%',
-              height: '70%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              width: "95%",
+              height: "70%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <div className={styles.mainTitle}>
@@ -36,7 +76,12 @@ export default function ransom() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image style={{borderRadius:"10px"}} src={'/arrowR.webp'} height={30} width={30} />
+                <Image
+                  style={{ borderRadius: "10px" }}
+                  src={"/arrowR.webp"}
+                  height={30}
+                  width={30}
+                />
               </div>
             </a>
           </div>
@@ -45,13 +90,19 @@ export default function ransom() {
         <div className={styles.sectionRow}>
           <div
             style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            <Image alt={"ransomware services"} style={{borderRadius:"10px"}} src={'/property.webp'} width={500} height={400} />
+            <Image
+              alt={"ransomware services"}
+              style={{ borderRadius: "10px" }}
+              src={"/property.webp"}
+              width={500}
+              height={400}
+            />
           </div>
           <div className={styles.stuff}>
             <div className={styles.title}>
@@ -78,5 +129,5 @@ export default function ransom() {
       <Funnel />
       <Footer />
     </div>
-  )
+  );
 }

@@ -1,22 +1,78 @@
-'use client'
-import Image from 'next/image'
-import { Quote } from './SVG/Quote'
-import Footer from './components/footer'
-import Link from 'next/link'
-import Header from '../app/components/header'
-import styles from '../app/styles/page.module.css'
-import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+"use client";
+import Image from "next/image";
+import { Quote } from "./SVG/Quote";
+import Footer from "./components/footer";
+import Link from "next/link";
+import Head from "next/head";
+import Header from "../app/components/header";
+import styles from "../app/styles/page.module.css";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [fixedHeader, setFixedHeader] = useState(false)
-  const [isDropdownOpen, setDropdownOpen] = useState(false)
-  const HEADER_HEIGHT = 90
-  const router = useRouter()
+  const [fixedHeader, setFixedHeader] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const HEADER_HEIGHT = 90;
+  const router = useRouter();
   return (
     <div className={styles.main}>
       <div className={styles.backgroundColor}>
         <Header />
+        <Head>
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="https://copiersutah.com/buy/" />
+          <title>
+            Expert Software and App Assistance | Alien IT - Reliable Support for
+            Your Digital Solutions
+          </title>
+
+          <meta
+            name="description"
+            content="Experience reliable support and expert assistance for your digital solutions with Alien IT. Our team provides seamless software and app support, troubleshooting, maintenance, and updates. Maximize efficiency, optimize business operations, and ensure smooth digital experiences. Get a free assessment today!"
+          />
+
+          <meta
+            name="keywords"
+            content="digital solutions support, software and app assistance, reliable IT services, expert troubleshooting, maintenance and updates, smooth digital operations, maximize efficiency, optimize business operations, seamless software support, app troubleshooting, timely resolutions, proactive monitoring, software vulnerabilities, security and performance, free assessment"
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Product",
+                name: "IT Solutions and Services",
+                description:
+                  "Comprehensive IT solutions and services for your business, including managed IT services, cybersecurity, cloud computing, and more.",
+                brand: "Alien IT",
+                url: "https://alienit.com/home",
+                image: "https://alienit.com/static/logo.webp",
+                offers: {
+                  "@type": "AggregateOffer",
+                  priceCurrency: "USD",
+                  availability: "https://schema.org/InStock",
+                  lowPrice: "Your Lowest Price",
+                  highPrice: "Your Highest Price",
+                  offerCount: "6",
+                  seller: {
+                    "@type": "LocalBusiness",
+                    name: "Alien IT",
+                    telephone: "(801) 261-0510",
+                    email: "info@youritcompany.com",
+                    address: {
+                      "@type": "PostalAddress",
+                      streetAddress: "554 W 8360 S",
+                      addressLocality: "Sandy",
+                      addressRegion: "Utah",
+                      postalCode: "84070",
+                      addressCountry: "USA",
+                    },
+                  },
+                },
+              }),
+            }}
+          />
+        </Head>
 
         <div className={styles.section}>
           <div className={styles.mainTitle}>
@@ -28,11 +84,64 @@ export default function Home() {
             </Link>
             <button
               onClick={() => {
-                router.push('/assesment')
+                router.push("/assesment");
               }}
               className={styles.button}
             >
-              Call 801-123-4567
+              Call 801-123-4567{" "}
+              <Head>
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://copiersutah.com/buy/" />
+                <title>
+                  Get a Quote for High-Quality New and Refurbished Copiers |
+                  Copiers Utah
+                </title>
+                <meta
+                  name="description"
+                  content="Looking for a high-quality copier for your office? Copiers Utah offers a range of advanced copy machines for sale, including new and refurbished options. Fill out our easy form to get a personalized quote today."
+                />
+                <meta
+                  name="keywords"
+                  content="office copiers, copiers for sale, refurbished copiers, get a quote, copiers Utah, copiers for sale, copier rentals, office copy machines, affordable copiers, copiers shop, copiers near me, copier sales, rent a copier machine, used copiers, used copiers near me, used copiers for sale, used copiers for rent, used copiers utah"
+                />
+                <script
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "Product",
+                      name: "New and Refurbished Copiers",
+                      description:
+                        "High-quality copiers for your office, including new and refurbished options.",
+                      brand: "Copiers Utah",
+                      url: "https://copiersutah.com/home",
+                      image: "https://copiersutah.com/static/logo.webp",
+                      offers: {
+                        "@type": "AggregateOffer",
+                        priceCurrency: "USD",
+                        availability: "https://schema.org/InStock",
+                        lowPrice: "Your Lowest Price",
+                        highPrice: "Your Highest Price",
+                        offerCount: "Number of Copiers Available",
+                        seller: {
+                          "@type": "LocalBusiness",
+                          name: "Copiers Utah",
+                          telephone: "(801) 261-0510",
+                          email: "info@copiersutah.com",
+                          address: {
+                            "@type": "PostalAddress",
+                            streetAddress: "554 W 8360 S",
+                            addressLocality: "Sandy",
+                            addressRegion: "Utah",
+                            postalCode: "84070",
+                            addressCountry: "USA",
+                          },
+                        },
+                      },
+                    }),
+                  }}
+                />
+              </Head>
             </button>
           </div>
         </div>
@@ -42,10 +151,10 @@ export default function Home() {
         <div className={styles.buttonRow}>
           <Image
             alt={"Expert managed IT services"}
-            src={'/professional.webp'}
+            src={"/professional.webp"}
             height={375}
             width={375}
-            style={{ borderRadius: '10px' }}
+            style={{ borderRadius: "10px" }}
           />
         </div>
         <div className={styles.centerRow}>
@@ -101,15 +210,15 @@ export default function Home() {
           <div className={styles.imageContainerFront}>
             <Image
               alt={"Alien IT services"}
-              src={'/support.webp'}
+              src={"/support.webp"}
               fill={true}
-              style={{ borderRadius: '10px' }}
+              style={{ borderRadius: "10px" }}
             />
           </div>
           <div className={styles.sideRowLeft}>
             <div>
               <h2 className={styles.title}>
-                Secure Collabration and cloud support{' '}
+                Secure Collabration and cloud support{" "}
               </h2>
               <div className={styles.paragraph}>
                 Secure Collaboration can provide secure, fully managed cloud
@@ -141,9 +250,9 @@ export default function Home() {
       </div>
       <div
         style={{
-          flexDirection: 'column',
-          paddingBottom: '40px',
-          height: '450px',
+          flexDirection: "column",
+          paddingBottom: "40px",
+          height: "450px",
         }}
         className={styles.sectionRow}
       >
@@ -194,5 +303,5 @@ export default function Home() {
       </div>
       <Footer />
     </div>
-  )
+  );
 }

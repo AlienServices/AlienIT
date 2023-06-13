@@ -1,26 +1,104 @@
-'use client'
-import Image from 'next/image'
-import { Quote } from '../SVG/Quote'
-import { PatternFormat } from 'react-number-format'
-import Header from '../components/header'
-import Funnel from '../funnel/page'
-import Footer from '../components/footer'
-import styles from '../styles/finance.module.css'
-import React, { useRef, useLayoutEffect, useState, useEffect } from 'react'
+"use client";
+import Image from "next/image";
+import { Quote } from "../SVG/Quote";
+import { PatternFormat } from "react-number-format";
+import Header from "../components/header";
+import Head from "next/head";
+import Funnel from "../funnel/page";
+import Footer from "../components/footer";
+import styles from "../styles/finance.module.css";
+import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function manufactoring() {
   return (
     <div>
-      <div style={{ color: 'black' }} className={styles.backgroundColor}>
+      <Head>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://youritcompany.com/manufacturing-services"
+        />
+        <title>
+          IT Solutions for the Manufacturing Industry | Your IT Company
+        </title>
+        <meta
+          name="description"
+          content="Your IT Company offers comprehensive IT solutions tailored for the manufacturing industry. From inventory management systems to process automation, our expert team ensures efficient operations and optimized production workflows for manufacturing businesses."
+        />
+        <meta
+          name="keywords"
+          content="IT solutions for manufacturing industry, manufacturing IT services, inventory management systems, process automation, cybersecurity, IT consulting, IT support, manufacturing technology, production optimization, digital transformation"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              name: "IT Solutions for the Manufacturing Industry",
+              description:
+                "Your IT Company offers comprehensive IT solutions tailored for the manufacturing industry. From inventory management systems to process automation, our expert team ensures efficient operations and optimized production workflows for manufacturing businesses.",
+              brand: "Your IT Company",
+              url: "https://alienit.com/manufacturing",
+              
+              offers: {
+                "@type": "AggregateOffer",
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+                lowPrice: "Contact for Pricing",
+                highPrice: "Contact for Pricing",
+                offerCount: "Multiple",
+                seller: {
+                  "@type": "LocalBusiness",
+                  name: "Alien IT",
+                  telephone: "(801) 261-0510",
+                  email: "info@copiersutah.com",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "554 W 8360 S",
+                    addressLocality: "Sandy",
+                    addressRegion: "Utah",
+                    postalCode: "84070",
+                    addressCountry: "USA",
+                  },
+                },
+              },
+            }),
+          }}
+        />
+      </Head>
+      <Head>
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://yourwebsite.com/landscape" />
+        <title>Landscape Component</title>
+        <meta
+          name="description"
+          content="A landscape component for your website."
+        />
+        <meta name="keywords" content="landscape, component, website" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Landscape Component",
+              description: "A landscape component for your website.",
+              url: "https://yourwebsite.com/landscape",
+            }),
+          }}
+        />
+      </Head>
+      <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
         <div className={styles.section}>
           <div
             style={{
-              height: '70%',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
+              height: "70%",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
             <div className={styles.mainTitle}>
@@ -36,30 +114,30 @@ export default function manufactoring() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <div className={styles.bold}>Get A Free Assesment</div>
-                <Image src={'/arrowR.webp'} height={30} width={30} />
+                <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={'/arrow.webp'} height={70} width={70} />
+          <Image src={"/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div
             style={{
-              width: '50%',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+              width: "50%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Image
               alt={"it services for manufactoring companies"}
-              style={{ borderRadius: '10px' }}
-              src={'/manufactor.webp'}
+              style={{ borderRadius: "10px" }}
+              src={"/manufactor.webp"}
               width={350}
               height={450}
             />
           </div>
-          <div  className={styles.stuff}>
+          <div className={styles.stuff}>
             <div className={styles.title}>
               PROPELLING YOUR BUSINESS INTO THE FUTURE
             </div>
@@ -86,5 +164,5 @@ export default function manufactoring() {
       <Funnel />
       <Footer />
     </div>
-  )
+  );
 }
