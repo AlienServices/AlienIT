@@ -4,6 +4,7 @@ import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
+import Head from "next/head";
 import Footer from "../components/footer";
 import styles from "../styles/finance.module.css";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
@@ -12,43 +13,57 @@ export default function restaurants() {
   return (
     <div>
       <Head>
-        <title>
-          Digital Dining Solutions: Enhancing Restaurant Experiences in the
-          Digital Age
-        </title>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://youritcompany.com/restaurant-services"
+        />
+        <title>IT Solutions for Restaurants | Your IT Company</title>
         <meta
           name="description"
-          content="Embracing Technology to Delight Guests, Optimize Operations, and Drive Restaurant Success"
+          content="Your IT Company offers comprehensive IT solutions tailored for restaurants. From point-of-sale systems to online ordering platforms, we provide the technology and support needed to streamline operations, enhance customer experience, and boost profitability for your restaurant business."
         />
         <meta
           name="keywords"
-          content="restaurant technology, digital dining solutions, IT services for restaurants"
+          content="restaurant IT solutions, restaurant technology, restaurant POS systems, online ordering platforms, IT support for restaurants, restaurant software, restaurant network security, restaurant IT consulting, restaurant tech solutions, restaurant technology services"
         />
-        <meta
-          property="og:title"
-          content="Digital Dining Solutions: Enhancing Restaurant Experiences in the Digital Age"
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              name: "IT Solutions for Restaurants",
+              description:
+                "Your IT Company offers comprehensive IT solutions tailored for restaurants. From point-of-sale systems to online ordering platforms, we provide the technology and support needed to streamline operations, enhance customer experience, and boost profitability for your restaurant business.",
+              brand: "Alien IT",
+              url: "https://youritcompany.com/restaurant-services",
+              image: "https://youritcompany.com/static/logo.webp",
+              offers: {
+                "@type": "AggregateOffer",
+                priceCurrency: "USD",
+                availability: "https://schema.org/InStock",
+                lowPrice: "Contact for Pricing",
+                highPrice: "Contact for Pricing",
+                offerCount: "Multiple",
+                seller: {
+                  "@type": "LocalBusiness",
+                  name: "Alien IT",
+                  telephone: "(801) 261-0510",
+                  email: "info@copiersutah.com",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "554 W 8360 S",
+                    addressLocality: "Sandy",
+                    addressRegion: "Utah",
+                    postalCode: "84070",
+                    addressCountry: "USA",
+                  },
+                },
+              },
+            }),
+          }}
         />
-        <meta
-          property="og:description"
-          content="Embracing Technology to Delight Guests, Optimize Operations, and Drive Restaurant Success"
-        />
-        <meta property="og:image" content="/food.webp" />
-        <meta
-          property="og:url"
-          content="https://example.com/restaurantsolutions"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Alien IT" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Digital Dining Solutions: Enhancing Restaurant Experiences in the Digital Age"
-        />
-        <meta
-          name="twitter:description"
-          content="Embracing Technology to Delight Guests, Optimize Operations, and Drive Restaurant Success"
-        />
-        <meta name="twitter:image" content="/food.webp" />
       </Head>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />

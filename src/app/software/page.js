@@ -4,6 +4,7 @@ import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
+import Head from "next/head";
 import Footer from "../components/footer";
 import styles from "../styles/finance.module.css";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
@@ -12,43 +13,48 @@ export default function backup() {
   return (
     <div>
       <Head>
-        <title>
-          Reliable Support for Your Digital Solutions: Alien IT's Expert
-          Software and App Assistance
-        </title>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://youritcompany.com/software-support"
+        />
+        <title>Software and App Support | Your IT Company</title>
         <meta
           name="description"
-          content="Stop worrying about your software, let us worry for you"
+          content="Your IT Company provides comprehensive software and app support services. Our expert team offers technical assistance, troubleshooting, and maintenance for various software applications and mobile apps, ensuring smooth operation and optimal performance for your business."
         />
         <meta
           name="keywords"
-          content="software support, app assistance, digital solutions, IT services"
+          content="software support, app support, software maintenance, app maintenance, software troubleshooting, app troubleshooting, software assistance, app assistance, software performance, app performance, software solutions, app solutions"
         />
-        <meta
-          property="og:title"
-          content="Reliable Support for Your Digital Solutions: Alien IT's Expert Software and App Assistance"
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: "Software and App Support",
+              seller: {
+                "@type": "LocalBusiness",
+                name: "Alien IT",
+                telephone: "(801) 261-0510",
+                email: "info@copiersutah.com",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "554 W 8360 S",
+                  addressLocality: "Sandy",
+                  addressRegion: "Utah",
+                  postalCode: "84070",
+                  addressCountry: "USA",
+                },
+              },
+              description:
+                "Your IT Company provides comprehensive software and app support services. Our expert team offers technical assistance, troubleshooting, and maintenance for various software applications and mobile apps, ensuring smooth operation and optimal performance for your business.",
+              serviceOutput:
+                "Smooth operation and optimal performance of software applications and mobile apps",
+            }),
+          }}
         />
-        <meta
-          property="og:description"
-          content="Stop worrying about your software, let us worry for you"
-        />
-        <meta property="og:image" content="/app.webp" />
-        <meta
-          property="og:url"
-          content="https://example.com/software-support"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Alien IT" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Reliable Support for Your Digital Solutions: Alien IT's Expert Software and App Assistance"
-        />
-        <meta
-          name="twitter:description"
-          content="Stop worrying about your software, let us worry for you"
-        />
-        <meta name="twitter:image" content="/app.webp" />
       </Head>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />

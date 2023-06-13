@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
+import Head from "next/head";
 import Footer from "../components/footer";
 import Funnel from "../funnel/page";
 import styles from "../styles/finance.module.css";
@@ -12,43 +13,48 @@ export default function property() {
   return (
     <div>
       <Head>
-        <title>
-          Smart Property Management: Streamlining Operations and Maximizing
-          Asset Value
-        </title>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://youritcompany.com/printer-services"
+        />
+        <title>Professional Printer Services | Your IT Company</title>
         <meta
           name="description"
-          content="Unlocking the Potential of Digital Solutions for Efficient Property Management and Enhanced Tenant Experiences"
+          content="Your IT Company offers professional printer services including repair and maintenance. Our expert technicians provide comprehensive solutions to keep your printers running smoothly and efficiently, ensuring minimal downtime and maximum productivity for your business."
         />
         <meta
           name="keywords"
-          content="smart property management, digital solutions, efficient property management, enhanced tenant experiences"
+          content="printer services, printer repair, printer maintenance, printer troubleshooting, printer support, printer solutions, printer technicians, printer installation, printer setup, printer upgrades"
         />
-        <meta
-          property="og:title"
-          content="Smart Property Management: Streamlining Operations and Maximizing Asset Value"
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: "Printer Services",
+              seller: {
+                "@type": "LocalBusiness",
+                name: "Alien IT",
+                telephone: "(801) 261-0510",
+                email: "info@copiersutah.com",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "554 W 8360 S",
+                  addressLocality: "Sandy",
+                  addressRegion: "Utah",
+                  postalCode: "84070",
+                  addressCountry: "USA",
+                },
+              },
+              description:
+                "Your IT Company offers professional printer services including repair and maintenance. Our expert technicians provide comprehensive solutions to keep your printers running smoothly and efficiently, ensuring minimal downtime and maximum productivity for your business.",
+              areaServed: "Your Service Area",
+              serviceOutput: "Optimal printer performance and reliability",
+            }),
+          }}
         />
-        <meta
-          property="og:description"
-          content="Unlocking the Potential of Digital Solutions for Efficient Property Management and Enhanced Tenant Experiences"
-        />
-        <meta property="og:image" content="/property.webp" />
-        <meta
-          property="og:url"
-          content="https://example.com/propertymanagement"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Alien IT" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Smart Property Management: Streamlining Operations and Maximizing Asset Value"
-        />
-        <meta
-          name="twitter:description"
-          content="Unlocking the Potential of Digital Solutions for Efficient Property Management and Enhanced Tenant Experiences"
-        />
-        <meta name="twitter:image" content="/property.webp" />
       </Head>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />

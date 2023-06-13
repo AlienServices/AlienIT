@@ -13,40 +13,48 @@ export default function backup() {
   return (
     <div>
       <Head>
-        <title>
-          Maximize Productivity: Comprehensive Printer Support Services by Alien
-          IT
-        </title>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://youritcompany.com/printer-services"
+        />
+        <title>Professional Printer Services | Your IT Company</title>
         <meta
           name="description"
-          content="At Alien IT, we provide comprehensive printer support services to ensure the smooth operation of your printing infrastructure. Our team of experienced technicians is well-versed in various printer makes and models, offering expertise in troubleshooting, maintenance, and repair."
+          content="Your IT Company offers professional printer services including repair and maintenance. Our expert technicians provide comprehensive solutions to keep your printers running smoothly and efficiently, ensuring minimal downtime and maximum productivity for your business."
         />
         <meta
           name="keywords"
-          content="printer support, printer services, printer troubleshooting, printer maintenance, printer repair"
+          content="printer services, printer repair, printer maintenance, printer troubleshooting, printer support, printer solutions, printer technicians, printer installation, printer setup, printer upgrades"
         />
-        <meta
-          property="og:title"
-          content="Maximize Productivity: Comprehensive Printer Support Services by Alien IT"
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: "Printer Services",
+              seller: {
+                "@type": "LocalBusiness",
+                name: "Alien IT",
+                telephone: "(801) 261-0510",
+                email: "info@copiersutah.com",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "554 W 8360 S",
+                  addressLocality: "Sandy",
+                  addressRegion: "Utah",
+                  postalCode: "84070",
+                  addressCountry: "USA",
+                },
+              },
+              description:
+                "Your IT Company offers professional printer services including repair and maintenance. Our expert technicians provide comprehensive solutions to keep your printers running smoothly and efficiently, ensuring minimal downtime and maximum productivity for your business.",
+              areaServed: "Utah",
+              serviceOutput: "Optimal printer performance and reliability",
+            }),
+          }}
         />
-        <meta
-          property="og:description"
-          content="At Alien IT, we provide comprehensive printer support services to ensure the smooth operation of your printing infrastructure. Our team of experienced technicians is well-versed in various printer makes and models, offering expertise in troubleshooting, maintenance, and repair."
-        />
-        <meta property="og:image" content="/print.webp" />
-        <meta property="og:url" content="https://example.com/printersupport" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Alien IT" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Maximize Productivity: Comprehensive Printer Support Services by Alien IT"
-        />
-        <meta
-          name="twitter:description"
-          content="At Alien IT, we provide comprehensive printer support services to ensure the smooth operation of your printing infrastructure. Our team of experienced technicians is well-versed in various printer makes and models, offering expertise in troubleshooting, maintenance, and repair."
-        />
-        <meta name="twitter:image" content="/print.webp" />
       </Head>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />

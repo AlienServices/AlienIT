@@ -4,6 +4,7 @@ import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
+import Head from "next/head";
 import Footer from "../components/footer";
 import styles from "../styles/finance.module.css";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
@@ -12,43 +13,48 @@ export default function ransom() {
   return (
     <div>
       <Head>
-        <title>
-          Safeguard Your Business with Alien IT's Robust Ransomware Protection
-          Services
-        </title>
+        <meta name="robots" content="index, follow" />
+        <link
+          rel="canonical"
+          href="https://youritcompany.com/ransomware-protection"
+        />
+        <title>Ransomware Protection Services | Your IT Company</title>
         <meta
           name="description"
-          content="Stop worrying about your security, let us worry for you"
+          content="Your IT Company offers comprehensive ransomware protection services to safeguard your business from cyber threats. Our expert team implements robust security measures, proactive monitoring, and timely incident response to prevent ransomware attacks and ensure the integrity and continuity of your operations."
         />
         <meta
           name="keywords"
-          content="ransomware protection, ransomware services, cybersecurity, data protection"
+          content="ransomware protection, ransomware security, ransomware prevention, ransomware defense, cyber security, cyber threat protection, data protection, network security, ransomware solutions, ransomware incident response"
         />
-        <meta
-          property="og:title"
-          content="Safeguard Your Business with Alien IT's Robust Ransomware Protection Services"
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              serviceType: "Ransomware Protection",
+              seller: {
+                "@type": "LocalBusiness",
+                name: "Alien IT",
+                telephone: "(801) 261-0510",
+                email: "info@copiersutah.com",
+                address: {
+                  "@type": "PostalAddress",
+                  streetAddress: "554 W 8360 S",
+                  addressLocality: "Sandy",
+                  addressRegion: "Utah",
+                  postalCode: "84070",
+                  addressCountry: "USA",
+                },
+              },
+              description:
+                "Your IT Company offers comprehensive ransomware protection services to safeguard your business from cyber threats. Our expert team implements robust security measures, proactive monitoring, and timely incident response to prevent ransomware attacks and ensure the integrity and continuity of your operations.",
+              serviceOutput:
+                "Protection against ransomware attacks and continuity of business operations",
+            }),
+          }}
         />
-        <meta
-          property="og:description"
-          content="Stop worrying about your security, let us worry for you"
-        />
-        <meta property="og:image" content="/property.webp" />
-        <meta
-          property="og:url"
-          content="https://example.com/ransomwareprotection"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Alien IT" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Safeguard Your Business with Alien IT's Robust Ransomware Protection Services"
-        />
-        <meta
-          name="twitter:description"
-          content="Stop worrying about your security, let us worry for you"
-        />
-        <meta name="twitter:image" content="/property.webp" />
       </Head>
 
       <div style={{ color: "black" }} className={styles.backgroundColor}>
