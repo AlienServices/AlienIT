@@ -4,6 +4,7 @@ import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
 import Footer from "../components/footer";
+
 import styles from "../styles/finance.module.css";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 

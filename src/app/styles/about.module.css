@@ -264,9 +264,14 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 50px;
     height:fit-content;
     flex-direction: column;
+  }
+  .center{
+    text-align: center;
+    font-size: 19px;
+    line-height: 28px;
   }
   .sectionSmall{
     display: flex;
