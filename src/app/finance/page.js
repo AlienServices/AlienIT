@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
@@ -77,19 +78,19 @@ export default function finance() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Streamline Your Accounting and Finance Operations with Our Robust
               IT Services
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Enhance Efficiency and Security with Tailored IT Solutions for
                 Accounting and Finance
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -107,10 +108,10 @@ export default function finance() {
             />
 
             <div className={styles.stuff}>
-              <div className={styles.title}>
+              <h3 className={styles.title}>
                 Elevating Accounting & Finance: Unlocking Potential with
                 Comprehensive IT Services
-              </div>
+              </h3>
               <div className={styles.paragraphfifty}>
                 Revolutionize your accounting and finance processes with Alien
                 IT, the leading provider of extraterrestrial technology
@@ -145,10 +146,10 @@ export default function finance() {
               />
             </div>
             <div className={styles.stuff}>
-              <div className={styles.title}>
+              <h4 className={styles.title}>
                 Revolutionizing Financial Firms: Unleashing the Power of Managed
                 IT Solutions
-              </div>
+              </h4>
               <div className={styles.paragraphfifty}>
                 At Alien IT, we specialize in simplifying the transition to
                 cloud-based construction business applications. Our expert team

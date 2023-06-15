@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "next/image"; import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -24,15 +24,15 @@ export default function about() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>How Alien IT is different</div>
+            <h1 className={styles.mainTitle}>How Alien IT is different</h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h4 className={styles.paragraph}>
                 Stop worrying about your IT, let us worry for you
-              </div>
+              </h4>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "next/image"; 
 import { Quote } from "./SVG/Quote";
 import Footer from "./components/footer";
 import Link from "next/link";

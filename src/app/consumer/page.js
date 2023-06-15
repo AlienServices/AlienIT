@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -80,18 +81,18 @@ export default function consumer() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               IT SERVICES FOR THE CONSUMER GOODS INDUSTRY
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Enhance Efficiency and Security with Tailored IT Solutions for
                 Accounting and Finance
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -117,9 +118,9 @@ export default function consumer() {
               />
             </div>
             <div className={styles.fifty}>
-              <div className={styles.title}>
+              <h3 className={styles.title}>
                 Revolutionizing IT Services for Consumer Goods Companies
-              </div>
+              </h3>
               <div className={styles.paragraphfifty}>
                 Alien IT is a pivotal player in the consumer goods production
                 industry, contributing significantly to the global economy by
@@ -160,10 +161,10 @@ export default function consumer() {
               />
             </div>
             <div className={styles.fifty}>
-              <div className={styles.title}>
+              <h4 className={styles.title}>
                 Seamless Healthcare IT Solutions: Empowering Your Practice for
                 Uninterrupted Operations
-              </div>
+              </h4>
               <div className={styles.paragraphfifty}>
                 Healthcare IT services are essential for keeping your medical
                 practice running smoothly. From maintaining accurate patient

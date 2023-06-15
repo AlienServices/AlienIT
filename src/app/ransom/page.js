@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
@@ -70,18 +71,18 @@ export default function ransom() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Safeguard Your Business with Alien IT's Robust Ransomware
               Protection Services
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Stop worrying about your security, let us worry for you
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image
                   style={{ borderRadius: "10px" }}
                   src={"/arrowR.webp"}
@@ -111,10 +112,10 @@ export default function ransom() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               Unleash the Power of Alien IT: Your Shield Against Ransomware
               Attacks
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               Alien IT understands the critical importance of protecting your
               business from the growing threat of ransomware attacks. Our

@@ -1,5 +1,6 @@
 "use client";
-import Image from "next/image";
+import Image from "next/image"; import Link from "next/link";
+
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -79,19 +80,19 @@ export default function health() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Digital Health Solutions: Empowering Wellness and Transforming
               Healthcare
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Harnessing the Power of Technology to Revolutionize Patient
                 Care, Efficiency, and Outcomes
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -116,10 +117,10 @@ export default function health() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               Seamless Healthcare IT Solutions: Empowering Your Practice for
               Uninterrupted Operations
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               Alien IT understands the crucial role of healthcare IT services in
               ensuring the seamless operation of your medical practice. From
@@ -159,10 +160,10 @@ export default function health() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h4 className={styles.title}>
               Elevating Patient Care: How Managed IT Enhances Your Medical
               Practice
-            </div>
+            </h4>
             <div className={styles.paragraphfifty}>
               Managed IT services from Alien IT offer healthcare businesses the
               opportunity to elevate their patient care through improved network

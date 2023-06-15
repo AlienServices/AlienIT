@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -9,7 +10,7 @@ import Footer from "../components/footer";
 import styles from "../styles/dropdown.module.css";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
-export default function dropdown(props) {
+export default function Dropdown(props) {
   const [display, setDisplay] = useState(true);
   const [serviceToggle, setServiceToggle] = useState(true);
   const [industryToggle, setIndustryToggle] = useState(true);

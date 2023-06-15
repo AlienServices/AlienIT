@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
@@ -78,18 +79,18 @@ export default function construction() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Tech Solutions for Construction: Building a Digital Future
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Efficiently Streamline Operations and Boost Productivity with
                 Cutting-Edge IT Solutions
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -114,10 +115,10 @@ export default function construction() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               Optimizing Efficiency and Security: Cloud Services for Utah
               Construction Companies
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               At Alien IT, we specialize in simplifying the transition to
               cloud-based construction business applications. Our expert team
@@ -154,7 +155,7 @@ export default function construction() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>Reliable Managed IT Services</div>
+            <h4 className={styles.title}>Reliable Managed IT Services</h4>
             <div className={styles.paragraphfifty}>
               With Alien IT, you can bid farewell to the worries of managing
               your IT infrastructure. Our team of skilled professionals is ready

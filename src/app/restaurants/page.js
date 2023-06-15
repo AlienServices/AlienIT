@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
@@ -77,19 +78,19 @@ export default function restaurants() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Digital Dining Solutions: Enhancing Restaurant Experiences in the
               Digital Age
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Embracing Technology to Delight Guests, Optimize Operations, and
                 Drive Restaurant Success
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -113,10 +114,10 @@ export default function restaurants() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               Enhancing Restaurant Efficiency and Security through Managed IT
               Services
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               At Alien IT, we deeply comprehend the indispensable role of
               technology in the restaurant industry. From reservation management
@@ -156,7 +157,7 @@ export default function restaurants() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>Cybersecurity Support</div>
+            <h4 className={styles.title}>Cybersecurity Support</h4>
             <div className={styles.paragraphfifty}>
               In today's digital landscape, cybersecurity is crucial for all
               businesses, including restaurants. Alien IT offers comprehensive

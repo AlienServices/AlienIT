@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -68,19 +69,19 @@ export default function property() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Smart Property Management: Streamlining Operations and Maximizing
               Asset Value
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Unlocking the Potential of Digital Solutions for Efficient
                 Property Management and Enhanced Tenant Experiences
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -105,10 +106,10 @@ export default function property() {
               />
             </div>
             <div className={styles.stuff}>
-              <div className={styles.title}>
+              <h3 className={styles.title}>
                 Streamlined IT Management for Utah Property Management
                 Companies: Alien IT's Managed Services
-              </div>
+              </h3>
               <div className={styles.paragraphfifty}>
                 Let us handle your IT infrastructure with our comprehensive
                 managed IT services. Our proactive team will monitor and manage

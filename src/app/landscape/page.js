@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -77,19 +78,19 @@ export default function landscape() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Streamline Your Accounting and Finance Operations with Our Robust
               IT Services
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Enhance Efficiency and Security with Tailored IT Solutions for
                 Accounting and Finance
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -114,9 +115,9 @@ export default function landscape() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               THE BENEFITS OF MANAGED IT SERVICES FOR YOUR BUSINESS
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               The landscape and pool industries have experienced rapid
               technological advancements in recent years, with online sales

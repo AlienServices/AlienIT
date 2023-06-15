@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -79,19 +80,19 @@ export default function hospitality() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Revolutionizing Hospitality with Innovative IT Solutions:
               Enhancing Guest Experiences and Operational Efficiency
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Elevate Your Hospitality Business with Next-Generation
                 Technology: Unleashing the Power of Digital Innovationp
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -116,9 +117,9 @@ export default function hospitality() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               Transform Your Hotel with Superior IT Management
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               Alien IT unleashes the full potential of top-tier IT management
               within the hospitality and tourism industry, empowering businesses
@@ -153,9 +154,9 @@ export default function hospitality() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               Safeguarding IT Security: Protecting Guests and Businesses Alike
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               With cyberattacks occurring at an alarming frequency of every 39
               seconds, every moment with comprehensive cybersecurity measures

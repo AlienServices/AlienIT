@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import Head from "next/head";
@@ -78,18 +79,18 @@ export default function backup() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Rapid Hardware Recovery: Trust Alien IT for Effective Repair
               Solutions and Minimal Downtime
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Stop worrying about your connection, let us worry for you
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -114,10 +115,10 @@ export default function backup() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               Seamless Hardware Solutions: Alien IT's Expert Repair Services for
               a Reliable Technology Infrastructure
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               At Alien IT, we specialize in resolving hardware issues to ensure
               your technology infrastructure runs smoothly. Our team of skilled

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import ReCAPTCHA from "react-google-recaptcha";
 import { PatternFormat } from "react-number-format";
@@ -37,6 +38,7 @@ export default function Assesment() {
     }
   };
   const sendEmail = (e) => {
+    debugger
     e.preventDefault();
     console.log("Sending");
 
@@ -58,17 +60,16 @@ export default function Assesment() {
           number: number,
           email: email,
           name: name,
-          company: company
+          company: company,
         },
       }),
     }).then((res) => {
       console.log(res);
       if (res.status === 200) {
         console.log("Response succeeded!");
-        // setSubmitted(true);
-        // setName("");
-        // setEmail("");
-        // setBody("");
+        setName("");
+        setEmail("");
+        
       }
     });
   };
@@ -159,13 +160,13 @@ export default function Assesment() {
                 }}
               />
             </Head>
-            <div className={styles.mainTitle}>Get An IT Assesment</div>
+            <h1 className={styles.mainTitle}>Get An IT Assesment</h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Want to know how your current IT infrastructure and strategy can
                 be improved? Contact us today to get a free IT assessment so we
                 can figure out how to solve your IT problems!
-              </div>
+              </h2>
             </div>
             <a href="">
               <div className={styles.bold}>Call Us At (801) 261-0510</div>
@@ -224,14 +225,15 @@ export default function Assesment() {
               </div>
             </div>
             <div className={styles.box}>
-              <div className={styles.titleBig}>Schedule Your Assesment!</div>
+              <h4 className={styles.titleBig}>Schedule Your Assesment!</h4>
               <div>
                 Receive a response within minutes, not hours. Guaranteed!
               </div>
               <div className={styles.boxcolumn}>
                 <div className={styles.inputRow}>
                   <input
-                    onClick={(event) => {
+                    onChange={(event) => {
+                      
                       setName(event.target.value);
                     }}
                     placeholder="First And Last Name"
@@ -239,7 +241,7 @@ export default function Assesment() {
                     type="text"
                   />
                   <input
-                    onClick={(event) => {
+                    onChange={(event) => {
                       setCompany(event.target.value);
                     }}
                     placeholder="Company Name"
@@ -249,7 +251,7 @@ export default function Assesment() {
                 </div>
                 <div className={styles.inputRow}>
                   <input
-                    onClick={(event) => {
+                    onChange={(event) => {
                       setEmail(event.target.value);
                     }}
                     placeholder="Email Address"
@@ -291,7 +293,9 @@ export default function Assesment() {
                   </div>
                 </div>
                 <textarea
-                  onClick={(event) => {setMessage(event.target.value)}}
+                  onChange={(event) => {
+                    setMessage(event.target.value);
+                  }}
                   className={styles.text}
                   placeholder={"Tell us about how we can help!"}
                   name=""
@@ -311,7 +315,13 @@ export default function Assesment() {
                   ref={captchaRef}
                   onChange={verifyCallback}
                 />
-                <button disabled={!recaptchaResponse} className={styles.button}>
+                <button
+                  onClick={(e) => {
+                    sendEmail(e);
+                  }}
+                  disabled={!recaptchaResponse}
+                  className={styles.button}
+                >
                   Get Assesment!
                 </button>
               </div>

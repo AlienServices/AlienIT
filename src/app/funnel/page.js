@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -29,7 +30,7 @@ export default function funnel() {
         </div>
         <a href="/assesment">
           <div className={styles.arrowRow}>
-            <div className={styles.bold}>Get A Free Assesment</div>
+            <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
             <Image src={"/arrowR.webp"} height={30} width={30} />
           </div>
         </a>

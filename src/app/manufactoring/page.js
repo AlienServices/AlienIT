@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
 import Header from "../components/header";
@@ -101,19 +102,19 @@ export default function manufactoring() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Driving Manufacturing Excellence through Advanced IT Solutions:
               Empowering Efficiency, Quality, and Growth
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Transforming Manufacturing Processes with Smart Technology:
                 Optimizing Operations and Accelerating Industry 4.0 Adoption
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -138,9 +139,9 @@ export default function manufactoring() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               PROPELLING YOUR BUSINESS INTO THE FUTURE
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               In the dynamic world of manufacturing, seamless telecommunications
               networks, efficient product distribution systems, reliable

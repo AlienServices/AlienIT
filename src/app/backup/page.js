@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import Funnel from "../funnel/page";
 import { Quote } from "../SVG/Quote";
 import { PatternFormat } from "react-number-format";
@@ -78,18 +79,18 @@ export default function backup() {
               alignItems: "center",
             }}
           >
-            <div className={styles.mainTitle}>
+            <h1 className={styles.mainTitle}>
               Safeguard Your Business: Comprehensive Backup and Restore
               Solutions by Alien IT
-            </div>
+            </h1>
             <div className={styles.buttonRow}>
-              <div className={styles.paragraph}>
+              <h2 className={styles.paragraph}>
                 Stop worrying about your backups, let us worry for you
-              </div>
+              </h2>
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <div className={styles.bold}>Get A Free Assesment</div>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image src={"/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
@@ -113,10 +114,10 @@ export default function backup() {
             />
           </div>
           <div className={styles.stuff}>
-            <div className={styles.title}>
+            <h3 className={styles.title}>
               Secure Your Business with Alien IT's Robust Backup and Restore
               Services
-            </div>
+            </h3>
             <div className={styles.paragraphfifty}>
               At Alien IT, we understand the critical importance of protecting
               your business from unforeseen data loss and system failures.
