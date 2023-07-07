@@ -141,7 +141,7 @@ export default function Header() {
           onClick={() => {
             setMenu(!menu);
           }}
-          src={"/whiteMenu.png"}
+          src={"/static/whiteMenu.png"}
           fill={true}
         />
       </div>
