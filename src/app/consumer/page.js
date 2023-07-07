@@ -93,11 +93,11 @@ export default function consumer() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={"/arrow.webp"} height={70} width={70} />
+          <Image src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div className={styles.eighty}>
@@ -112,7 +112,7 @@ export default function consumer() {
               <Image
                 alt={"it services for consumer companies"}
                 style={{ borderRadius: "10px" }}
-                src={"/food.webp"}
+                src={"/static/food.webp"}
                 width={350}
                 height={450}
               />
@@ -155,7 +155,7 @@ export default function consumer() {
               <Image
                 alt={"consumer it services"}
                 style={{ borderRadius: "10px" }}
-                src={"/consumer.webp"}
+                src={"/static/consumer.webp"}
                 width={450}
                 height={400}
               />

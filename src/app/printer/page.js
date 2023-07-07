@@ -82,7 +82,7 @@ export default function backup() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -100,7 +100,7 @@ export default function backup() {
             <Image
               alt={"printer it services"}
               style={{ borderRadius: "10px" }}
-              src={"/print.webp"}
+              src={"/static/print.webp"}
               width={400}
               height={500}
             />

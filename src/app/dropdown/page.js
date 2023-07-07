@@ -35,7 +35,7 @@ export default function Dropdown(props) {
             className={styles.flex}
           >
             <div>Services</div>
-            <Image src={"/side.webp"} width={20} height={20} />
+            <Image src={"/static/side.webp"} width={20} height={20} />
           </div>
           <div
             style={{ display: serviceToggle ? "none" : "flex" }}
@@ -93,7 +93,7 @@ export default function Dropdown(props) {
             className={styles.flex}
           >
             <div>Industries We Serve</div>
-            <Image src={"/side.webp"} width={20} height={20} />
+            <Image src={"/static/side.webp"} width={20} height={20} />
           </div>
           <div
             style={{ display: industryToggle ? "none" : "flex" }}
@@ -172,7 +172,7 @@ export default function Dropdown(props) {
             className={styles.flex}
           >
             <div>Areas We Serve</div>
-            <Image src={"/side.webp"} width={20} height={20} />
+            <Image src={"/static/side.webp"} width={20} height={20} />
           </div>
           <div
             style={{ display: areaToggle ? "none" : "flex" }}

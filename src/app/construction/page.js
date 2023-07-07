@@ -91,11 +91,11 @@ export default function construction() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={"/arrow.webp"} height={70} width={70} />
+          <Image src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div
@@ -109,7 +109,7 @@ export default function construction() {
             <Image
               alt={"it solutions for construction"}
               style={{ borderRadius: "5px" }}
-              src={"/construction.webp"}
+              src={"/static/construction.webp"}
               width={500}
               height={350}
             />
@@ -149,7 +149,7 @@ export default function construction() {
             <Image
               alt={"it services for construction"}
               style={{ borderRadius: "5px" }}
-              src={"/construction2.webp"}
+              src={"/static/construction2.webp"}
               width={550}
               height={400}
             />

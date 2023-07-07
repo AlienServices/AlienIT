@@ -93,11 +93,11 @@ export default function hospitality() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={"/arrow.webp"} height={70} width={70} />
+          <Image src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div
@@ -111,7 +111,7 @@ export default function hospitality() {
             <Image
               alt={"it services for hotels"}
               style={{ borderRadius: "5px" }}
-              src={"/hotel.webp"}
+              src={"/static/hotel.webp"}
               width={550}
               height={350}
             />
@@ -148,7 +148,7 @@ export default function hospitality() {
             <Image
               alt={"software support for hotels"}
               style={{ borderRadius: "5px" }}
-              src={"/hotel2.webp"}
+              src={"/static/hotel2.webp"}
               width={550}
               height={350}
             />

@@ -82,11 +82,11 @@ export default function property() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={"/arrow.webp"} height={70} width={70} />
+          <Image src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div className={styles.photoContainer}>
@@ -100,7 +100,7 @@ export default function property() {
             >
               <Image
                 alt={" "}
-                src={"/property.webp"}
+                src={"/static/property.webp"}
                 width={500}
                 height={400}
               />

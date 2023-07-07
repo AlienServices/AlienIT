@@ -91,18 +91,18 @@ export default function finance() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={"/arrow.webp"} height={70} width={70} />
+          <Image src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div className={styles.eighty}>
             <Image
               alt={"it services for finance"}
               style={{ borderRadius: "5px" }}
-              src={"/finance.webp"}
+              src={"/static/finance.webp"}
               width={500}
               height={400}
             />
@@ -140,7 +140,7 @@ export default function finance() {
               <Image
                 alt={""}
                 style={{ borderRadius: "5px" }}
-                src={"/finance.webp"}
+                src={"/static/finance.webp"}
                 width={500}
                 height={400}
               />

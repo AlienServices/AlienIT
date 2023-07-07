@@ -91,7 +91,7 @@ export default function restaurants() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -108,7 +108,7 @@ export default function restaurants() {
             <Image
               alt={"software support for restaurants"}
               style={{ borderRadius: "5px" }}
-              src={"/food.webp"}
+              src={"/static/food.webp"}
               width={400}
               height={450}
             />
@@ -151,7 +151,7 @@ export default function restaurants() {
             <Image
               alt={"restaurant it services"}
               style={{ borderRadius: "5px" }}
-              src={"/rest2.webp"}
+              src={"/static/rest2.webp"}
               width={470}
               height={330}
             />

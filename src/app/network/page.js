@@ -82,7 +82,7 @@ export default function backup() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -97,7 +97,7 @@ export default function backup() {
               alignItems: "center",
             }}
           >
-            <Image src={"/wifi.webp"} width={500} height={350} />
+            <Image src={"/static/wifi.webp"} width={500} height={350} />
           </div>
           <div className={styles.stuff}>
             <h3 className={styles.title}>

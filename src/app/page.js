@@ -4,7 +4,7 @@ import { Quote } from "./SVG/Quote";
 import Footer from "./components/footer";
 import Link from "next/link";
 import Head from "next/head";
-import Header from "../app/components/header";
+import Header from "./components/header";
 import styles from "../app/styles/page.module.css";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -151,7 +151,7 @@ export default function Home() {
         <div className={styles.buttonRow}>
           <Image
             alt={"Expert managed IT services"}
-            src={"/professional.webp"}
+            src={"/static/professional.webp"}
             height={375}
             width={375}
             style={{ borderRadius: "10px" }}
@@ -210,7 +210,7 @@ export default function Home() {
           <div className={styles.imageContainerFront}>
             <Image
               alt={"Alien IT services"}
-              src={"/support.webp"}
+              src={"/static/support.webp"}
               fill={true}
               style={{ borderRadius: "10px" }}
             />

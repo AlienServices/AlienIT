@@ -85,7 +85,7 @@ export default function ransom() {
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image
                   style={{ borderRadius: "10px" }}
-                  src={"/arrowR.webp"}
+                  src={"/static/arrowR.webp"}
                   height={30}
                   width={30}
                 />
@@ -106,7 +106,7 @@ export default function ransom() {
             <Image
               alt={"ransomware services"}
               style={{ borderRadius: "10px" }}
-              src={"/property.webp"}
+              src={"/static/property.webp"}
               width={500}
               height={400}
             />

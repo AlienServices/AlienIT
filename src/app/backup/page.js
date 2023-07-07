@@ -91,7 +91,7 @@ export default function backup() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -108,7 +108,7 @@ export default function backup() {
           >
             <Image
               alt={"secure your business with our backup services"}
-              src={"/rest2.webp"}
+              src={"/static/rest2.webp"}
               width={500}
               height={350}
             />

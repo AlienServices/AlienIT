@@ -1,5 +1,5 @@
 import styles from "../styles/page.module.css";
-import Image from "next/image"; 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -17,7 +17,7 @@ export default function Header() {
             <Image
               alt={"alien IT logo"}
               style={{ cursor: "pointer" }}
-              src={"/logo.webp"}
+              src={"/static/logo.webp"}
               fill={true}
             />
           </Link>
@@ -34,14 +34,10 @@ export default function Header() {
               <Link href="/ransom">
                 <div className={styles.hide}>Ransomware Protection</div>
               </Link>
-              <div
-                onClick={() => {
-                  router.push("backup");
-                }}
-                className={styles.hide}
-              >
-                Backup And Restore
-              </div>
+              <Link href="/backup">
+                <div className={styles.hide}>Backup And Restore</div>
+              </Link>
+
               <Link href="/printer">
                 <div className={styles.hide}>Full Printer Support</div>
               </Link>

@@ -93,11 +93,11 @@ export default function health() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image src={"/arrowR.webp"} height={30} width={30} />
+                <Image src={"/static/arrowR.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
-          <Image src={"/arrow.webp"} height={70} width={70} />
+          <Image src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
           <div
@@ -111,7 +111,7 @@ export default function health() {
             <Image
               alt={"it services for healthcare"}
               style={{ borderRadius: "5px" }}
-              src={"/hospital.webp"}
+              src={"/static/hospital.webp"}
               width={500}
               height={350}
             />
@@ -154,7 +154,7 @@ export default function health() {
             <Image
               alt={"it services for hospitals"}
               style={{ borderRadius: "5px" }}
-              src={"/health.webp"}
+              src={"/static/health.webp"}
               width={500}
               height={350}
             />

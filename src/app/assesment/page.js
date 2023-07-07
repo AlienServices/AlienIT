@@ -172,7 +172,7 @@ export default function Assesment() {
               <div className={styles.bold}>Call Us At (801) 261-0510</div>
             </a>
           </div>
-          <Image src={"/arrow.webp"} height={80} width={80} />
+          <Image src={"/static/arrow.webp"} height={80} width={80} />
         </div>
         <div className={styles.section}>
           <div className={styles.row}>

@@ -11,7 +11,7 @@ export default function Footer(props) {
           alt={"alien IT logo"}
           style={{ cursor: "pointer" }}
           onClick={() => {}}
-          src={"/logo.webp"}
+          src={"/static/logo.webp"}
           fill={true}
         />
       </div>
