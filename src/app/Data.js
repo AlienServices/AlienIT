@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image"; 
+import Image from "next/image";
 import { Quote } from "./SVG/Quote";
 import Footer from "./components/footer";
 import Link from "next/link";
@@ -12,67 +12,17 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const [fixedHeader, setFixedHeader] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [images, setImages] = useState({
+    imageOne: true, imageTwo: false, imageThree: false, imageFour: false, imageFive: false
+  })
   const HEADER_HEIGHT = 90;
   const router = useRouter();
+  console.log(images.imageTwo, "these are imagessss")
   return (
     <div className={styles.main}>
       <div className={styles.backgroundColor}>
         <Header />
-        <Head>
-          <meta name="robots" content="index, follow" />
-          <link rel="canonical" href="https://alienitservices.com/" />
-          <title>
-            Expert Software and App Assistance | Alien IT - Reliable Support for
-            Your Digital Solutions
-          </title>
 
-          <meta
-            name="description"
-            content="Experience reliable support and expert assistance for your digital solutions with Alien IT. Our team provides seamless software and app support, troubleshooting, maintenance, and updates. Maximize efficiency, optimize business operations, and ensure smooth digital experiences. Get a free assessment today!"
-          />
-
-          <meta
-            name="keywords"
-            content="digital solutions support, software and app assistance, reliable IT services, expert troubleshooting, maintenance and updates, smooth digital operations, maximize efficiency, optimize business operations, seamless software support, app troubleshooting, timely resolutions, proactive monitoring, software vulnerabilities, security and performance, free assessment"
-          />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "Product",
-                name: "IT Solutions and Services",
-                description:
-                  "Comprehensive IT solutions and services for your business, including managed IT services, cybersecurity, cloud computing, and more.",
-                brand: "Alien IT",
-                url: "https://alienit.com/home",
-                image: "https://alienit.com/static/logo.webp",
-                offers: {
-                  "@type": "AggregateOffer",
-                  priceCurrency: "USD",
-                  availability: "https://schema.org/InStock",
-                  lowPrice: "Your Lowest Price",
-                  highPrice: "Your Highest Price",
-                  offerCount: "6",
-                  seller: {
-                    "@type": "LocalBusiness",
-                    name: "Alien IT",
-                    telephone: "(801) 261-0510",
-                    email: "info@youritcompany.com",
-                    address: {
-                      "@type": "PostalAddress",
-                      streetAddress: "554 W 8360 S",
-                      addressLocality: "Sandy",
-                      addressRegion: "Utah",
-                      postalCode: "84070",
-                      addressCountry: "USA",
-                    },
-                  },
-                },
-              }),
-            }}
-          />
-        </Head>
 
         <div className={styles.section}>
           <h1 className={styles.mainTitle}>
@@ -89,60 +39,55 @@ export default function Home() {
               className={styles.button}
             >
               Call 801-123-4567{" "}
-              <Head>
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://copiersutah.com/buy/" />
-                <title>
-                  Get a Quote for High-Quality New and Refurbished Copiers |
-                  Copiers Utah
-                </title>
-                <meta
-                  name="description"
-                  content="Looking for a high-quality copier for your office? Copiers Utah offers a range of advanced copy machines for sale, including new and refurbished options. Fill out our easy form to get a personalized quote today."
-                />
-                <meta
-                  name="keywords"
-                  content="office copiers, copiers for sale, refurbished copiers, get a quote, copiers Utah, copiers for sale, copier rentals, office copy machines, affordable copiers, copiers shop, copiers near me, copier sales, rent a copier machine, used copiers, used copiers near me, used copiers for sale, used copiers for rent, used copiers utah"
-                />
-                <script
-                  type="application/ld+json"
-                  dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                      "@context": "https://schema.org",
-                      "@type": "Product",
-                      name: "New and Refurbished Copiers",
-                      description:
-                        "High-quality copiers for your office, including new and refurbished options.",
-                      brand: "Copiers Utah",
-                      url: "https://copiersutah.com/home",
-                      image: "https://copiersutah.com/static/logo.webp",
-                      offers: {
-                        "@type": "AggregateOffer",
-                        priceCurrency: "USD",
-                        availability: "https://schema.org/InStock",
-                        lowPrice: "Your Lowest Price",
-                        highPrice: "Your Highest Price",
-                        offerCount: "Number of Copiers Available",
-                        seller: {
-                          "@type": "LocalBusiness",
-                          name: "Copiers Utah",
-                          telephone: "(801) 261-0510",
-                          email: "info@copiersutah.com",
-                          address: {
-                            "@type": "PostalAddress",
-                            streetAddress: "554 W 8360 S",
-                            addressLocality: "Sandy",
-                            addressRegion: "Utah",
-                            postalCode: "84070",
-                            addressCountry: "USA",
-                          },
-                        },
-                      },
-                    }),
-                  }}
-                />
-              </Head>
             </button>
+          </div>
+          <div className={styles.displayFlex}>
+            <Image src={'/static/left.png'} height={50} width={50} onClick={(() => {
+              setImages({ imageOne: images.imageTwo, imageTwo: images.imageThree, imageThree: images.imageFour, imageFour: images.imageFive, imageFive: images.imageOne })
+            })}></Image>
+            <div className={images.imageOne ? styles.showing : styles.hidden}>
+              <div className={styles.box}>
+                <div className={styles.title}>mobile phone tech</div>
+                <div className={styles.paragraphSmall}>Mobile phone technology encompasses the innovations and advancements in handheld devices that enable communication, access to information, and various functionalities on the go. It continually evolves to offer faster processors, improved cameras, enhanced connectivity, and a wide array of applications, making our phones more than just communication tools but indispensable companions in our daily lives, facilitating work, entertainment, and staying connected with the world.</div>
+              </div>
+            </div>
+            <div className={images.imageTwo ? styles.showing : styles.hidden}>
+              <div className={styles.box}>
+                <div className={styles.title}>cloud computing</div>
+                <div className={styles.paragraphSmall}>
+                  Cloud computing is like renting space on the internet to store data, run applications, or access services instead of solely relying on a local computer or server. It offers convenience, scalability, and flexibility, allowing businesses and individuals to access resources on-demand from anywhere, anytime, with the added benefits of cost-efficiency and reduced maintenance overhead.</div>
+              </div>
+            </div>
+            <div className={images.imageThree ? styles.showing : styles.hidden}>
+              <div className={styles.box}>
+                <div className={styles.title}>SD-WAN</div>
+                <div className={styles.paragraphSmall}>SD-WAN, which stands for Software-Defined Wide Area Networking, transforms how companies handle their networks. It uses smart software to efficiently manage data flow across the network, making connections faster, more reliable, and flexible. This technology improves performance while cutting costs compared to older, hardware-focused network setups.</div>
+              </div>
+            </div>
+            <div className={images.imageFour ? styles.showing : styles.hidden}>
+              <div className={styles.box}>
+                <div className={styles.title}>contact center</div>
+                <div className={styles.paragraphSmall}>
+                  
+A contact center serves as a centralized hub where customer interactions across multiple channels like phone, email, chat, and social media are managed efficiently. It employs specialized software and trained agents to handle inquiries, provide support, and ensure consistent, high-quality customer experiences. Contact centers streamline communication between customers and businesses, aiming to resolve issues promptly while gathering valuable insights to enhance service and product offerings.
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+            <div className={images.imageFive ? styles.showing : styles.hidden}>
+              <div className={styles.box}>
+                <div className={styles.title}>ucass</div>
+                <div className={styles.paragraphSmall}>
+UCaaS, or Unified Communications as a Service, is like having a one-stop-shop in the cloud for all your communication needs. It combines tools like calls, video meetings, messaging, and more into a single service, making it easier for businesses to manage their communications effectively while saving money and simplifying operations.</div>
+              </div>
+            </div>
+            <Image src={'/static/right.png'} height={50} width={50} onClick={(() => {
+              setImages({ imageOne: images.imageFive, imageTwo: images.imageOne, imageThree: images.imageTwo, imageFour: images.imageThree, imageFive: images.imageFour })
+            })}></Image>
           </div>
         </div>
       </div>

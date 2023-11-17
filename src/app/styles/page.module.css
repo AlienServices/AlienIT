@@ -7,6 +7,31 @@
   background-color: white;
   color: black;
 }
+.displayFlex{
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+.hidden{
+  opacity: 0;
+  position: absolute;
+  /* transition: all .3s ease-in-out; */
+}
+.showing{
+  transition: all .3s ease-in;
+  opacity: 1;
+}
+.flex{
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+.box{
+  width: 500px;  
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+}
 .imageContainerSmall{
   width: 250px;
   height: 150px;
@@ -44,6 +69,12 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 35px;
+  text-align: center;
+}
+.paragraphSmall{
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 25px;
   text-align: center;
 }
 .midTitle{
@@ -120,9 +151,6 @@
 .dropdownWrapper:hover .hide:hover{
   color: white;
   
-}
-.hidden{
-  opacity: 1;
 }
 .hide{
   display: none;
