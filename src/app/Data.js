@@ -47,42 +47,77 @@ export default function Home() {
             })}></Image>
             <div className={images.imageOne ? styles.showing : styles.hidden}>
               <div className={styles.box}>
-                <div className={styles.title}>mobile phone tech</div>
-                <div className={styles.paragraphSmall}>Mobile phone technology encompasses the innovations and advancements in handheld devices that enable communication, access to information, and various functionalities on the go. It continually evolves to offer faster processors, improved cameras, enhanced connectivity, and a wide array of applications, making our phones more than just communication tools but indispensable companions in our daily lives, facilitating work, entertainment, and staying connected with the world.</div>
+                <div className={styles.boxContainer}>
+                  <div className={styles.title}>mobile phone tech</div>
+                  <div className={styles.paragraphSmall}>Mobile phone technology encompasses the innovations and advancements in handheld devices that enable communication, access to information, and various functionalities on the go. It continually evolves to offer faster processors, improved cameras, enhanced connectivity, and a wide array of applications, making our phones more than just communication tools but indispensable companions in our daily lives, facilitating work, entertainment, and staying connected with the world.</div>
+                  <Link href={'/phoneTech'}>
+                    <button className={styles.button}>See Details</button>
+                  </Link>
+                </div>
+                <div>
+                  <Image src={'/static/headset.webp'} alt={'lady with computer'} height={200} width={200}></Image>
+                </div>
               </div>
             </div>
             <div className={images.imageTwo ? styles.showing : styles.hidden}>
               <div className={styles.box}>
-                <div className={styles.title}>cloud computing</div>
-                <div className={styles.paragraphSmall}>
-                  Cloud computing is like renting space on the internet to store data, run applications, or access services instead of solely relying on a local computer or server. It offers convenience, scalability, and flexibility, allowing businesses and individuals to access resources on-demand from anywhere, anytime, with the added benefits of cost-efficiency and reduced maintenance overhead.</div>
+                <div className={styles.boxContainer}>
+                  <div className={styles.title}>cloud computing</div>
+                  <div className={styles.paragraphSmall}>
+                    Cloud computing is like renting space on the internet to store data, run applications, or access services instead of solely relying on a local computer or server. It offers convenience, scalability, and flexibility, allowing businesses and individuals to access resources on-demand from anywhere, anytime, with the added benefits of cost-efficiency and reduced maintenance overhead.</div>
+                  <Link href={'/cloud'}>
+                    <button className={styles.button}>See Details</button>
+                  </Link>
+                </div>
+                <div>
+                  <Image src={'/static/headset1.webp'} alt={'lady with computer'} height={200} width={200}></Image>
+                </div>
               </div>
             </div>
             <div className={images.imageThree ? styles.showing : styles.hidden}>
               <div className={styles.box}>
-                <div className={styles.title}>SD-WAN</div>
-                <div className={styles.paragraphSmall}>SD-WAN, which stands for Software-Defined Wide Area Networking, transforms how companies handle their networks. It uses smart software to efficiently manage data flow across the network, making connections faster, more reliable, and flexible. This technology improves performance while cutting costs compared to older, hardware-focused network setups.</div>
+                <div className={styles.boxContainer}>
+                  <div className={styles.title}>SD-WAN</div>
+                  <div className={styles.paragraphSmall}>SD-WAN, which stands for Software-Defined Wide Area Networking, transforms how companies handle their networks. It uses smart software to efficiently manage data flow across the network, making connections faster, more reliable, and flexible. This technology improves performance while cutting costs compared to older, hardware-focused network setups.</div>
+                  <Link href={'/wan'}>
+                    <button className={styles.button}>See Details</button>
+                  </Link>
+                </div>
+                <div>
+                  <Image src={'/static/headset.webp'} alt={'lady with computer'} height={200} width={200}></Image>
+                </div>
               </div>
             </div>
             <div className={images.imageFour ? styles.showing : styles.hidden}>
               <div className={styles.box}>
-                <div className={styles.title}>contact center</div>
-                <div className={styles.paragraphSmall}>
-                  
-A contact center serves as a centralized hub where customer interactions across multiple channels like phone, email, chat, and social media are managed efficiently. It employs specialized software and trained agents to handle inquiries, provide support, and ensure consistent, high-quality customer experiences. Contact centers streamline communication between customers and businesses, aiming to resolve issues promptly while gathering valuable insights to enhance service and product offerings.
-
-
-
-
-
+                <div className={styles.boxContainer}>
+                  <div className={styles.title}>contact center</div>
+                  <div className={styles.paragraphSmall}>
+                    A contact center serves as a centralized hub where customer interactions across multiple channels like phone, email, chat, and social media are managed efficiently. It employs specialized software and trained agents to handle inquiries, provide support, and ensure consistent, high-quality customer experiences. Contact centers streamline communication between customers and businesses, aiming to resolve issues promptly while gathering valuable insights to enhance service and product offerings.
+                  </div>
+                  <Link href={'/contact'}>
+                    <button className={styles.button}>See Details</button>
+                  </Link>
+                </div>
+                <div>
+                  <Image src={'/static/headset1.webp'} alt={'lady with computer'} height={200} width={200}></Image>
                 </div>
               </div>
+
             </div>
             <div className={images.imageFive ? styles.showing : styles.hidden}>
               <div className={styles.box}>
-                <div className={styles.title}>ucass</div>
-                <div className={styles.paragraphSmall}>
-UCaaS, or Unified Communications as a Service, is like having a one-stop-shop in the cloud for all your communication needs. It combines tools like calls, video meetings, messaging, and more into a single service, making it easier for businesses to manage their communications effectively while saving money and simplifying operations.</div>
+                <div className={styles.boxContainer}>
+                  <div className={styles.title}>ucass</div>
+                  <div className={styles.paragraphSmall}>
+                    UCaaS, or Unified Communications as a Service, is like having a one-stop-shop in the cloud for all your communication needs. It combines tools like calls, video meetings, messaging, and more into a single service, making it easier for businesses to manage their communications effectively while saving money and simplifying operations.</div>
+                  <Link href={'/ucaas'}>
+                    <button className={styles.button}>See Details</button>
+                  </Link>
+                </div>
+                <div>
+                  <Image src={'/static/headset.webp'} alt={'lady with computer'} height={200} width={200}></Image>
+                </div>
               </div>
             </div>
             <Image src={'/static/right.png'} height={50} width={50} onClick={(() => {

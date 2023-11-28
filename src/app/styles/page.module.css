@@ -10,11 +10,13 @@
 .displayFlex{
   display: flex;
   width: 80%;
+  align-items: center;
   justify-content: space-evenly;
 }
 .hidden{
   opacity: 0;
   position: absolute;
+  display: none;
   /* transition: all .3s ease-in-out; */
 }
 .showing{
@@ -27,10 +29,21 @@
   justify-content: space-evenly;
 }
 .box{
-  width: 500px;  
-  height: 250px;
+  width: 750px;  
+  padding: 5px;
+  display: flex;  
+  height: 310px;
   background-color: white;
   border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.boxContainer{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .imageContainerSmall{
   width: 250px;
@@ -72,7 +85,7 @@
   text-align: center;
 }
 .paragraphSmall{
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 25px;
   text-align: center;
@@ -105,6 +118,7 @@
   border-radius: 5px;
   cursor: pointer;
   border: none;
+  
 }
 
 .dropdownWrapper {
@@ -203,7 +217,7 @@
 .title{
   text-align: center;
   font-size: 20px;
-  padding: 15px;
+  padding: 5px;
   color: black;
   font-weight: 600;
 }
