@@ -71,8 +71,7 @@ export default function backup() {
             }}
           >
             <h1 className={styles.mainTitle}>
-              Reliable Support for Your Digital Solutions: Alien IT's Expert
-              Software and App Assistance
+            Mobile Phone Technology Solutions For YOu
             </h1>
             <div className={styles.buttonRow}>
               <h2 className={styles.paragraph}>

@@ -12,7 +12,7 @@
   }
   .footerBody{
     display: flex;
-    background-color: black;
+    background-color: #162439;
     color: white;
     width: 100%;
     align-items: center;
@@ -45,8 +45,8 @@
     align-items: center;
   }
   .imageContainerSmall{
-    width: 250px;
-    height: 200px;
+    width: 150px;
+    height: 130px;
     position: relative;
   }
  

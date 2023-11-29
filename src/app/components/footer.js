@@ -37,7 +37,7 @@ export default function Footer(props) {
             <div>App Support</div>
           </Link>
         </div>
-        <div className={styles.line}></div>
+        
         <div className={styles.center}>
           <div className={styles.bold}>Industries We Serve</div>
           <Link href="/finance">
@@ -53,7 +53,7 @@ export default function Footer(props) {
             <div>Hospitality</div>
           </Link>
         </div>
-        <div className={styles.line}></div>
+        
         <div className={styles.center}>
           <div className={styles.bold}>Areas We Serve</div>
           <Link href="/assesment">

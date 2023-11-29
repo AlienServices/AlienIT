@@ -13,15 +13,7 @@ export default function funnel() {
   return (
     <div className={styles.sectionSmall}>
       
-      <div
-        style={{
-          width: "100%",
-          height: "60%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <div className={styles.gray}>
         <div className={styles.mainTitle}>
           You dont need to do it on your own
         </div>

@@ -60,7 +60,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 80%;
+  width: 90%;
   
 }
 .backgroundColor{
@@ -388,7 +388,7 @@
   z-index: -1;
 }
 
-.center::before,
+
 .center::after {
   content: '';
   left: 50%;

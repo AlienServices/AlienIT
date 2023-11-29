@@ -12,51 +12,7 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function backup() {
   return (
-    <div>
-      <Head>
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://youritcompany.com/software-support"
-        />
-        <title>Software and App Support | Your IT Company</title>
-        <meta
-          name="description"
-          content="Your IT Company provides comprehensive software and app support services. Our expert team offers technical assistance, troubleshooting, and maintenance for various software applications and mobile apps, ensuring smooth operation and optimal performance for your business."
-        />
-        <meta
-          name="keywords"
-          content="software support, app support, software maintenance, app maintenance, software troubleshooting, app troubleshooting, software assistance, app assistance, software performance, app performance, software solutions, app solutions"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              serviceType: "Software and App Support",
-              seller: {
-                "@type": "LocalBusiness",
-                name: "Alien IT",
-                telephone: "(801) 261-0510",
-                email: "info@copiersutah.com",
-                address: {
-                  "@type": "PostalAddress",
-                  streetAddress: "554 W 8360 S",
-                  addressLocality: "Sandy",
-                  addressRegion: "Utah",
-                  postalCode: "84070",
-                  addressCountry: "USA",
-                },
-              },
-              description:
-                "Your IT Company provides comprehensive software and app support services. Our expert team offers technical assistance, troubleshooting, and maintenance for various software applications and mobile apps, ensuring smooth operation and optimal performance for your business.",
-              serviceOutput:
-                "Smooth operation and optimal performance of software applications and mobile apps",
-            }),
-          }}
-        />
-      </Head>
+    <div>      
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
@@ -71,8 +27,7 @@ export default function backup() {
             }}
           >
             <h1 className={styles.mainTitle}>
-              Reliable Support for Your Digital Solutions: Alien IT's Expert
-              Software and App Assistance
+            All Cloud Computing Solutions Here
             </h1>
             <div className={styles.buttonRow}>
               <h2 className={styles.paragraph}>
@@ -107,24 +62,10 @@ export default function backup() {
           </div>
           <div className={styles.stuff}>
             <h3 className={styles.title}>
-              Seamless Software and App Support: Alien IT's Expert Assistance
-              for Smooth Digital Operations
+            Benefits of Cloud Services: Enhancing Scalability and Flexibility
             </h3>
             <div className={styles.paragraphfifty}>
-              At Alien IT, we offer comprehensive software and app support
-              services to ensure the smooth operation of your digital
-              applications. Our experienced team is well-versed in a wide range
-              of software solutions and platforms, enabling us to provide expert
-              assistance for troubleshooting, maintenance, and updates. Whether
-              you're facing compatibility issues, software glitches, or need
-              guidance on utilizing specific features, our experts are here to
-              help. We offer timely resolutions to technical issues, ensuring
-              minimal disruption to your business processes. Additionally, we
-              provide proactive monitoring to detect potential software
-              vulnerabilities and apply necessary patches and updates to enhance
-              security and performance. With Alien IT's software and app
-              support, you can maximize the efficiency of your digital solutions
-              and optimize your business operations with confidence.
+            Cloud services offer unmatched flexibility and scalability, allowing businesses to quickly adapt to changing needs. This means effortlessly adjusting resources to match demand spikes, whether it's handling increased website traffic or expanding data storage. With cloud computing, organizations can easily scale up or down, ensuring efficient resource allocation without the limitations of traditional systems. This adaptability not only fosters innovation but also streamlines operations, empowering companies to stay agile and responsive in today's fast-paced markets.  
             </div>
           </div>
         </div>
