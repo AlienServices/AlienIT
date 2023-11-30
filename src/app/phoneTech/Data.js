@@ -12,55 +12,11 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function backup() {
   return (
-    <div>
-      <Head>
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://youritcompany.com/software-support"
-        />
-        <title>Software and App Support | Your IT Company</title>
-        <meta
-          name="description"
-          content="Your IT Company provides comprehensive software and app support services. Our expert team offers technical assistance, troubleshooting, and maintenance for various software applications and mobile apps, ensuring smooth operation and optimal performance for your business."
-        />
-        <meta
-          name="keywords"
-          content="software support, app support, software maintenance, app maintenance, software troubleshooting, app troubleshooting, software assistance, app assistance, software performance, app performance, software solutions, app solutions"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              serviceType: "Software and App Support",
-              seller: {
-                "@type": "LocalBusiness",
-                name: "Alien IT",
-                telephone: "(801) 261-0510",
-                email: "info@copiersutah.com",
-                address: {
-                  "@type": "PostalAddress",
-                  streetAddress: "554 W 8360 S",
-                  addressLocality: "Sandy",
-                  addressRegion: "Utah",
-                  postalCode: "84070",
-                  addressCountry: "USA",
-                },
-              },
-              description:
-                "Your IT Company provides comprehensive software and app support services. Our expert team offers technical assistance, troubleshooting, and maintenance for various software applications and mobile apps, ensuring smooth operation and optimal performance for your business.",
-              serviceOutput:
-                "Smooth operation and optimal performance of software applications and mobile apps",
-            }),
-          }}
-        />
-      </Head>
+    <div>      
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div style={{ height: "530px" }} className={styles.section}>
+        <div  className={styles.section}>
           <div
             style={{
               width: "95%",
@@ -81,7 +37,7 @@ export default function backup() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image alt={"right arrow"} src={"/static/arrowR.webp"} height={30} width={30} />
+                <Image alt={"right arrow"} src={"/static/right.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -99,9 +55,9 @@ export default function backup() {
             <Image
               alt={"data and software backup"}
               style={{ borderRadius: "10px" }}
-              src={"/static/app.webp"}
+              src={"/static/phone.webp"}
               width={500}
-              height={350}
+              height={400}
             />
           </div>
           <div className={styles.stuff}>

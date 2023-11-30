@@ -86,7 +86,7 @@ export default function ransom() {
                 <Image
                   alt={"right arrow"}
                   style={{ borderRadius: "10px" }}
-                  src={"/static/arrowR.webp"}
+                  src={"/static/right.webp"}
                   height={30}
                   width={30}
                 />

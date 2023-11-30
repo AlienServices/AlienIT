@@ -16,6 +16,7 @@
     color: white;
     width: 100%;
     align-items: center;
+    justify-content: center;
     height: fit-content
   }
   .line{
@@ -31,8 +32,7 @@
   .center{
     display: flex;
     flex-direction: column;
-    height: 250px;
-    
+    height: 250px;    
   }
   .center div{
     cursor: pointer;
@@ -40,13 +40,14 @@
   }
   .headerRow{
     width: 70%;
+    padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
   .imageContainerSmall{
-    width: 150px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
     position: relative;
   }
  

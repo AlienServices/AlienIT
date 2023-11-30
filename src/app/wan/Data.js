@@ -37,7 +37,7 @@ export default function backup() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image alt={"right arrow"} src={"/static/arrowR.webp"} height={30} width={30} />
+                <Image alt={"right arrow"} src={"/static/right.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
@@ -55,9 +55,9 @@ export default function backup() {
             <Image
               alt={"data and software backup"}
               style={{ borderRadius: "10px" }}
-              src={"/static/app.webp"}
-              width={500}
-              height={350}
+              src={"/static/diagram.webp"}
+              width={400}
+              height={400}
             />
           </div>
           <div className={styles.stuff}>

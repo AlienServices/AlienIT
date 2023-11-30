@@ -33,7 +33,7 @@ export default function about() {
             <a href="/assesment">
               <div className={styles.arrowRow}>
                 <Link  href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
-                <Image alt={'an arrow facing right'} src={"/static/arrowR.webp"} height={30} width={30} />
+                <Image alt={'an arrow facing right'} src={"/static/right.webp"} height={30} width={30} />
               </div>
             </a>
           </div>
