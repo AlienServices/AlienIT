@@ -60,7 +60,7 @@ export default function backup() {
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div style={{ height: "530px" }} className={styles.section}>
+        <div className={styles.section}>
           <div
             style={{
               width: "95%",

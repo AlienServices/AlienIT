@@ -53,6 +53,24 @@ export default function Footer(props) {
             <div>Hospitality</div>
           </Link>
         </div>
+        <div className={styles.center}>
+          <div className={styles.bold}>Office Solutions</div>
+          <Link href="/contact">
+            <div>Contact Center</div>
+          </Link>
+          <Link href="/ucaas">
+            <div>UCAAS</div>
+          </Link>
+          <Link href="/wan">
+            <div>SD-WAN</div>
+          </Link>
+          <Link href="/phoneTech">
+            <div>Mobile Phone Tech</div>
+          </Link>
+          <Link href="/cloud">
+            <div>Cloud Computing</div>
+          </Link>
+        </div>
         
         <div className={styles.center}>
           <div className={styles.bold}>Areas We Serve</div>

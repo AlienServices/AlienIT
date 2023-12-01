@@ -109,6 +109,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  
   justify-content: space-evenly;
   padding: 40px; 
 }
@@ -199,7 +200,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height:600px;
+  height:700px;
   flex-direction: column;
 }
 .paragraphContainer{
@@ -238,11 +239,23 @@
   justify-content: space-evenly;
   align-items: center;
   height:600px; 
+  background-color: #f2f9ff;
+
+}
+.sectionRowW{
+  display: flex;  
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  height:600px; 
+  background-color: white;
+
 }
 .sectionServiceRow{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #e8e8e8;
   align-items: center;
   height:750px; 
 }

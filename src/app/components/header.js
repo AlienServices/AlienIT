@@ -22,10 +22,28 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className={styles.dropdownWrapper}>
-          <Link href="/">
-            <div className={styles.hover}>Home</div>
-          </Link>
+        <div className={styles.dropdownWrapper}>          
+            <div className={styles.hover}>Office Solutions</div>
+            <div className={styles.hidden}>
+              <div className={styles.menuWrapper}>
+                <Link href="/contact">
+                  <div className={styles.hide}>Contact Center</div>
+                </Link>
+                <Link href="/phoneTech">
+                  <div className={styles.hide}>Mobile Phone Tech</div>
+                </Link>
+
+                <Link href="/ucaas">
+                  <div className={styles.hide}>UCAAS</div>
+                </Link>
+                <Link href="/wan">
+                  <div className={styles.hide}>SD-WAN</div>
+                </Link>
+                <Link href="/cloud">
+                  <div className={styles.hide}>Cloud Computing</div>
+                </Link>
+              </div>
+            </div>          
         </div>
         <div className={styles.dropdownWrapper}>
           <div className={styles.hover}>Services</div>

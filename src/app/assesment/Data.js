@@ -160,7 +160,7 @@ export default function Assesment() {
                 }}
               />
             </Head>
-            <h1 className={styles.mainTitle}>Get An IT Assesment</h1>
+            <div className={styles.mainTitle}>Get An IT Assesment</div>
             <div className={styles.buttonRow}>
               <h2 className={styles.paragraph}>
                 Want to know how your current IT infrastructure and strategy can
@@ -189,7 +189,7 @@ export default function Assesment() {
                   <Image
                     alt={"checkmark"}
                     style={{ margin: "10px" }}
-                    src={"/static/checkmark.png"}
+                    src={"/static/seen.webp"}
                     width={25}
                     height={25}
                   />
@@ -199,7 +199,7 @@ export default function Assesment() {
                   <Image
                     alt={"checkmark"}
                     style={{ margin: "10px" }}
-                    src={"/static/checkmark.png"}
+                    src={"/static/seen.webp"}
                     width={25}
                     height={25}
                   />
@@ -212,7 +212,7 @@ export default function Assesment() {
                   <Image
                     alr={"checkmark"}
                     style={{ margin: "10px" }}
-                    src={"/static/checkmark.png"}
+                    src={"/static/seen.webp"}
                     width={25}
                     height={25}
                   />
@@ -221,11 +221,7 @@ export default function Assesment() {
                     maximizing your operational efficiency.
                   </div>
                 </div>
-              </div>
-              <div className={styles.paragraphMid}>
-                Our IT assessments are quick and painless, and our team is ready
-                to help you now.
-              </div>
+              </div>            
             </div>
             <div className={styles.box}>
               <h4 className={styles.titleBig}>Schedule Your Assesment!</h4>
@@ -244,6 +240,7 @@ export default function Assesment() {
                     type="text"
                   />
                   <input
+                  style={{color:"white"}}
                     onChange={(event) => {
                       setCompany(event.target.value);
                     }}
@@ -270,31 +267,7 @@ export default function Assesment() {
                       setNumber(event.target.value);
                     }}
                   />
-                </div>
-                <div className={styles.checkColumn}>
-                  <div className={styles.inputrow}>
-                    <input className={styles.check} type="checkbox" />
-                    <div style={{ paddingLeft: "5px" }}>I need Managed IT</div>
-                  </div>
-                  <div className={styles.inputrow}>
-                    <input className={styles.check} type="checkbox" />
-                    <div style={{ paddingLeft: "5px" }}>
-                      I need Remote Support
-                    </div>
-                  </div>
-                  <div className={styles.inputrow}>
-                    <input className={styles.check} type="checkbox" />
-                    <div style={{ paddingLeft: "5px" }}>
-                      I need Onsite Support
-                    </div>
-                  </div>
-                  <div className={styles.inputrow}>
-                    <input className={styles.check} type="checkbox" />
-                    <div style={{ paddingLeft: "5px" }}>
-                      I need Personal Computer Support
-                    </div>
-                  </div>
-                </div>
+                </div>                
                 <textarea
                   onChange={(event) => {
                     setMessage(event.target.value);
