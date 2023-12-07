@@ -98,20 +98,13 @@ export default function construction() {
           <Image alt={"down arrow"} src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <div className={styles.imageContainer}
           >
             <Image
               alt={"it solutions for construction"}
               style={{ borderRadius: "5px" }}
               src={"/static/construction.webp"}
-              width={500}
-              height={350}
+              fill={true}
             />
           </div>
           <div className={styles.stuff}>
@@ -138,13 +131,7 @@ export default function construction() {
           </div>
         </div>
         <div className={styles.sectionOpposite}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <div className={styles.imageContainer}
           >
             <Image
               alt={"it services for construction"}

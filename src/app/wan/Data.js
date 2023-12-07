@@ -44,20 +44,13 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <div className={styles.imageContainer}
           >
             <Image
               alt={"data and software backup"}
               style={{ borderRadius: "10px" }}
               src={"/static/diagram.webp"}
-              width={400}
-              height={400}
+              fill={true}
             />
           </div>
           <div className={styles.stuff}>

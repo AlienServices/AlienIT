@@ -142,7 +142,7 @@ export default function consumer() {
             </div>
           </div>
         </div>
-        <div className={styles.sectionOpposite}>
+        {/* <div className={styles.sectionOpposite}>
           <div className={styles.eightyOpposite}>
             <div
               style={{
@@ -181,7 +181,7 @@ export default function consumer() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Funnel />
       <Footer />

@@ -623,15 +623,22 @@
     line-height: 25px;
   }
   .section{
-    height: 450px;
+    min-height: 450px;
+    height: fit-content;
+    justify-content: space-evenly;
+    
   }
   .mainTitle{
     width: 110%;
+    font-size: 22px;
   }
   .stuff{
     padding: 0px;
     min-height: 650px;
     justify-content: center;
+  }
+  .buttonRow{
+    padding: 5px;
   }
   .sectionRow{
     width: 100%;
@@ -644,6 +651,9 @@
     position: relative;
     height: 250px;
     width: 300px;
+  }
+  .sectionRow{
+    padding-top: 50px;
   }
 }
 

@@ -100,20 +100,13 @@ export default function health() {
           <Image alt={"right arrow"} src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <div className={styles.imageContainer}
           >
             <Image
               alt={"it services for healthcare"}
               style={{ borderRadius: "5px" }}
               src={"/static/hospital.webp"}
-              width={500}
-              height={350}
+              fill={true}
             />
           </div>
           <div className={styles.stuff}>
@@ -143,20 +136,13 @@ export default function health() {
           </div>
         </div>
         <div className={styles.sectionOpposite}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <div className={styles.imageContainer}
           >
             <Image
               alt={"it services for hospitals"}
               style={{ borderRadius: "5px" }}
               src={"/static/health.webp"}
-              width={500}
-              height={350}
+              fill={true}
             />
           </div>
           <div className={styles.stuff}>

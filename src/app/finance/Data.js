@@ -13,59 +13,7 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 export default function finance() {
   return (
     <div>
-      <Head>
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://youritcompany.com/finance-services"
-        />
-        <title>IT Solutions for Finance Companies | Your IT Company</title>
-        <meta
-          name="description"
-          content="Your IT Company provides comprehensive IT solutions tailored for finance companies. From secure data management to advanced analytics, our expert team ensures efficient operations and regulatory compliance for finance businesses."
-        />
-        <meta
-          name="keywords"
-          content="IT solutions for finance companies, finance IT services, data management, analytics, cybersecurity, IT consulting, IT support, financial industry solutions, regulatory compliance, digital transformation, financial technology"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Product",
-              name: "IT Solutions for Finance Companies",
-              description:
-                "Your IT Company provides comprehensive IT solutions tailored for finance companies. From secure data management to advanced analytics, our expert team ensures efficient operations and regulatory compliance for finance businesses.",
-              brand: "Your IT Company",
-              url: "https://youritcompany.com/finance-services",
-              image: "https://youritcompany.com/static/logo.webp",
-              offers: {
-                "@type": "AggregateOffer",
-                priceCurrency: "USD",
-                availability: "https://schema.org/InStock",
-                lowPrice: "Contact for Pricing",
-                highPrice: "Contact for Pricing",
-                offerCount: "Multiple",
-                seller: {
-                  "@type": "LocalBusiness",
-                  name: "Alien IT",
-                  telephone: "(801) 261-0510",
-                  email: "info@copiersutah.com",
-                  address: {
-                    "@type": "PostalAddress",
-                    streetAddress: "554 W 8360 S",
-                    addressLocality: "Sandy",
-                    addressRegion: "Utah",
-                    postalCode: "84070",
-                    addressCountry: "USA",
-                  },
-                },
-              },
-            }),
-          }}
-        />
-      </Head>
+
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
@@ -99,13 +47,14 @@ export default function finance() {
         </div>
         <div className={styles.sectionRow}>
           <div className={styles.eighty}>
-            <Image
-              alt={"it services for finance"}
-              style={{ borderRadius: "5px" }}
-              src={"/static/finance.webp"}
-              width={500}
-              height={400}
-            />
+            <div className={styles.imageContainer}>
+              <Image
+                alt={"it services for finance"}
+                style={{ borderRadius: "5px" }}
+                src={"/static/finance.webp"}
+                fill={true}
+              />
+            </div>
 
             <div className={styles.stuff}>
               <h3 className={styles.title}>

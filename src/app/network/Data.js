@@ -89,15 +89,9 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <div className={styles.imageContainer}
           >
-            <Image alt={"network it services"} src={"/static/wifi.webp"} width={500} height={350} />
+            <Image alt={"network it services"} src={"/static/wifi.webp"} fill={true} />
           </div>
           <div className={styles.stuff}>
             <h3 className={styles.title}>

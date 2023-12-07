@@ -97,13 +97,7 @@ export default function restaurants() {
           </div>
         </div>
         <div className={styles.sectionRow}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <div className={styles.imageContainer}
           >
             <Image
               alt={"software support for restaurants"}
@@ -140,13 +134,7 @@ export default function restaurants() {
           </div>
         </div>
         <div className={styles.sectionOpposite}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+          <div className={styles.imageContainer}
           >
             <Image
               alt={"restaurant it services"}
