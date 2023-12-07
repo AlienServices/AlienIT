@@ -12,11 +12,11 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function backup() {
   return (
-    <div>      
+    <div>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div  className={styles.section}>
+        <div className={styles.section}>
           <div
             style={{
               width: "95%",
@@ -27,7 +27,7 @@ export default function backup() {
             }}
           >
             <h1 className={styles.mainTitle}>
-            All Cloud Computing Solutions Here
+              All Cloud Computing Solutions Here
             </h1>
             <div className={styles.buttonRow}>
               <h2 className={styles.paragraph}>
@@ -44,21 +44,23 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div className={styles.imageContainer}
-          >
-            <Image
-              alt={"data and software backup"}
-              style={{ borderRadius: "10px" }}
-              src={"/static/cloud.webp"}
-              fill={true}
-            />
-          </div>
-          <div className={styles.stuff}>
-            <h3 className={styles.title}>
-            Benefits of Cloud Services: Enhancing Scalability and Flexibility
-            </h3>
-            <div className={styles.paragraphfifty}>
-            Cloud services offer unmatched flexibility and scalability, allowing businesses to quickly adapt to changing needs. This means effortlessly adjusting resources to match demand spikes, whether it's handling increased website traffic or expanding data storage. With cloud computing, organizations can easily scale up or down, ensuring efficient resource allocation without the limitations of traditional systems. This adaptability not only fosters innovation but also streamlines operations, empowering companies to stay agile and responsive in today's fast-paced markets.  
+          <div className={styles.eighty}>
+            <div className={styles.imageContainer}
+            >
+              <Image
+                alt={"data and software backup"}
+                style={{ borderRadius: "10px" }}
+                src={"/static/cloud.webp"}
+                fill={true}
+              />
+            </div>
+            <div className={styles.stuff}>
+              <h3 className={styles.title}>
+                Benefits of Cloud Services: Enhancing Scalability and Flexibility
+              </h3>
+              <div className={styles.paragraphfifty}>
+                Cloud services offer unmatched flexibility and scalability, allowing businesses to quickly adapt to changing needs. This means effortlessly adjusting resources to match demand spikes, whether it's handling increased website traffic or expanding data storage. With cloud computing, organizations can easily scale up or down, ensuring efficient resource allocation without the limitations of traditional systems. This adaptability not only fosters innovation but also streamlines operations, empowering companies to stay agile and responsive in today's fast-paced markets.
+              </div>
             </div>
           </div>
         </div>

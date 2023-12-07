@@ -69,7 +69,7 @@ export default function backup() {
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div  className={styles.section}>
+        <div className={styles.section}>
           <div
             style={{
               width: "95%",
@@ -98,35 +98,37 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div className={styles.imageContainer}
-          >
-            <Image
-              alt={"Hardware Repair"}
-              style={{ borderRadius: "10px" }}
-              src={"/static/repair.webp"}
-              fill={true}
-            />
-          </div>
-          <div className={styles.stuff}>
-            <h3 className={styles.title}>
-              Seamless Hardware Solutions: Alien IT's Expert Repair Services for
-              a Reliable Technology Infrastructure
-            </h3>
-            <div className={styles.paragraphfifty}>
-              At Alien IT, we specialize in resolving hardware issues to ensure
-              your technology infrastructure runs smoothly. Our team of skilled
-              technicians possesses extensive knowledge and experience in
-              diagnosing and repairing a wide range of hardware problems. From
-              malfunctioning computers and servers to faulty peripherals and
-              components, we have the expertise to get your equipment back in
-              working order. We utilize industry-leading diagnostic tools and
-              techniques to accurately identify the root cause of hardware
-              failures and implement effective solutions. Our priority is to
-              minimize downtime and disruption to your business operations by
-              providing timely and efficient hardware repairs. With Alien IT as
-              your trusted partner, you can count on us to restore your
-              hardware's functionality and reliability, enabling you to focus on
-              what matters most: your core business activities.
+          <div className={styles.eighty}>
+            <div className={styles.imageContainer}
+            >
+              <Image
+                alt={"Hardware Repair"}
+                style={{ borderRadius: "10px" }}
+                src={"/static/repair.webp"}
+                fill={true}
+              />
+            </div>
+            <div className={styles.stuff}>
+              <h3 className={styles.title}>
+                Seamless Hardware Solutions: Alien IT's Expert Repair Services for
+                a Reliable Technology Infrastructure
+              </h3>
+              <div className={styles.paragraphfifty}>
+                At Alien IT, we specialize in resolving hardware issues to ensure
+                your technology infrastructure runs smoothly. Our team of skilled
+                technicians possesses extensive knowledge and experience in
+                diagnosing and repairing a wide range of hardware problems. From
+                malfunctioning computers and servers to faulty peripherals and
+                components, we have the expertise to get your equipment back in
+                working order. We utilize industry-leading diagnostic tools and
+                techniques to accurately identify the root cause of hardware
+                failures and implement effective solutions. Our priority is to
+                minimize downtime and disruption to your business operations by
+                providing timely and efficient hardware repairs. With Alien IT as
+                your trusted partner, you can count on us to restore your
+                hardware's functionality and reliability, enabling you to focus on
+                what matters most: your core business activities.
+              </div>
             </div>
           </div>
         </div>

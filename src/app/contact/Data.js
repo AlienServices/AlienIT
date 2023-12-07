@@ -12,7 +12,7 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function backup() {
   return (
-    <div>      
+    <div>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
@@ -44,21 +44,23 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div className={styles.imageContainer}
-          >
-            <Image
-              alt={"data and software backup"}
-              style={{ borderRadius: "10px" }}
-              src={"/static/contact.webp"}
-              fill={true}
-            />
-          </div>
-          <div className={styles.stuff}>
-            <h3 className={styles.title}>
-              Customized Contact Center Solutions: Tailored for Your Business Needs
-            </h3>
-            <div className={styles.paragraphfifty}>
-              Our contact center solutions are tailored to fit your business perfectly. We recognize that every business is unique, and our customizable options are designed to seamlessly align with your specific needs. Whether it's scaling up for growth, integrating with your current systems, or implementing special features, our solutions ensure efficient operations while delivering personalized customer experiences, ultimately driving your business forward
+          <div className={styles.eighty}>
+            <div className={styles.imageContainer}
+            >
+              <Image
+                alt={"data and software backup"}
+                style={{ borderRadius: "10px" }}
+                src={"/static/contact.webp"}
+                fill={true}
+              />
+            </div>
+            <div className={styles.stuff}>
+              <h3 className={styles.title}>
+                Customized Contact Center Solutions: Tailored for Your Business Needs
+              </h3>
+              <div className={styles.paragraphfifty}>
+                Our contact center solutions are tailored to fit your business perfectly. We recognize that every business is unique, and our customizable options are designed to seamlessly align with your specific needs. Whether it's scaling up for growth, integrating with your current systems, or implementing special features, our solutions ensure efficient operations while delivering personalized customer experiences, ultimately driving your business forward
+              </div>
             </div>
           </div>
         </div>

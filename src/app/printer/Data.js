@@ -60,7 +60,7 @@ export default function backup() {
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div  className={styles.section}>
+        <div className={styles.section}>
           <div
             style={{
               width: "95%",
@@ -89,33 +89,35 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div className={styles.imageContainer}
-          >
-            <Image
-              alt={"printer it services"}
-              style={{ borderRadius: "10px" }}
-              src={"/static/print.webp"}
-              fill={true}
-            />
-          </div>
-          <div className={styles.stuff}>
-            <h3 className={styles.title}>
-              Efficient Printing Solutions: Comprehensive Printer Support by
-              Alien IT
-            </h3>
-            <div className={styles.paragraphfifty}>
-              At Alien IT, we provide comprehensive printer support services to
-              ensure the smooth operation of your printing infrastructure. Our
-              team of experienced technicians is well-versed in various printer
-              makes and models, offering expertise in troubleshooting,
-              maintenance, and repair. Whether you need assistance with printer
-              setup, driver installation, or resolving performance issues, our
-              experts are here to help. We offer proactive monitoring to detect
-              potential printer problems before they impact your workflow, and
-              our swift response times ensure minimal downtime. With Alien IT's
-              full printer support, you can rely on us to optimize your printing
-              environment, increase efficiency, and keep your business running
-              smoothly.
+          <div className={styles.eighty}>
+            <div className={styles.imageContainer}
+            >
+              <Image
+                alt={"printer it services"}
+                style={{ borderRadius: "10px" }}
+                src={"/static/print.webp"}
+                fill={true}
+              />
+            </div>
+            <div className={styles.stuff}>
+              <h3 className={styles.title}>
+                Efficient Printing Solutions: Comprehensive Printer Support by
+                Alien IT
+              </h3>
+              <div className={styles.paragraphfifty}>
+                At Alien IT, we provide comprehensive printer support services to
+                ensure the smooth operation of your printing infrastructure. Our
+                team of experienced technicians is well-versed in various printer
+                makes and models, offering expertise in troubleshooting,
+                maintenance, and repair. Whether you need assistance with printer
+                setup, driver installation, or resolving performance issues, our
+                experts are here to help. We offer proactive monitoring to detect
+                potential printer problems before they impact your workflow, and
+                our swift response times ensure minimal downtime. With Alien IT's
+                full printer support, you can rely on us to optimize your printing
+                environment, increase efficiency, and keep your business running
+                smoothly.
+              </div>
             </div>
           </div>
         </div>

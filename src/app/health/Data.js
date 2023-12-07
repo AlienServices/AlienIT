@@ -13,64 +13,8 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 export default function health() {
   return (
     <div>
-      <Head>
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://youritcompany.com/healthcare-services"
-        />
-        <title>
-          IT Solutions for the Healthcare Industry | Your IT Company
-        </title>
-        <meta
-          name="description"
-          content="Your IT Company offers comprehensive IT solutions tailored for the healthcare industry. From secure data management to telemedicine platforms, our expert team ensures efficient operations, regulatory compliance, and enhanced patient care for healthcare businesses."
-        />
-        <meta
-          name="keywords"
-          content="IT solutions for healthcare industry, healthcare IT services, data management, telemedicine platforms, cybersecurity, IT consulting, IT support, healthcare technology, regulatory compliance, patient care, digital transformation"
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Product",
-              name: "IT Solutions for the Healthcare Industry",
-              description:
-                "Your IT Company offers comprehensive IT solutions tailored for the healthcare industry. From secure data management to telemedicine platforms, our expert team ensures efficient operations, regulatory compliance, and enhanced patient care for healthcare businesses.",
-              brand: "Your IT Company",
-              url: "https://youritcompany.com/healthcare-services",
-              image: "https://youritcompany.com/static/logo.webp",
-              offers: {
-                "@type": "AggregateOffer",
-                priceCurrency: "USD",
-                availability: "https://schema.org/InStock",
-                lowPrice: "Contact for Pricing",
-                highPrice: "Contact for Pricing",
-                offerCount: "Multiple",
-                seller: {
-                  "@type": "LocalBusiness",
-                  name: "Alien IT",
-                  telephone: "(801) 261-0510",
-                  email: "info@copiersutah.com",
-                  address: {
-                    "@type": "PostalAddress",
-                    streetAddress: "554 W 8360 S",
-                    addressLocality: "Sandy",
-                    addressRegion: "Utah",
-                    postalCode: "84070",
-                    addressCountry: "USA",
-                  },
-                },
-              },
-            }),
-          }}
-        />
-      </Head>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
-
         <div className={styles.section}>
           <div
             style={{
@@ -100,38 +44,40 @@ export default function health() {
           <Image alt={"right arrow"} src={"/static/arrow.webp"} height={70} width={70} />
         </div>
         <div className={styles.sectionRow}>
-          <div className={styles.imageContainer}
-          >
-            <Image
-              alt={"it services for healthcare"}
-              style={{ borderRadius: "5px" }}
-              src={"/static/hospital.webp"}
-              fill={true}
-            />
-          </div>
-          <div className={styles.stuff}>
-            <h3 className={styles.title}>
-              Seamless Healthcare IT Solutions: Empowering Your Practice for
-              Uninterrupted Operations
-            </h3>
-            <div className={styles.paragraphfifty}>
-              Alien IT understands the crucial role of healthcare IT services in
-              ensuring the seamless operation of your medical practice. From
-              maintaining accurate patient records to enabling secure data
-              access, your technology infrastructure is instrumental in
-              delivering quality care to your patients. Given the increasing
-              frequency of cyber attacks targeting healthcare organizations,
-              data security has become a paramount concern. Compliance with
-              stringent guidelines, such as HIPAA, is essential for safeguarding
-              and protecting sensitive patient health information. Alien IT's
-              healthcare IT services offer comprehensive security measures to
-              fortify the protection of critical data within your practice. By
-              establishing a robust network infrastructure, we provide a secure
-              environment where authorized access is granted while unauthorized
-              access is effectively prevented. With our solutions in place, you
-              can confidently prioritize patient care, knowing that your
-              protected health information remains shielded from potential
-              threats.
+          <div className={styles.eighty}>
+            <div className={styles.imageContainer}
+            >
+              <Image
+                alt={"it services for healthcare"}
+                style={{ borderRadius: "5px" }}
+                src={"/static/hospital.webp"}
+                fill={true}
+              />
+            </div>
+            <div className={styles.stuff}>
+              <h3 className={styles.title}>
+                Seamless Healthcare IT Solutions: Empowering Your Practice for
+                Uninterrupted Operations
+              </h3>
+              <div className={styles.paragraphfifty}>
+                Alien IT understands the crucial role of healthcare IT services in
+                ensuring the seamless operation of your medical practice. From
+                maintaining accurate patient records to enabling secure data
+                access, your technology infrastructure is instrumental in
+                delivering quality care to your patients. Given the increasing
+                frequency of cyber attacks targeting healthcare organizations,
+                data security has become a paramount concern. Compliance with
+                stringent guidelines, such as HIPAA, is essential for safeguarding
+                and protecting sensitive patient health information. Alien IT's
+                healthcare IT services offer comprehensive security measures to
+                fortify the protection of critical data within your practice. By
+                establishing a robust network infrastructure, we provide a secure
+                environment where authorized access is granted while unauthorized
+                access is effectively prevented. With our solutions in place, you
+                can confidently prioritize patient care, knowing that your
+                protected health information remains shielded from potential
+                threats.
+              </div>
             </div>
           </div>
         </div>

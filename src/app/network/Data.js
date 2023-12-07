@@ -89,31 +89,33 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div className={styles.imageContainer}
-          >
-            <Image alt={"network it services"} src={"/static/wifi.webp"} fill={true} />
-          </div>
-          <div className={styles.stuff}>
-            <h3 className={styles.title}>
-              Unlock Network Efficiency: Empower Your Business with Alien IT's
-              Comprehensive Network Support
-            </h3>
-            <div className={styles.paragraphfifty}>
-              At Alien IT, we are committed to optimizing your network
-              efficiency to ensure seamless connectivity and smooth operations.
-              Our team of skilled professionals possesses extensive experience
-              in network infrastructure design, implementation, and management.
-              We conduct thorough assessments to identify potential bottlenecks,
-              security vulnerabilities, or performance issues within your
-              network. Leveraging industry best practices and cutting-edge
-              technologies, we tailor solutions that enhance network speed,
-              stability, and security. From network configuration and
-              optimization to proactive monitoring and troubleshooting, we
-              provide comprehensive network support services that allow your
-              business to operate at its full potential. With Alien IT's
-              expertise, you can experience a reliable and efficient network
-              that empowers your organization to thrive in today's digital
-              landscape.
+          <div className={styles.eighty}>
+            <div className={styles.imageContainer}
+            >
+              <Image alt={"network it services"} src={"/static/wifi.webp"} fill={true} />
+            </div>
+            <div className={styles.stuff}>
+              <h3 className={styles.title}>
+                Unlock Network Efficiency: Empower Your Business with Alien IT's
+                Comprehensive Network Support
+              </h3>
+              <div className={styles.paragraphfifty}>
+                At Alien IT, we are committed to optimizing your network
+                efficiency to ensure seamless connectivity and smooth operations.
+                Our team of skilled professionals possesses extensive experience
+                in network infrastructure design, implementation, and management.
+                We conduct thorough assessments to identify potential bottlenecks,
+                security vulnerabilities, or performance issues within your
+                network. Leveraging industry best practices and cutting-edge
+                technologies, we tailor solutions that enhance network speed,
+                stability, and security. From network configuration and
+                optimization to proactive monitoring and troubleshooting, we
+                provide comprehensive network support services that allow your
+                business to operate at its full potential. With Alien IT's
+                expertise, you can experience a reliable and efficient network
+                that empowers your organization to thrive in today's digital
+                landscape.
+              </div>
             </div>
           </div>
         </div>

@@ -12,11 +12,11 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function backup() {
   return (
-    <div>      
+    <div>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div  className={styles.section}>
+        <div className={styles.section}>
           <div
             style={{
               width: "95%",
@@ -27,7 +27,7 @@ export default function backup() {
             }}
           >
             <h1 className={styles.mainTitle}>
-            Navigating Efficiency: Unveiling the Power of SD-WAN Service
+              Navigating Efficiency: Unveiling the Power of SD-WAN Service
             </h1>
             <div className={styles.buttonRow}>
               <h2 className={styles.paragraph}>
@@ -44,21 +44,24 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div className={styles.imageContainer}
-          >
-            <Image
-              alt={"data and software backup"}
-              style={{ borderRadius: "10px" }}
-              src={"/static/diagram.webp"}
-              fill={true}
-            />
-          </div>
-          <div className={styles.stuff}>
-            <h3 className={styles.title}>
-            Understanding SD-WAN: Simplifying Network Infrastructure
-            </h3>
-            <div className={styles.paragraphfifty}>
-            SD-WAN simplifies network infrastructure by using software to manage and optimize connections. Unlike traditional setups, it streamlines control, allowing businesses to easily handle different types of connections like MPLS or broadband internet. With software-defined policies, it provides better control over network traffic, optimizing resources, and ensuring critical applications run smoothly. This technology makes networks more agile, cost-effective, and adaptable to modern connectivity demands.
+          <div className={styles.eighty}>
+            <div className={styles.imageContainer}
+            >
+
+              <Image
+                alt={"data and software backup"}
+                style={{ borderRadius: "10px" }}
+                src={"/static/diagram.webp"}
+                fill={true}
+              />
+            </div>
+            <div className={styles.stuff}>
+              <h3 className={styles.title}>
+                Understanding SD-WAN: Simplifying Network Infrastructure
+              </h3>
+              <div className={styles.paragraphfifty}>
+                SD-WAN simplifies network infrastructure by using software to manage and optimize connections. Unlike traditional setups, it streamlines control, allowing businesses to easily handle different types of connections like MPLS or broadband internet. With software-defined policies, it provides better control over network traffic, optimizing resources, and ensuring critical applications run smoothly. This technology makes networks more agile, cost-effective, and adaptable to modern connectivity demands.
+              </div>
             </div>
           </div>
         </div>

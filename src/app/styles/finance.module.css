@@ -30,6 +30,11 @@
   width: 80%;
   text-align: center ;
 }
+.imageContainer{
+  position: relative;
+  height: 400px;
+  width: 550px;
+}
 .arrowRow{
   display: flex;
   align-items: center;
@@ -307,7 +312,9 @@
   font-size: 23px;
 }
 .eighty{
-  width: 95%;
+  width: 90%;
+  align-items: center;
+  justify-content: space-evenly;
   display: flex;
 }
 .eightyOpposite{
