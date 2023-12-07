@@ -27,9 +27,9 @@
     height: 100%;
   }
   .mainTitle{
-    font-size: 50px;
+    font-size: 35px;
     font-size: 400;
-    width: 60%;
+    width: 100%;
     text-align: center ;
   }
   .mainTitleFull{
@@ -255,7 +255,8 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-    height:600px;
+    min-height: 650px;
+    height:fit-content;
     flex-direction: column;
   }
   .paragraphContainer{
@@ -269,6 +270,7 @@
   .text{      
     background-color: transparent;
     width: 95%;
+    padding: 5px;
     color: white;
   }
   .text::placeholder{
@@ -594,12 +596,34 @@
   }
   @media(max-width:600px) {
     .box{
-      width: 450px;
+      width: 350px;
+    }
+    .mobileSmall{
+      text-align: center;
+      font-size: 10px;
+      padding: 4px;
     }
     .buttonRow{
       padding: 0px;
+      width: 90%;
     }
     .bold{
       padding: 10px;
+    }
+    .section{
+      min-height: 450px;
+    }
+    .column{
+      width: 100%;
+    }
+    .space{
+      width: 95%;
+    }
+    .titleBig{
+      font-size: 20px;
+      padding: 1px;
+    }
+    .hiddenMobile{
+      display: none;
     }
   }

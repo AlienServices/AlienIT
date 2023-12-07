@@ -51,6 +51,7 @@
     position: relative;
   }
  
+
   .headerPieces{
       font-weight: 200;
   }
@@ -125,6 +126,18 @@
     }
     .footer {
       height: 31vh;
+    }
+    .center{
+      padding-top: 5px;
+    }
+    .center div{
+      font-size: 12px;
+    }
+    .hiddenSmall{
+      display: none;
+    }
+    .bold{
+      font-size: 15px;
     }
   }
   

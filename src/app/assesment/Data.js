@@ -175,8 +175,8 @@ export default function Assesment() {
           <Image alt={"down arrow"} src={"/static/arrow.webp"} height={80} width={80} />
         </div>
         <div className={styles.section}>
-          <div className={styles.row}>
-            <div className={styles.column}>
+          <div className={`${styles.row} `}>
+            <div className={`${styles.column} ${styles.hiddenMobile}`}>
               <div className={styles.titleBigBlack}>
                 Heres what you get from us:
               </div>
@@ -225,7 +225,7 @@ export default function Assesment() {
             </div>
             <div className={styles.box}>
               <h4 className={styles.titleBig}>Schedule Your Assesment!</h4>
-              <div>
+              <div className={styles.mobileSmall}>
                 Receive a response within minutes, not hours. Guaranteed!
               </div>
               <div className={styles.boxcolumn}>
@@ -235,7 +235,7 @@ export default function Assesment() {
                       
                       setName(event.target.value);
                     }}
-                    placeholder="First And Last Name"
+                    placeholder="First And Last"
                     className={styles.input}
                     type="text"
                   />

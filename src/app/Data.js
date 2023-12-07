@@ -22,8 +22,6 @@ export default function Home() {
     <div className={styles.main}>
       <div className={styles.backgroundColor}>
         <Header />
-
-
         <div className={styles.section}>
           <h1 className={styles.mainTitle}>
             Easy IT Support For All Businesses In Utah
@@ -234,7 +232,7 @@ export default function Home() {
           paddingBottom: "40px",
           height: "450px",
         }}
-        className={styles.sectionRow}
+        className={`${styles.sectionRow} ${styles.hiddenSmall}`}
       >
         <div className={styles.middle}>
           <h3 className={styles.reviewBig}>Recent Google Reviews...</h3>
@@ -260,7 +258,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={styles.paragraphContainer}>
+          <div className={`${styles.paragraphContainer} ${styles.hiddenSmall}`}>
             <div className={styles.title}>Carley Ward</div>
             <div className={styles.smallRow}>
               <Quote />

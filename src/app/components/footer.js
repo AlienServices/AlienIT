@@ -6,7 +6,7 @@ export default function Footer(props) {
   const router = useRouter();
   return (
     <div className={styles.footerBody}>
-      <div className={styles.imageContainerSmall}>
+      <div className={`${styles.imageContainerSmall} ${styles.hiddenSmall}`}>
         <Image
           alt={"alien IT logo"}
           style={{ cursor: "pointer" }}
@@ -72,7 +72,7 @@ export default function Footer(props) {
           </Link>
         </div>
         
-        <div className={styles.center}>
+        <div className={`${styles.center} ${styles.hiddenSmall}`}>
           <div className={styles.bold}>Areas We Serve</div>
           <Link href="/assesment">
             <div>Utah</div>

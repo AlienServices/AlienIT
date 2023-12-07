@@ -12,11 +12,11 @@ import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function backup() {
   return (
-    <div>      
+    <div>
       <div style={{ color: "black" }} className={styles.backgroundColor}>
         <Header />
 
-        <div  className={styles.section}>
+        <div className={styles.section}>
           <div
             style={{
               width: "95%",
@@ -27,7 +27,7 @@ export default function backup() {
             }}
           >
             <h1 className={styles.mainTitle}>
-            Mobile Phone Technology Solutions For YOu
+              Mobile Phone Technology Solutions For YOu
             </h1>
             <div className={styles.buttonRow}>
               <h2 className={styles.paragraph}>
@@ -44,22 +44,15 @@ export default function backup() {
         </div>
 
         <div className={styles.sectionRow}>
-          <div
-            style={{
-              width: "50%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <Image
-              alt={"data and software backup"}
-              style={{ borderRadius: "10px" }}
-              src={"/static/phone.webp"}
-              width={500}
-              height={400}
-            />
-          </div>
+          
+            <div className={styles.imageContainer}>
+              <Image
+                alt={"data and software backup"}
+                style={{ borderRadius: "10px" }}
+                src={"/static/phone.webp"}
+                fill={true}
+              />
+            </div>          
           <div className={styles.stuff}>
             <h3 className={styles.title}>
               Seamless Software and App Support: Alien IT's Expert Assistance

@@ -618,3 +618,32 @@
    width: 100%;
  }
 }
+@media(max-width:800px) {
+  .paragraph{
+    line-height: 25px;
+  }
+  .section{
+    height: 450px;
+  }
+  .mainTitle{
+    width: 110%;
+  }
+  .stuff{
+    padding: 0px;
+    min-height: 650px;
+    justify-content: center;
+  }
+  .sectionRow{
+    width: 100%;
+  }
+  .paragraphfifty{
+    font-size: 13px;
+    line-height: 28px;
+  }
+  .imageContainer{
+    position: relative;
+    height: 250px;
+    width: 300px;
+  }
+}
+

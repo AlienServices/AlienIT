@@ -1,5 +1,6 @@
 import Data from './Data'
 import Head from 'next/head';
+import Script from "next/script";
 
 export const metadata = {
   title: "Easy IT Support For All Businesses In Utah",
@@ -10,12 +11,12 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div>      
       <Head>
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://yourdomain.com" />
         {/* Rest of your meta tags and head content */}
-      </Head>/
+      </Head>
 
       <Data />
     </div>
