@@ -16,13 +16,14 @@ export default function Dropdown(props) {
   const [industryToggle, setIndustryToggle] = useState(true);
   const [areaToggle, setAreaToggle] = useState(true);
   const router = useRouter();
-  useEffect(() => {
+  useEffect(() => {    
     if (props.toggle === false) {
       setDisplay(false);
     } else {
       setDisplay(true);
     }
   }, [props.toggle]);
+  console.log(props, "this is props")  
   return (
     <div className={styles.dropdown}>
       <div style={{ opacity: display ? "0" : "1" }} className={styles.box}>

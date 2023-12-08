@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import Dropdown from "../dropdown/page";
+import Dropdown from "../dropdown/Data";
 
 export default function Header() {
   const [menu, setMenu] = useState(true);
   const router = useRouter();
   return (
     <div className={styles.center}>
-      <Dropdown toggle={menu} />
+      <Dropdown toggle={menu}/>
       <div className={styles.row}>
         <div className={styles.imageContainerSmall}>
           <Link href="/">

@@ -40,7 +40,7 @@ export default function Home() {
             </button>
           </div>
           <div className={styles.displayFlex}>
-            <Image src={'/static/left.png'} height={50} width={50} onClick={(() => {
+            <Image alt="homepage images" src={'/static/left.png'} height={50} width={50} onClick={(() => {
               setImages({ imageOne: images.imageTwo, imageTwo: images.imageThree, imageThree: images.imageFour, imageFour: images.imageFive, imageFive: images.imageOne })
             })}></Image>
             <div className={images.imageOne ? styles.showing : styles.hidden}>
