@@ -78,13 +78,11 @@ export default function backup() {
               <h2 className={styles.paragraph}>
                 Stop worrying about your connection, let us worry for you
               </h2>
-            </div>
-            <a href="/assesment">
+            </div>            
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image alt={"right arrow"} src={"/static/right.webp"} height={30} width={30} />
-              </div>
-            </a>
+              </div>            
           </div>
         </div>
 

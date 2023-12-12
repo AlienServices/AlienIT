@@ -35,12 +35,12 @@ export default function hospitality() {
                 Technology: Unleashing the Power of Digital Innovationp
               </h2>
             </div>
-            <a href="/assesment">
+            
               <div className={styles.arrowRow}>
                 <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
                 <Image alt={"arrow right"} src={"/static/right.webp"} height={30} width={30} />
               </div>
-            </a>
+            
           </div>
           <Image alt={"arrow right"} src={"/static/arrow.webp"} height={70} width={70} />
         </div>        

@@ -19,13 +19,11 @@ export default function funnel() {
         </div>
         <div className={styles.buttonRow}>
           <div className={styles.paragraph}>Let us figure it out for you</div>
-        </div>
-        <a href="/assesment">
+        </div>        
           <div className={styles.arrowRow}>
             <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
             <Image alt={"arrow right"} src={"/static/right.webp"} height={30} width={30} />
-          </div>
-        </a>
+          </div>        
       </div>
     </div>
   );
