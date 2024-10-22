@@ -35,7 +35,7 @@ export default function ransom() {
               </h2>
             </div>            
               <div className={styles.arrowRow}>
-                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assessment</div></Link>
                 <Image
                   alt={"right arrow"}
                   style={{ borderRadius: "10px" }}

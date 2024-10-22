@@ -298,7 +298,7 @@ export default function Assesment() {
                   disabled={!recaptchaResponse}
                   className={styles.button}
                 >
-                  Get Assesment!
+                  Get Assessment!
                 </button>
               </div>
             </div>

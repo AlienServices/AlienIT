@@ -90,7 +90,7 @@ export default function landscape() {
             </div>
             <a href="/assesment">
               <div className={styles.arrowRow}>
-                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assessment</div></Link>
                 <Image alt={"arrow right"} src={"/static/right.webp"} height={30} width={30} />
               </div>
             </a>

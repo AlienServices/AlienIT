@@ -206,7 +206,7 @@ export default function Dropdown(props) {
             }}
             className={styles.flex}
           >
-            <button className={styles.button}>Free Assesment</button>
+            <button className={styles.button}>Free Assessment</button>
           </div>
         </div>
       </div>

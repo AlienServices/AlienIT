@@ -92,7 +92,7 @@ export default function consumer() {
             </div>
             
               <div className={styles.arrowRow}>
-                <Link href="/assesment"><div className={styles.bold}>Get A Free Assesment</div></Link>
+                <Link href="/assesment"><div className={styles.bold}>Get A Free Assessment</div></Link>
                 <Image alt={"right arrow"} src={"/static/right.webp"} height={30} width={30} />
               </div>
             
