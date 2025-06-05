@@ -53,7 +53,7 @@ export default function Header() {
                 <div className={styles.hide}>Ransomware Protection</div>
               </Link>
               <Link href="/backup">
-                <div className={styles.hide}>Backup And Restore</div>
+                <div className={styles.hide}>Backup and Restore</div>
               </Link>
 
               <Link href="/printer">
@@ -66,7 +66,11 @@ export default function Header() {
                 <div className={styles.hide}>Fix Broken Hardware</div>
               </Link>
               <Link href="/software">
-                <div className={styles.hide}>Sofware And App Support</div>
+                <div className={styles.hide}>Sofware and App Support</div>
+              </Link>
+              <Link href="/ransomAppguard">
+                <div className={`${styles.hide} ${styles.centerHeaderDropdownItem}`}
+                >Appguard Windows Endpoint Security</div>
               </Link>
             </div>
           </div>

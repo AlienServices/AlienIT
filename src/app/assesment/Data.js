@@ -210,7 +210,7 @@ export default function Assesment() {
                 </div>
                 <div className={styles.container}>
                   <Image
-                    alr={"checkmark"}
+                    alt={"checkmark"}
                     style={{ margin: "10px" }}
                     src={"/static/seen.webp"}
                     width={25}

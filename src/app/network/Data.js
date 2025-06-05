@@ -9,6 +9,7 @@ import Head from "next/head";
 import Footer from "../components/footer";
 import styles from "../styles/finance.module.css";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
+import { CheckCircle } from 'lucide-react';
 
 export default function backup() {
   return (
@@ -71,12 +72,13 @@ export default function backup() {
             }}
           >
             <h1 className={styles.mainTitle}>
-              Streamline Connectivity and Boost Productivity: Alien IT's Expert
-              Network Efficiency Solutions
+              Streamline Connectivity and Boost Productivity:
+              <br />
+              Alien IT's Expert Network Efficiency Solutions
             </h1>
             <div className={styles.buttonRow}>
               <h2 className={styles.paragraph}>
-                Stop worrying about your connection, let us worry for you
+              Networking and connectivity are the lifeblood of business, powering seamless communication, collaboration, and lightning-fast decision-making for unparalleled operational agility.
               </h2>
             </div>            
               <div className={styles.arrowRow}>
@@ -93,7 +95,9 @@ export default function backup() {
               <Image alt={"network it services"} src={"/static/wifi.webp"} fill={true} />
             </div>
             <div className={styles.stuff}>
-              <h3 className={styles.title}>
+
+
+              {/* <h3 className={styles.title}>
                 Unlock Network Efficiency: Empower Your Business with Alien IT's
                 Comprehensive Network Support
               </h3>
@@ -113,10 +117,79 @@ export default function backup() {
                 expertise, you can experience a reliable and efficient network
                 that empowers your organization to thrive in today's digital
                 landscape.
+              </div> */}
+
+<div className="bg-white min-h-screen">
+      <div className="max-w-6xl mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className={styles.checklist}>
+            <h1 className="text-4xl font-bold text-blue-900 mb-4">
+              Modernize Your Customers with Networking & Connectivity
+            </h1>
+          </div>
+          
+          <div className="md:col-span-2 space-y-8">
+            <div className="border-t border-gray-200 pt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <hr style={{ width: '92%', justifySelf: 'center'}}></hr>
+                <div className={styles.checklist}>
+                  <CheckCircle className="text-rose-400 mt-1 flex-shrink-0" size={20} color="#a41b1b"/>
+                  <p className="text-gray-800 font-medium">
+                    Seamless connectivity and smooth business operations.
+                  </p>
+                </div>
+
+                <hr style={{ width: '92%', justifySelf: 'center'}}></hr>
+                
+                <div className={styles.checklist}>
+                  <CheckCircle className="text-rose-400 mt-1 flex-shrink-0" size={20} color="#a41b1b"/>
+                  <p className="text-gray-800 font-medium">
+                    Our expert team brings deep experience in designing, implementing, and managing network infrastructure.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="border-t border-gray-200 pt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <hr style={{ width: '92%', justifySelf: 'center'}}></hr>
+                <div className={styles.checklist}>
+                  <CheckCircle className="text-rose-400 mt-1 flex-shrink-0" size={20} color="#a41b1b"/>
+                  <p className="text-gray-800 font-medium">
+                    In-depth assessments to uncover bottlenecks, security risks, and performance issues.
+                  </p>
+                </div>
+                <hr style={{ width: '92%', justifySelf: 'center'}}></hr>
+                <div className={styles.checklist}>
+                  <CheckCircle className="text-rose-400 mt-1 flex-shrink-0" size={20} color="#a41b1b"/>
+                  <p className="text-gray-800 font-medium">
+                    Tailored solutions to boost network speed, stability, and security.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="border-t border-gray-200 pt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <hr style={{ width: '92%', justifySelf: 'center'}}></hr>
+                <div className={styles.checklist}>
+                  <CheckCircle className="text-rose-400 mt-1 flex-shrink-0" size={20} color="#a41b1b"/>
+                  <p className="text-gray-800 font-medium">
+                    Configuration, optimization, monitoring, and troubleshooting to ensure your network runs at peak performance.
+                  </p>
+                </div>
+                <hr style={{ width: '92%', justifySelf: 'center'}}></hr>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+            </div>
+          </div>
+        </div>
+ 
       </div>
       <Funnel />
       <Footer />

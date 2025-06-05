@@ -8,6 +8,9 @@ import Header from "./components/header";
 import styles from "../app/styles/page.module.css";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { Phone } from "lucide-react";
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [fixedHeader, setFixedHeader] = useState(false);
@@ -19,7 +22,7 @@ export default function Home() {
   const router = useRouter();
   console.log(images.imageTwo, "these are imagessss")
   return (
-    <div className={styles.main}>
+    <div className={inter.className}>
       <div className={styles.backgroundColor}>
         <Header />
         <div className={styles.section}>
@@ -30,14 +33,19 @@ export default function Home() {
             <Link href="/assesment/" title="buy new and used copiers">
               <button className={styles.buttonRed}>Get Started</button>
             </Link>
-            <button
+      
+              <div style={{ maxWidth: '400px', fontFamily: 'Arial, sans-serif', display: 'flex', alignItems: 'center'}}>
+                {/* <Phone style={{ marginRight: '10px', fontSize: '18px', color: '#888' }} size={30} /> */}
+                801-212-9013
+              </div>
+            {/* <button
               onClick={() => {
                 router.push("/assesment");
               }}
               className={styles.button}
             >
-              Call 801-123-4567{" "}
-            </button>
+              Call 801-212-9013{" "}
+            </button> */}
           </div>
           <div className={styles.displayFlex}>
             <Image alt="homepage images" src={'/static/left.png'} height={50} width={50} onClick={(() => {
@@ -46,7 +54,7 @@ export default function Home() {
             <div className={images.imageOne ? styles.showing : styles.hidden}>
               <div className={styles.box}>
                 <div className={styles.boxContainer}>
-                  <div className={styles.title}>mobile phone tech</div>
+                  <div className={styles.title}>Mobile Phone Tech</div>
                   <div className={styles.paragraphSmall}>Mobile phone technology encompasses the innovations and advancements in handheld devices that enable communication, access to information, and various functionalities on the go. It continually evolves to offer faster processors, improved cameras, enhanced connectivity, and a wide array of applications, making our phones more than just communication tools but indispensable companions in our daily lives, facilitating work, entertainment, and staying connected with the world.</div>
                   <Link href={'/phoneTech'}>
                     <button className={styles.button}>See Details</button>
@@ -60,7 +68,7 @@ export default function Home() {
             <div className={images.imageTwo ? styles.showing : styles.hidden}>
               <div className={styles.box}>
                 <div className={styles.boxContainer}>
-                  <div className={styles.title}>cloud computing</div>
+                  <div className={styles.title}>Cloud Computing</div>
                   <div className={styles.paragraphSmall}>
                     Cloud computing is like renting space on the internet to store data, run applications, or access services instead of solely relying on a local computer or server. It offers convenience, scalability, and flexibility, allowing businesses and individuals to access resources on-demand from anywhere, anytime, with the added benefits of cost-efficiency and reduced maintenance overhead.</div>
                   <Link href={'/cloud'}>
@@ -89,7 +97,7 @@ export default function Home() {
             <div className={images.imageFour ? styles.showing : styles.hidden}>
               <div className={styles.box}>
                 <div className={styles.boxContainer}>
-                  <div className={styles.title}>contact center</div>
+                  <div className={styles.title}>Contact Center</div>
                   <div className={styles.paragraphSmall}>
                     A contact center serves as a centralized hub where customer interactions across multiple channels like phone, email, chat, and social media are managed efficiently. It employs specialized software and trained agents to handle inquiries, provide support, and ensure consistent, high-quality customer experiences. Contact centers streamline communication between customers and businesses, aiming to resolve issues promptly while gathering valuable insights to enhance service and product offerings.
                   </div>
@@ -106,7 +114,7 @@ export default function Home() {
             <div className={images.imageFive ? styles.showing : styles.hidden}>
               <div className={styles.box}>
                 <div className={styles.boxContainer}>
-                  <div className={styles.title}>ucass</div>
+                  <div className={styles.title}>UCaaS</div>
                   <div className={styles.paragraphSmall}>
                     UCaaS, or Unified Communications as a Service, is like having a one-stop-shop in the cloud for all your communication needs. It combines tools like calls, video meetings, messaging, and more into a single service, making it easier for businesses to manage their communications effectively while saving money and simplifying operations.</div>
                   <Link href={'/ucaas'}>
@@ -118,9 +126,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <Image src={'/static/right.png'} height={50} width={50} onClick={(() => {
+            <Image alt={"right arrow"} src={'/static/right.png'} height={50} width={50} onClick={(() => {
               setImages({ imageOne: images.imageFive, imageTwo: images.imageOne, imageThree: images.imageTwo, imageFour: images.imageThree, imageFive: images.imageFour })
             })}></Image>
+          </div>
+          <div style={{ margin: '40px 0 40px 0' }}>
+            <h1>Over 30 Years of Experience</h1>
           </div>
         </div>
       </div>

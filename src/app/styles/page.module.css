@@ -67,7 +67,7 @@
 .backgroundColor{
   background-color: blanchedalmond;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .mainTitle{
   font-size: 60px;
@@ -99,8 +99,10 @@
 }
 .buttonRow{
   display: flex;
-  width: 30%;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
   padding: 40px; 
 }
 .sideRowLeft{
@@ -156,6 +158,10 @@
   
   
 }
+.centerHeaderDropdownItem {
+  display: block;
+  text-align: center;
+}
 .dropdownWrapper:hover .hideNo{
   display: flex;
   color: lightgray;
@@ -199,13 +205,14 @@
 .buttonRed{
   padding: 18px;
   cursor: pointer;
-  background-color: 	#FF9900;
+  /* background-color: 	#FF9900; */
+  background-color: rgb(250, 216, 21);
   border: none;
   border-radius: 5px;
 }
 .section{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height:700px;
   flex-direction: column;
@@ -286,7 +293,8 @@
   
 }
 .bigButton{
-  background-color: 	#FF9900;
+  /* background-color: 	#FF9900; */
+  background-color: rgb(250, 216, 21);
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;

@@ -187,6 +187,13 @@
 .check{
   padding: 5px;
 }
+.checklist{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 0px 20px 0px;
+  margin-left: 30px;
+  gap: 30px;
+}
 .input:focus{
   outline: none;
 }
@@ -295,6 +302,13 @@
   display: flex;
   justify-content: space-evenly;
 }
+.mainTitleContainer{
+ width: 95%;
+ height: 70%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
 .title{
   text-align: center;
   font-size: 23px;
@@ -329,6 +343,45 @@
   align-items: center;
   height:600px;
 }
+.imageHoverLinkContainer{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+.appguardContainer{
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  align-items: center;
+}
+.appguardSectionRow{
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  height:600px;
+}
+.appguardSection{
+  display: flex;
+  justify-content: space-around;
+}
+.appguardParagraph{
+  font-weight: 300;
+  line-height: 35px;
+  width: 82%;
+  font-size: 'x-large';
+  font-family: 'Poppins, sans-serif';
+  margin-bottom: '1em';
+}
+.appguardButton{
+    background-color: rgb(250, 216, 21);
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+  }
 .stuff{
   display: flex;
   width: 80%;
@@ -635,6 +688,14 @@
     justify-content: space-evenly;
     
   }
+  .mainTitleContainer{
+    width: 95%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
   .mainTitle{
     width: 110%;
     font-size: 22px;
@@ -661,6 +722,30 @@
   }
   .sectionRow{
     padding-top: 50px;
+  }
+  .imageHoverLinkContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    align-items: center;
+  }
+  .appguardContainer{
+    width: 100%;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+  .appguardSectionRow{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: fit-content;
+  }
+  .appguardSection{
+    width: 70%;
+    display: block;
+    align-items: center;
   }
 }
 

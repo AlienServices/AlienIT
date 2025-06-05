@@ -23,7 +23,6 @@ export default function Dropdown(props) {
       setDisplay(true);
     }
   }, [props.toggle]);
-  console.log(props, "this is props")  
   return (
     <div className={styles.dropdown}>
       <div style={{ opacity: display ? "0" : "1" }} className={styles.box}>
@@ -47,7 +46,7 @@ export default function Dropdown(props) {
                 router.push("/ransom");
               }}
             >
-              Ransomwhere Protection
+              Ransomware Protection
             </div>
             <div
               onClick={() => {
@@ -83,6 +82,13 @@ export default function Dropdown(props) {
               }}
             >
               Software Support
+            </div>
+            <div 
+              onClick={() => { 
+                router.push("/ransomAppguard")
+              }
+            }>
+              Appguard Security
             </div>
           </div>
         </div>
