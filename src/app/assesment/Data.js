@@ -202,7 +202,7 @@ export default function Assesment() {
                     width={25}
                     height={25}
                   />
-                  <div className={styles.paragraphSmall}>Asses your needs</div>
+                  <div className={styles.paragraphSmall}>Assess your needs</div>
                 </div>
                 <div className={styles.container}>
                   <Image
