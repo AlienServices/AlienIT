@@ -154,7 +154,7 @@ export default function Header() {
           </div>
         </div>
         <Link href="/assesment">
-          <button className={styles.bigButton}>Free Assesment</button>
+          <button className={styles.bigButton}>Free Assessment</button>
         </Link>
       </div>
       <div className={styles.burgerContainer}>

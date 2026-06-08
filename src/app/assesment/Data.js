@@ -160,7 +160,7 @@ export default function Assesment() {
                 }}
               />
             </Head>
-            <div className={styles.mainTitle}>Get An IT Assesment</div>
+            <div className={styles.mainTitle}>Get An IT Assessment</div>
             <div className={styles.buttonRow}>
               <h2 className={styles.paragraph}>
                 Want to know how your current IT infrastructure and strategy can
@@ -224,7 +224,7 @@ export default function Assesment() {
               </div>            
             </div>
             <div className={styles.box}>
-              <h4 className={styles.titleBig}>Schedule Your Assesment!</h4>
+              <h4 className={styles.titleBig}>Schedule Your Assessment!</h4>
               <div className={styles.mobileSmall}>
                 Receive a response within minutes, not hours. Guaranteed!
               </div>
