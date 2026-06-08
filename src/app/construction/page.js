@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "IT Solutions for Construction Companies | Your IT Company",
   description: "Your IT Company offers comprehensive IT solutions tailored for construction companies. From network infrastructure setup to software integration, our expert team ensures smooth operations and enhanced productivity for your construction projects.",

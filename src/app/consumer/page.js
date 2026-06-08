@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "IT Solutions for the Consumer Goods Industry | Your IT Company",
   description: "Your IT Company offers comprehensive IT solutions tailored for the consumer goods industry. From e-commerce platforms to supply chain management systems, our expert team ensures efficient operations and enhanced customer experiences for consumer goods businesses.",

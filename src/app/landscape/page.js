@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "IT Solutions for the Landscape Industry | Your IT Company",
   description: "Your IT Company offers comprehensive IT solutions tailored for the landscape industry. From project management systems to fleet tracking software, our expert team ensures efficient operations and streamlined workflows for landscape businesses.",

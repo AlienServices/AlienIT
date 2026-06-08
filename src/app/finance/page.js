@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "IT Solutions for Finance Companies | Your IT Company",
   description: "Your IT Company provides comprehensive IT solutions tailored for finance companies. From secure data management to advanced analytics, our expert team ensures efficient operations and regulatory compliance for finance businesses.",

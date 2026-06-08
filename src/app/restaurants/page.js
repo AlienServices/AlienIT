@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: " Enhancing Restaurant Experiences in the Digital Age",
   description: "Embracing Technology to Delight Guests, Optimize Operations, and Drive Restaurant Success",

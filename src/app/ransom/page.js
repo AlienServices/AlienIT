@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "Safeguard Your Business with Alien IT's Ransomware Protection Services",
   description: "Stop worrying about your security, let us worry for you",

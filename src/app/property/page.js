@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "Streamlining Operations and Maximizing Asset Value",
   description: "Unlocking the Potential of Digital Solutions for Efficient Property Management and Enhanced Tenant Experiences",

@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "Trust Alien IT for Effective Repair Solutions and Minimal Downtime",
   description: "Stop worrying about your connection, let us worry for you",

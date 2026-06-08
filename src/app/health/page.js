@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "IT Solutions for the Healthcare Industry | Your IT Company",
   description: "Your IT Company offers comprehensive IT solutions tailored for the healthcare industry. From secure data management to telemedicine platforms, our expert team ensures efficient operations, regulatory compliance, and enhanced patient care for healthcare businesses.",

@@ -1,4 +1,4 @@
-import Data from './data'
+import Data from './Data'
 export const metadata = {
   title: "Professional Backup and Restore Services | Your IT Company",
   description: "Ensure the safety and availability of your valuable data with professional backup and restore services provided by Your IT Company. Our expert team offers secure and reliable solutions for backing up and restoring your critical business information.",
