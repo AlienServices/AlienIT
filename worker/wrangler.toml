@@ -1,0 +1,13 @@
+name = "alienit-assessment-form"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# Non-secret config. Change these here, not in code.
+[vars]
+ALLOWED_ORIGIN = "https://alienitservices.com"
+TO_EMAIL = "info@alienitservices.com"
+# Must be a domain VERIFIED in the SMTP2GO account. DNS shows copiersutah.com
+# is the SMTP2GO sender domain (link.copiersutah.com -> track.smtp2go.net).
+SENDER_EMAIL = "info@copiersutah.com"
+
+# Secret (do NOT put here): set with `wrangler secret put SMTP2GO_API_KEY`

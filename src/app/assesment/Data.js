@@ -8,6 +8,7 @@ import Header from "../components/header";
 import Head from "next/head";
 import Footer from "../components/footer";
 import styles from "../styles/assesment.module.css";
+import { FORM_ENDPOINT } from "../formEndpoint";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function Assesment() {
@@ -44,30 +45,15 @@ export default function Assesment() {
     setSending(true);
     setStatusMsg("");
 
-    fetch("https://api.smtp2go.com/v3/email/send", {
+    fetch(FORM_ENDPOINT, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        api_key: "api-3882AF7A0AD511EE941FF23C91C88F4E",
-        to: [`<info@alienitservices.com>`],
-        sender: "<info@copiersutah.com>",
-        subject: `This is${name}'s quote form. Their number is ${number}`,
-        text_body: `${message}`,
-        html_body: `<h1>${message}</h1>`,
-        template_id: "9856603",
-        template_data: {
-          message: message,
-          number: number,
-          email: email,
-          name: name,
-          company: company,
-        },
-      }),
+      body: JSON.stringify({ name, company, email, number, message }),
     })
       .then((res) => {
-        if (res.status === 200) {
+        if (res.ok) {
           setName("");
           setEmail("");
           setStatusMsg("Thanks! We received your request and will respond shortly.");

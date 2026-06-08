@@ -8,6 +8,7 @@ import Header from "../components/header";
 import Head from "next/head";
 import Footer from "../components/footer";
 import styles from "../styles/assesment.module.css";
+import { FORM_ENDPOINT } from "../formEndpoint";
 import React, { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 export default function Assessmentappguard() {
@@ -18,6 +19,8 @@ export default function Assessmentappguard() {
   const [message, setMessage] = useState();
   const captchaRef = useRef(null);
   const [recaptchaResponse, setRecaptchaResponse] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [statusMsg, setStatusMsg] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
     let token = captchaRef.current.getValue();
@@ -38,40 +41,32 @@ export default function Assessmentappguard() {
     }
   };
   const sendEmail = (e) => {
-    debugger
     e.preventDefault();
-    console.log("Sending");
+    setSending(true);
+    setStatusMsg("");
 
-    fetch("https://api.smtp2go.com/v3/email/send", {
+    fetch(FORM_ENDPOINT, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        api_key: "api-3882AF7A0AD511EE941FF23C91C88F4E",
-        to: [`<info@alienitservices.com>`],
-        sender: "<info@copiersutah.com>",
-        subject: `This is${name}'s quote form. Their number is ${number}`,
-        text_body: `${message}`,
-        html_body: `<h1>${message}</h1>`,
-        template_id: "9856603",
-        template_data: {
-          message: message,
-          number: number,
-          email: email,
-          name: name,
-          company: company,
-        },
-      }),
-    }).then((res) => {
-      console.log(res);
-      if (res.status === 200) {
-        console.log("Response succeeded!");
-        setName("");
-        setEmail("");
-        
-      }
-    });
+      body: JSON.stringify({ name, company, email, number, message }),
+    })
+      .then((res) => {
+        if (res.ok) {
+          setName("");
+          setEmail("");
+          setStatusMsg("Thanks! We received your request and will respond shortly.");
+        } else {
+          setStatusMsg("Something went wrong sending your request. Please call us at (801) 261-0510.");
+        }
+      })
+      .catch(() => {
+        setStatusMsg("Something went wrong sending your request. Please call us at (801) 261-0510.");
+      })
+      .finally(() => {
+        setSending(false);
+      });
   };
 
   var verifyCallback = function (response) {
@@ -180,11 +175,21 @@ export default function Assessmentappguard() {
                   onClick={(e) => {
                     sendEmail(e);
                   }}
-                  disabled={!recaptchaResponse}
+                  disabled={!recaptchaResponse || sending}
                   className={styles.button}
                 >
-                  Get Assessment!
+                  {sending ? "Sending..." : "Get Assessment!"}
                 </button>
+                {!recaptchaResponse && (
+                  <div className={styles.mobileSmall} style={{ marginTop: "8px" }}>
+                    Please complete the reCAPTCHA above to enable the button.
+                  </div>
+                )}
+                {statusMsg && (
+                  <div className={styles.mobileSmall} style={{ marginTop: "8px" }}>
+                    {statusMsg}
+                  </div>
+                )}
               </div>
             </div>
           </div>
